@@ -1,7 +1,3 @@
-import { ExternalLink } from '@/components/Technologies/ExternalLink';
-import { GitHubIcon } from '@/components/Technologies/icons/GitHubIcon';
-import { InstagramIcon } from '@/components/Technologies/icons/InstagramIcon';
-import { XIcon } from '@/components/Technologies/icons/XIcon';
 import AmbitLogo from '@/components/Technologies/images/logos/ambit.png';
 import BarepapersLogo from '@/components/Technologies/images/logos/barepapers.svg';
 import BimLogo from '@/components/Technologies/images/logos/bim.png';
@@ -19,16 +15,10 @@ import ParabolLogo from '@/components/Technologies/images/logos/ambit.png';
 import TastyCloudLogo from '@/components/Technologies/images/logos/tastycloud.png';
 import YearProgressLogo from '@/components/Technologies/images/logos/yearprogress.svg';
 import Minimal from '@/components/Technologies/images/logos/minimal.svg';
-import { LinkedInIcon } from '@/components/Technologies/icons/LinkedInIcon';
 
 export const Name = 'Bartosz Jarocki';
 
-export const About = (
-  <>
-    {`I used to consider myself a software engineer, but the reality is that I simply enjoy creating things. If you'd like to get in touch,`}{' '}
-    <ExternalLink href="mailto:bartosz@jarocki.me">send me an email.</ExternalLink>
-  </>
-);
+
 export const AboutExtended = `I live in Wrocław, Poland, having grown up in the small town of Góra in the western part of the country. I have a bachelor's degree in Control Systems Engineering and Robotics from the Wrocław University of Technology. I like programming, books, plants, mountain biking, whisky, and traveling the world with my wife, Kasia. The cosmos fascinates me, and I take great delight in gazing at the stars.`;
 
 export type Project = {
@@ -182,12 +172,6 @@ export const MyPastProjects: Project[] = [
   },
 ];
 
-export const SocialMedia = [
-  { name: 'Twitter', link: 'https://twitter.com/BartoszJarocki', icon: XIcon },
-  { name: 'Instagram', link: 'https://www.instagram.com/bartosz.jarocki/', icon: InstagramIcon },
-  { name: 'Github', link: 'https://github.com/BartoszJarocki', icon: GitHubIcon },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/bjarocki', icon: LinkedInIcon },
-] as const;
 
 export const Work = [
   {
