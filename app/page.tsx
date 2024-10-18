@@ -1,7 +1,6 @@
 import HorizontalScroller2 from "@/components/BrandLogos/Clients";
 import { Contact } from "@/components/Contact/Contact";
 import FeatureComponent from "@/components/Feature/Feature";
-import { Feature1 } from "@/components/Feature/Feature1";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import { Industries } from "@/components/Services/Industries";
@@ -14,22 +13,11 @@ export default function Home() {
     <>
     <Hero/>
     <FeatureComponent/>
-    
- 
- 
-
-  <Services/>
-
-  <HorizontalScroller2/>
-
-  <Projects/>
-  {/* <Feature1/> */}
-  <Industries/>
-    
- 
+    <Services/>
+    <HorizontalScroller2/>
+    <Projects/>
+    <Industries/>
     <Contact/>
-
-   
     </>
   );
 }

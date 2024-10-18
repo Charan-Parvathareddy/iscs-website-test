@@ -1,27 +1,25 @@
 "use client";
 
-import { CalendarIcon, Check, MoveRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Check, MoveRight } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+
 import { useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import { format } from "date-fns";
+
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function Contact() {
-  const [date, setDate] = useState<Date | undefined>(new Date());
+
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', { date, firstName, email, message });
+    console.log('Form submitted:', { firstName, email, message });
     // Here you would typically send the form data to your backend
   };
 

@@ -1,9 +1,8 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { SlideLeft, SlideUp, SlideRight } from "@/components/utility/animation"; // Import your animation functions
-import { FaBullseye, FaLightbulb, FaShieldAlt, FaBrain } from "react-icons/fa"; // Icons for sections
+import { FaBullseye, FaLightbulb, FaShieldAlt } from "react-icons/fa"; // Icons for sections
 
 export default function AboutUs() {
   return (
