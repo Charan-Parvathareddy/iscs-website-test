@@ -1,18 +1,14 @@
 "use client";
 
 import { Check, MoveRight } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
-
 import { useState } from "react";
-
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function Contact() {
-
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -24,19 +20,21 @@ export function Contact() {
   };
 
   return (
-    <div className="relative w-full bg-cover bg-center bg-no-repeat py-8 md:py-12" style={{
+    <div
+      className="relative w-full bg-cover bg-center bg-no-repeat py-8 md:py-12"
+      style={{
         backgroundImage: "url('/background-3.png')"
-      }}>
+      }}
+    >
       <div className="container max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-            
               <h4 className="text-2xl md:text-4xl lg:text-5xl tracking-tighter font-regular">
                 Get in touch
               </h4>
               <p className="text-base md:text-lg leading-relaxed tracking-tight text-muted-foreground max-w-sm">
-                We're here to help and answer any question you might have. We look forward to hearing from you.
+                We&apos;re here to help and answer any question you might have. We look forward to hearing from you.
               </p>
             </div>
             {['Easy to reach', 'Fast response', 'Expert support'].map((item, index) => (
@@ -45,7 +43,7 @@ export function Contact() {
                 <div>
                   <p className="font-medium">{item}</p>
                   <p className="text-sm text-muted-foreground">
-                    {index === 0 && "We're always available to assist you."}
+                    {index === 0 && "We&apos;re always available to assist you."}
                     {index === 1 && "We aim to respond to all inquiries within 24 hours."}
                     {index === 2 && "Our team of experts is ready to assist you with any questions."}
                   </p>
@@ -58,33 +56,33 @@ export function Contact() {
             <CardContent>
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4 md:p-6">
                 <h2 className="text-xl md:text-2xl font-semibold mb-4">Contact Us</h2>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="firstName">Name</Label>
-                  <Input 
-                    id="firstName" 
+                  <Input
+                    id="firstName"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    required 
+                    required
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
+                  <Input
+                    id="email"
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    required 
+                    required
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    required 
+                    required
                   />
                 </div>
                 <Button type="submit" className="w-full">
