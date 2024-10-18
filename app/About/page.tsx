@@ -1,17 +1,17 @@
+import AboutUs from '@/components/About/Aboutus'
 import React from 'react'
-import { TimelineDemo } from './TimelineDemo'
-import { Culture } from './Culture'
-import { Benefits } from './Benefits'
 
-function page() {
+function Home() {
   return (
     <div>
-      <Culture/>
-      <Benefits/>
-      <TimelineDemo/>
       
+      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: "url('/background-1.png')"
+    }}>
+      <AboutUs/>
+      </div>
     </div>
   )
 }
 
-export default page
+export default Home

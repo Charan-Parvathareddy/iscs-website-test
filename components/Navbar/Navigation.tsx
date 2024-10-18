@@ -352,23 +352,23 @@ const Navigation: React.FC = () => {
         {
           category: "AI/ML Solutions",
           items: [
-            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/services" },
-            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/services/ml-models" },
+            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services" },
+            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services" },
           ],
         },
         {
           category: "Salesforce Solutions",
           items: [
-            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/services/salesforce-implementation" },
-            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/services/service-cloud" }
+            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services" },
+            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services" }
             ],
         },
         {
           category: "TIBCO Services",
           items: [
-            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/services/integration-strategy" },
-            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/services/training" },
-            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/services/tibco-consulting" },
+            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/Services" },
+            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/Services" },
+            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/Services" },
           
           ],
         },
@@ -376,9 +376,9 @@ const Navigation: React.FC = () => {
         {
           category: "Oracle Solutions",
           items: [
-            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/services/oracle-ebusiness" },
-            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/services/business-analytics" },
-           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/services/it-consulting" },
+            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services" },
+            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services" },
+           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services" },
        
           ],
         },
@@ -390,13 +390,13 @@ const Navigation: React.FC = () => {
               name: "IT Consulting Services", 
               description: "Expert IT consulting and staffing solutions", 
               icon: "/assets/staffing/it-consulting.png", 
-              href: "/services" 
+              href: "/Services" 
             },
             { 
               name: "Talent Assessment Management", 
               description: "Comprehensive talent assessment and management services", 
               icon: "/assets/staffing/talent-assessment.png", 
-              href: "/services" 
+              href: "/Services" 
             }
           ]
         },
@@ -414,8 +414,8 @@ const Navigation: React.FC = () => {
         {
           category: "Diabetic Retinopathy Detection G-Nayana ",
           items: [
-            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-NAyana/solution.png", href: "/products/previews" },
-            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-NAyana/ai.png", href: "/products/ai" },
+            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-NAyana/solution.png", href: "/Products" },
+            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-NAyana/ai.png", href: "/Products" },
           ],
         },
         
@@ -423,21 +423,21 @@ const Navigation: React.FC = () => {
           {
           category: "Integrated HRMS",
           items: [
-            { name: "i-HRMS", description: "Fast, scalable, and reliable", icon: "/assets/i-HRMS/i-HRMS.png", href: "/products/rendering" },
+            { name: "i-HRMS", description: "Fast, scalable, and reliable", icon: "/assets/i-HRMS/i-HRMS.png", href: "/Products" },
          ],
         },
 
         {
           category: "E-Learning Platform",
           items: [
-            { name: "Empowering Learning", description: "Interactive  online education.", icon: "/assets/E-Learning/E-Learning.png", href: "/products/rendering" },
+            { name: "Empowering Learning", description: "Interactive  online education.", icon: "/assets/E-Learning/E-Learning.png", href: "/Products" },
           ],
         },
         {
           category: "Mi-Ware ",
           items: [
-            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/products/previews" },
-            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/products/ai" },
+            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products" },
+            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products" },
           ],
         },
        
@@ -452,19 +452,19 @@ const Navigation: React.FC = () => {
         {
           category: "Commercial Industries",
           items: [
-            { name: "Banking & Financial Services", icon: "/assets/Industries/banking.png", href: "/industries" },
-            { name: "Communication Technologies", icon: "/assets/Industries/communication.png", href: "/industries" },
-            { name: "High-Tech & Semiconductor", icon: "/assets/Industries/semiconductor.png", href: "/industries" },
-            { name: "Education", icon: "/assets/Industries/education.png", href: "/industries" },
+            { name: "Banking & Financial Services", icon: "/assets/Industries/banking.png", href: "/Industries" },
+            { name: "Communication Technologies", icon: "/assets/Industries/communication.png", href: "/Industries" },
+            { name: "High-Tech & Semiconductor", icon: "/assets/Industries/semiconductor.png", href: "/Industries" },
+            { name: "Education", icon: "/assets/Industries/education.png", href: "/Industries" },
           ],
         },
         {
           category: "Enterprise Industries",
           items: [
-            { name: "Information Services", icon: "/assets/Industries/it.png", href: "/industries" },
-            { name: "Retail & Consumer Goods", icon: "/assets/Industries/retail.png", href: "/industries" },
-            { name: "Trading & Distribution", icon: "/assets/Industries/trading.png", href: "/industries" },
-            { name: "Industrial Manufacturing", icon: "/assets/Industries/industry.png", href: "/industries" },
+            { name: "Information Services", icon: "/assets/Industries/it.png", href: "/Industries" },
+            { name: "Retail & Consumer Goods", icon: "/assets/Industries/retail.png", href: "/Industries" },
+            { name: "Trading & Distribution", icon: "/assets/Industries/trading.png", href: "/Industries" },
+            { name: "Industrial Manufacturing", icon: "/assets/Industries/industry.png", href: "/Industries" },
           ],
         },
       ],
@@ -478,10 +478,10 @@ const Navigation: React.FC = () => {
       dropdown: [
         {
           items: [
-            { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/resources/case-studies" },
-            { name: "Blog", icon: "/assets/placeholder.svg", href: "/resources/whitepapers" },
-            { name: "Insights", icon: "/assets/placeholder.svg", href: "/resources/blog" },
-            { name: "Careers", icon: "/assets/placeholder.svg", href: "/resources/docs" },
+            { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
+            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
+            { name: "Insights", icon: "/assets/placeholder.svg", href: "/Resources/blog" },
+            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
           ],
         }
       ]

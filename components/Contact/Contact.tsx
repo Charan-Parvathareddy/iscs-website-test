@@ -56,35 +56,11 @@ export function Contact() {
             ))}
           </div>
 
-          <Card className="w-full max-w-md mx-auto">
+          <Card className=" w-full max-w-md mx-auto">
             <CardContent>
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4 md:p-6">
                 <h2 className="text-xl md:text-2xl font-semibold mb-4">Contact Us</h2>
-                <div className="space-y-2">
-                  <Label htmlFor="date">Date</Label>
-                  <Popover>
-                    <PopoverTrigger asChild>
-                      <Button
-                        variant={"outline"}
-                        className={cn(
-                          "w-full justify-start text-left font-normal",
-                          !date && "text-muted-foreground"
-                        )}
-                      >
-                        <CalendarIcon className="mr-2 h-4 w-4" />
-                        {date ? format(date, "PPP") : <span>Pick a date</span>}
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0">
-                      <Calendar
-                        mode="single"
-                        selected={date}
-                        onSelect={setDate}
-                        initialFocus
-                      />
-                    </PopoverContent>
-                  </Popover>
-                </div>
+                
                 <div className="space-y-2">
                   <Label htmlFor="firstName">Name</Label>
                   <Input 

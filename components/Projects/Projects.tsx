@@ -18,7 +18,9 @@ function Projects() {
               <div className="space-y-2">
                 
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Latest Projects
+                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
+          Our Products
+        </span>
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   We have worked on a variety of projects, from simple

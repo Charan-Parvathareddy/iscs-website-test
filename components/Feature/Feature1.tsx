@@ -7,7 +7,7 @@ export  function Feature1() {
   const stats = [
     {
       icon: Code,
-      number: "500+",
+      number: "50+",
       title: "Projects Delivered",
       description: "Across various industries",
     },
@@ -19,7 +19,7 @@ export  function Feature1() {
     },
     {
       icon: Cpu,
-      number: "50+",
+      number: "20+",
       title: "AI Models Deployed",
       description: "Enhancing business intelligence",
     },
@@ -51,8 +51,8 @@ export  function Feature1() {
           <div className="text-center mb-12">
             <Badge className="mb-4">Our Impact</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-gray-800">Delivering </span>
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-orange-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">Delivering </span>
+              <span className="bg-gradient-to-r from-orange-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">
                 Innovative Solutions
               </span>
             </h2>
@@ -69,8 +69,8 @@ export  function Feature1() {
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                        <stat.icon className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                        <stat.icon className="w-6 h-6 text-orange-600" />
                       </div>
                     </div>
                     <div>

@@ -23,8 +23,21 @@ export function Services() {
     {
       title: "Oracle Solutions",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/oracle.webp"
+      image: "/assets/Oracle/oracle.jpg"
     },
+
+    {
+      title: "Oracle PeopleSoft",
+      description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
+      image: "/assets/Oracle/oracle-peoplesoft.png"
+    },
+
+    {
+      title: "Cloud Services",
+      description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
+      image: "/assets/cloud-services.jpg"
+    },
+    
     {
       title: "Professional Staffing Services",
       description: "Find the right talent for your business with our professional staffing services. We specialize in connecting you with skilled professionals across various industries.",
