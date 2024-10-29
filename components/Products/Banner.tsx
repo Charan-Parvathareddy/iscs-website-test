@@ -1,4 +1,4 @@
-"use client";  // Ensures this component is treated as a client-side component
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -12,20 +12,23 @@ import { Button } from "@/components/ui/button";
 interface BannerProps {
   image: StaticImageData;
   title: string;
-  subtitle: string;
+  subtitle: string | string[];  // Accept either a single string or array of strings
   link?: string;
   tag: string;
   reverse?: boolean;
 }
 
 const Banner: React.FC<BannerProps> = ({ image, title, subtitle, link, tag, reverse }) => {
+  // Convert subtitle to array if it's a single string
+  const paragraphs = Array.isArray(subtitle) ? subtitle : [subtitle];
+
   return (
     <div className="pb-14">
       <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <div className="container pt-20"> {/* Added pt-20 for 20 points padding from the top */}
-          <div className="grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0">
+        <div className="container pt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className={`flex justify-start items-center ${reverse ? "md:order-last md:justify-end" : ""}`}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -37,43 +40,51 @@ const Banner: React.FC<BannerProps> = ({ image, title, subtitle, link, tag, reve
                   src={image}
                   alt="Banner"
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-lg shadow-lg"
                 />
               </motion.div>
             </div>
-            {/* Banner text section */}
-            <div className="flex flex-col justify-center text-center md:text-left space-y-4 lg:max-w-[500px]">
+            
+            <div className="flex flex-col justify-center space-y-6 lg:max-w-[600px]">
               <motion.p
                 variants={SlideUp(0.5)}
                 initial="hidden"
                 whileInView="visible"
-                className="text-sm text-orange-600 font-semibold capitalize"
+                className="text-sm text-orange-600 font-semibold uppercase tracking-wide"
               >
                 {tag}
               </motion.p>
-              <motion.p
+              
+              <motion.h2
                 variants={SlideUp(0.7)}
                 initial="hidden"
                 whileInView="visible"
-                className="text-xl lg:text-2xl font-semibold capitalize"
+                className="text-2xl lg:text-3xl font-bold leading-tight text-gray-900"
               >
                 {title}
-              </motion.p>
-              <motion.p
-                variants={SlideUp(0.9)}
-                initial="hidden"
-                whileInView="visible"
-                className="text-sm text-slate-500"
-              >
-                {subtitle}
-              </motion.p>
+              </motion.h2>
+              
+              <div className="space-y-4">
+                {paragraphs.map((paragraph, index) => (
+                  <motion.p
+                    key={index}
+                    variants={SlideUp(0.9 + index * 0.1)}
+                    initial="hidden"
+                    whileInView="visible"
+                    className="text-base text-gray-600 leading-relaxed"
+                  >
+                    {paragraph}
+                  </motion.p>
+                ))}
+              </div>
+              
               <motion.div
                 variants={SlideUp(1.1)}
                 initial="hidden"
                 whileInView="visible"
-                className="flex justify-center md:justify-start"
+                className="pt-4"
               >
-                <Button className="mt-5">
+                <Button className="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors">
                   {link ? <a href={link}>Know More</a> : "Get Started"}
                 </Button>
               </motion.div>

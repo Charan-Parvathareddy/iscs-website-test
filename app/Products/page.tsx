@@ -10,17 +10,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 const BannerData = {
   image: Img1,
-  tag: " G-Nayana",
-  title: "Severity Classification for Diabetic Retinopathy Leveraging AI ",
-  subtitle: "Diabetic retinopathy (DR) is a leading cause of vision impairment and blindness among diabetic patients, significantly impacting their quality of life. Early detection and timely intervention are crucial for preventing permanent damage and preserving vision. However, traditional diagnostic methods can be time-consuming, labor-intensive, and subjective, often relying on manual image review by specialized ophthalmologists. In response to this pressing challenge, ISCS has developed an innovative AI-powered solution that harnesses advanced deep learning techniques, including Convolutional Neural Networks (CNNs) and Vision Transformers. This cutting-edge technology delivers accurate and rapid predictions of diabetic retinopathy stages, enabling healthcare professionals to make informed decisions and initiate appropriate treatments sooner. By streamlining the diagnostic process, ISCS aims to enhance patient outcomes and reduce the burden of diabetes-related vision loss.",
-  link: "#",
+  tag: "G-Nayana",
+  title: "AI-Driven Severity Classification for Diabetic Retinopathy",
+  subtitle: [
+    "Diabetic retinopathy (DR) is one of the most common complications of diabetes and a leading cause of vision impairment and blindness worldwide, affecting millions of patients. Timely detection and intervention are critical to preserving vision and preventing long-term damage. However, traditional diagnostic methods are often labor-intensive, time-consuming, and dependent on subjective assessments by ophthalmologists, which can delay treatment.",
+    
+    "ISCS addresses this challenge with an AI-powered solution leveraging advanced deep learning models such as Convolutional Neural Networks (CNNs) and Vision Transformers. This cutting-edge technology ensures precise and rapid detection of diabetic retinopathy stages, enabling healthcare providers to act swiftly.",
+    
+    "With this solution, medical professionals can access real-time, automated predictions of DR severity, eliminating bottlenecks caused by manual image reviews. Our AI-driven classification not only improves diagnostic accuracy but also ensures that patients receive timely treatments, minimizing the risk of vision loss.",
+    
+    "By streamlining the diagnostic workflow through automation and predictive analytics, we empower healthcare providers to enhance patient outcomes and reduce diabetes-related vision loss, ultimately improving the quality of life for diabetic patients."
+  ],
+  link: "https://ai-ra.vercel.app/",
 };
 
 const BannerData2 = {
   image: Img3,
   tag: "Mi-ware: Middleware Tool",
   title: "A Python-based Middleware Tool designed as a free alternative to TIBCO ",
-  subtitle: "At ISCS Technologies, we are proud to offer Mi-ware, a Python-based Middleware Tool designed as a free alternative to TIBCO. Mi-ware facilitates seamless integration between applications, automates data flow, and enhances process management efficiency. With its robust features, Mi-ware empowers organizations to streamline their operations and improve productivity.",
+  subtitle: "At ISCS Technologies, we are proud to offer Mi-ware, a Python-based Middleware Tool designed as an low-cost alternative to TIBCO. Mi-ware facilitates seamless integration between applications, automates data flow, and enhances process management efficiency. With its robust features, Mi-ware empowers organizations to streamline their operations and improve productivity.",
   link: "#",
 };
 
