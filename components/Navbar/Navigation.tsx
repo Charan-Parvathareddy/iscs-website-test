@@ -414,8 +414,8 @@ const Navigation: React.FC = () => {
         {
           category: "Diabetic Retinopathy Detection G-Nayana ",
           items: [
-            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-NAyana/solution.png", href: "/Products" },
-            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-NAyana/ai.png", href: "/Products" },
+            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-Nayana/solution.png", href: "/Products" },
+            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-Nayana/ai.png", href: "/Products" },
           ],
         },
         

@@ -63,7 +63,7 @@ export default function Hero() {
                 Contact Us <PhoneCall className="w-4 h-4" />
               </Button>
               <Button size="lg" className="gap-2">
-                Log In  <MoveRight className="w-4 h-4" />
+                Know More  <MoveRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
