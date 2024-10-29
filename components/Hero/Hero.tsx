@@ -46,7 +46,11 @@ export default function Hero() {
         <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
           <div className="flex gap-8 flex-col items-center lg:items-start"> {/* Increased gap-4 to gap-8 */}
             <div>
-              <Badge variant="outline">ISCS Technologies</Badge>
+              <Badge variant="outline">
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
+                
+              ISCS Technologies
+              </span></Badge>
             </div>
             <div className="flex gap-8 flex-col"> {/* Increased gap-4 to gap-8 */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl max-w-lg tracking-tighter text-center lg:text-left font-regular">

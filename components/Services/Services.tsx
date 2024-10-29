@@ -13,12 +13,12 @@ export function Services() {
     {
       title: "Salesforce Solutions",
       description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
-      image: "/assets/salesforce/salesforce.webp"
+      image: "/assets/salesforce/salesforce-logo.jfif"
     },
     {
       title: "TIBCO Services",
       description: "Leverage our TIBCO services to enhance data integration, analytics, and application connectivity. We offer tailored solutions to streamline your processes.",
-      image: "/assets/tibco/tibco.jpg"
+      image: "/assets/tibco/tibco-logo.webp"
     },
     {
       title: "Oracle Solutions",
@@ -29,7 +29,7 @@ export function Services() {
     {
       title: "Oracle PeopleSoft",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/oracle-peoplesoft.png"
+      image: "/assets/Oracle/peoplesoft.jpeg"
     },
 
     {
