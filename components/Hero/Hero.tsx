@@ -44,11 +44,11 @@ export default function Hero() {
     }}>
       <div className="container mx-auto px-4 py-12 lg:py-24">
         <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
-          <div className="flex gap-4 flex-col items-center lg:items-start">
+          <div className="flex gap-8 flex-col items-center lg:items-start"> {/* Increased gap-4 to gap-8 */}
             <div>
               <Badge variant="outline">ISCS Technologies</Badge>
             </div>
-            <div className="flex gap-4 flex-col">
+            <div className="flex gap-8 flex-col"> {/* Increased gap-4 to gap-8 */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl max-w-lg tracking-tighter text-center lg:text-left font-regular">
                 Innovative&nbsp;Strategic<br />
                 Consulting&nbsp;Services
@@ -58,12 +58,12 @@ export default function Hero() {
                 Various Industry Specific IT Products and Resource Consulting Services Globally.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4"> {/* Added mt-4 for extra spacing */}
               <Button size="lg" className="gap-2" variant="outline">
-                Jump on a call <PhoneCall className="w-4 h-4" />
+                Contact Us <PhoneCall className="w-4 h-4" />
               </Button>
               <Button size="lg" className="gap-2">
-                Sign up here <MoveRight className="w-4 h-4" />
+                Log In  <MoveRight className="w-4 h-4" />
               </Button>
             </div>
           </div>

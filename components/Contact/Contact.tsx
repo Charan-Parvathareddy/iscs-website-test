@@ -34,7 +34,7 @@ export function Contact() {
                 Get in touch
               </h4>
               <p className="text-base md:text-lg leading-relaxed tracking-tight text-muted-foreground max-w-sm">
-                We&apos;re here to help and answer any question you might have. We look forward to hearing from you.
+                We are here to help and answer any question you might have. We look forward to hearing from you.
               </p>
             </div>
             {['Easy to reach', 'Fast response', 'Expert support'].map((item, index) => (
@@ -43,7 +43,7 @@ export function Contact() {
                 <div>
                   <p className="font-medium">{item}</p>
                   <p className="text-sm text-muted-foreground">
-                    {index === 0 && "We&apos;re always available to assist you."}
+                    {index === 0 && "We are always available to assist you."}
                     {index === 1 && "We aim to respond to all inquiries within 24 hours."}
                     {index === 2 && "Our team of experts is ready to assist you with any questions."}
                   </p>

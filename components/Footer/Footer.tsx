@@ -25,13 +25,13 @@ export function Footer  ()  {
       <div className="flex  gap-6">
         <div className="footer-section2">
           <ul className="flex flex-col gap-2 text-sm list-none">
-            <p className="font-bold">EXPLORE</p>
+            <p className="font-bold">Services</p>
             <li>
               <Link
                 href="docs/templates/startup-saas"
                 className="opacity-75 hover:opacity-100"
               >
-                Templates
+                AI / ML Solutions
               </Link>
             </li>
             <li>
@@ -39,7 +39,7 @@ export function Footer  ()  {
                 href="docs/components"
                 className="opacity-75 hover:opacity-100"
               >
-                Components
+                Salesforce Solutions
               </Link>
             </li>
             <li>
@@ -47,25 +47,25 @@ export function Footer  ()  {
                 href="docs/layouts"
                 className="opacity-75 hover:opacity-100"
               >
-                Layouts
+                TIBCO Solutions
               </Link>
             </li>
             <li>
               <Link href="docs/learn" className="opacity-75 hover:opacity-100">
-                Learn
+                Oracle Solutions
               </Link>
             </li>
           </ul>
         </div>
         <div className="footer-section3">
           <ul className="flex flex-col gap-2 text-sm list-none">
-            <p className="font-bold">LEGAL</p>
+            <p className="font-bold">Products</p>
             <li>
               <Link
                 href="docs/examples"
                 className="opacity-75 hover:opacity-100"
               >
-                Examples
+                G-Nayana
               </Link>
             </li>
             <li>
@@ -73,7 +73,7 @@ export function Footer  ()  {
                 href="docs/changelog"
                 className="opacity-75 hover:opacity-100"
               >
-                Changelog
+                Mi-Ware
               </Link>
             </li>
             <li>
@@ -81,7 +81,7 @@ export function Footer  ()  {
                 href="docs/roadmap"
                 className="opacity-75 hover:opacity-100"
               >
-                Roadmap
+                i-HRMS
               </Link>
             </li>
             <li>
@@ -89,54 +89,21 @@ export function Footer  ()  {
                 href="docs/support"
                 className="opacity-75 hover:opacity-100"
               >
-                Support
+                E-Learning Platform
               </Link>
             </li>
           </ul>
         </div>
-        <div className="footer-section2">
-          <ul className="flex flex-col gap-2 text-sm list-none">
-            <p className="font-bold">EXPLORE</p>
-            <li>
-              <Link
-                href="docs/templates/startup-saas"
-                className="opacity-75 hover:opacity-100"
-              >
-                Templates
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="docs/components"
-                className="opacity-75 hover:opacity-100"
-              >
-                Components
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="docs/layouts"
-                className="opacity-75 hover:opacity-100"
-              >
-                Layouts
-              </Link>
-            </li>
-            <li>
-              <Link href="docs/learn" className="opacity-75 hover:opacity-100">
-                Learn
-              </Link>
-            </li>
-          </ul>
-        </div>
+        
         <div className="footer-section3">
           <ul className="flex flex-col gap-2 text-sm list-none">
-            <p className="font-bold">LEGAL</p>
+            <p className="font-bold">Resources</p>
             <li>
               <Link
                 href="docs/examples"
                 className="opacity-75 hover:opacity-100"
               >
-                Examples
+                Case Studies
               </Link>
             </li>
             <li>
@@ -144,7 +111,7 @@ export function Footer  ()  {
                 href="docs/changelog"
                 className="opacity-75 hover:opacity-100"
               >
-                Changelog
+                Blog
               </Link>
             </li>
             <li>
@@ -152,7 +119,7 @@ export function Footer  ()  {
                 href="docs/roadmap"
                 className="opacity-75 hover:opacity-100"
               >
-                Roadmap
+                Insights
               </Link>
             </li>
             <li>
@@ -160,7 +127,7 @@ export function Footer  ()  {
                 href="docs/support"
                 className="opacity-75 hover:opacity-100"
               >
-                Support
+                Careers
               </Link>
             </li>
           </ul>

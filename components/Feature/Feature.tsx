@@ -45,9 +45,7 @@ const FeatureComponent = () => {
           <p className="text-base text-gray-600">
             As a fast-growing global IT services provider, we have established ourselves as a trusted partner to leading technology giants, including Oracle and TIBCO. Our commitment to building enduring partnerships and delivering innovative solutions has positioned us as a preferred ally for organizations seeking excellence in IT consulting and integration.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded">
-            Get in Touch
-          </button>
+          
         </div>
         <div className="w-full max-w-3xl mx-auto">
           <div className="h-[30rem] flex items-center justify-center w-full">

@@ -42,11 +42,11 @@ export function AllIndustries() {
       description: "We specialize in optimizing supply chains, enhancing inventory management, and improving logistics to ensure efficient product flow and maximize profitability in your business.",
       image: "/assets/Industries/Distribution.jpg"
     },
-    // {
-    //     "title": "Industrial Manufacturing",
-    //     "description": "We drive innovation in manufacturing with solutions for automation, process optimization, and supply chain management to enhance efficiency and productivity.",
-    //     image: "/assets/Industries/industrial-manufacturing.jpg"
-    // }
+    {
+        "title": "Industrial Manufacturing",
+        "description": "We drive innovation in manufacturing with solutions for automation, process optimization, and supply chain management to enhance efficiency and productivity.",
+        image: "/assets/Industries/manufacturing-industry.png"
+    }
     
   ];
 
