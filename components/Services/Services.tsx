@@ -13,7 +13,7 @@ export function Services() {
     {
       title: "Salesforce Solutions",
       description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
-      image: "/assets/salesforce/salesforce-logo.jfif"
+      image: "/assets/salesforce/salesforce-logo.png"
     },
     {
       title: "TIBCO Services",
