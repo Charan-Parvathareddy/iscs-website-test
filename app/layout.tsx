@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/Footer/Footer";
 import Navigation from "@/components/Navbar/Navigation";
 
@@ -33,17 +32,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+        
             <Navigation/>
             
         {children}
         <Footer/>
-        </ThemeProvider>
+       
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X, MoveRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { ModeToggle } from '@/components/modetoggle'
+
 import Image from 'next/image'
 
 interface SubItem {
@@ -517,10 +517,10 @@ const Navigation: React.FC = () => {
             <Button variant="default">
               Contact Us
             </Button>
-            <ModeToggle />
+           
           </div>
           <div className="flex items-center md:hidden">
-            <ModeToggle />
+           
             <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className="ml-2">
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
