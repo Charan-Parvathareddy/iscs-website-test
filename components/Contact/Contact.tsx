@@ -23,7 +23,8 @@ export function Contact() {
   };
 
   return (
-    <div
+    <section id="contact">
+      <div
       className="relative w-full bg-cover bg-center bg-no-repeat py-8 md:py-12"
       style={{
         backgroundImage: "url('/background-3.png')"
@@ -98,5 +99,7 @@ export function Contact() {
         </div>
       </div>
     </div>
+    </section>
+
   );
 }

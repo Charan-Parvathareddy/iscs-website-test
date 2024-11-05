@@ -6,7 +6,7 @@ import { ChevronDown, Menu, X, MoveRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 import Image from 'next/image'
-import { useScroll } from '@/contexts/ScrollContext'
+
 
 interface SubItem {
   name: string
@@ -329,10 +329,12 @@ const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isScrolled, setIsScrolled] = useState(false)
-  const refs = useScroll();
-
+ 
   const scrollToContact = () => {
-    refs.contact.current?.scrollIntoView({ behavior: 'smooth' });
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
 
