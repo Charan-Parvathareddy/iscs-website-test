@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Footer } from "@/components/Footer/Footer";
 import Navigation from "@/components/Navbar/Navigation";
+import { ScrollProvider } from '@/contexts/ScrollContext';
+
 
 
 
@@ -32,8 +34,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-            <Navigation/>
+        <ScrollProvider>          
+          <Navigation/>
+          </ScrollProvider>
+  
             
         {children}
         <Footer/>
