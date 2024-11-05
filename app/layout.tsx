@@ -36,12 +36,9 @@ export default function RootLayout({
       >
         <ScrollProvider>          
           <Navigation/>
-          </ScrollProvider>
-  
-            
-        {children}
+          {children}
+        </ScrollProvider>
         <Footer/>
-       
       </body>
     </html>
   );
