@@ -7,11 +7,14 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import { useScroll } from '@/contexts/ScrollContext';
+
 
 export function Contact() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const refs = useScroll();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,6 +28,7 @@ export function Contact() {
       style={{
         backgroundImage: "url('/background-3.png')"
       }}
+      ref={refs.contact}
     >
       <div className="container max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">

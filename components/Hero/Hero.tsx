@@ -1,12 +1,14 @@
+// components/Hero/Hero.tsx
 'use client'
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { MoveRight, PhoneCall } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import Autoplay from "embla-carousel-autoplay"
+import { useScroll } from '@/contexts/ScrollContext'
 import {
   Carousel,
   CarouselContent,
@@ -33,10 +35,19 @@ const cardContent = [
   }
 ]
 
-export default function Hero() {
-  const plugin = useRef(
+const Hero = () => {
+  const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
+  const refs = useScroll();
+
+  const scrollToContact = () => {
+    refs.contact.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToFeature = () => {
+    refs.feature.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
@@ -44,15 +55,15 @@ export default function Hero() {
     }}>
       <div className="container mx-auto px-4 py-12 lg:py-24">
         <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
-          <div className="flex gap-8 flex-col items-center lg:items-start"> {/* Increased gap-4 to gap-8 */}
+          <div className="flex gap-8 flex-col items-center lg:items-start">
             <div>
               <Badge variant="outline">
-              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
-                
-              ISCS Technologies
-              </span></Badge>
+                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
+                  ISCS Technologies
+                </span>
+              </Badge>
             </div>
-            <div className="flex gap-8 flex-col"> {/* Increased gap-4 to gap-8 */}
+            <div className="flex gap-8 flex-col">
               <h1 className="text-4xl md:text-6xl lg:text-7xl max-w-lg tracking-tighter text-center lg:text-left font-regular">
                 Innovative&nbsp;Strategic<br />
                 Consulting&nbsp;Services
@@ -62,12 +73,21 @@ export default function Hero() {
                 Various Industry Specific IT Products and Resource Consulting Services Globally.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-4"> {/* Added mt-4 for extra spacing */}
-              <Button size="lg" className="gap-2" variant="outline">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <Button 
+                size="lg" 
+                className="gap-2" 
+                variant="outline"
+                onClick={scrollToContact}
+              >
                 Contact Us <PhoneCall className="w-4 h-4" />
               </Button>
-              <Button size="lg" className="gap-2">
-                Know More  <MoveRight className="w-4 h-4" />
+              <Button 
+                size="lg" 
+                className="gap-2"
+                onClick={scrollToFeature}
+              >
+                Know More <MoveRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -115,3 +135,5 @@ export default function Hero() {
     </div>
   )
 }
+
+export default Hero;

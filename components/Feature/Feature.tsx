@@ -4,6 +4,8 @@ import React from 'react';
 import { cn } from "@/lib/utils";
 import Image from 'next/image';
 import cafImage from '@/public/caf.png';
+import { useScroll } from '@/contexts/ScrollContext';
+
 
 
 export const Highlight = ({
@@ -27,10 +29,12 @@ export const Highlight = ({
 
 
 const FeatureComponent = () => {
+  const refs = useScroll();
   return (
     <div
       className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/background-3.png')" }}
+      ref={refs.feature}
     >
        <div className="container mx-auto px-4 py-8 lg:py-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
