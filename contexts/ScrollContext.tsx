@@ -1,4 +1,5 @@
 // contexts/ScrollContext.tsx
+'use client';
 import React, { createContext, useContext, useRef, RefObject } from 'react';
 
 // Define the type for our refs
