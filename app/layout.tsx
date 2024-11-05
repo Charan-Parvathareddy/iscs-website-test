@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import LayoutClient from "./layout-client";
+import { Footer } from "@/components/Footer/Footer";
+import Navigation from "@/components/Navbar/Navigation";
+import { ScrollProvider } from '@/contexts/ScrollContext';
+
+
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -27,12 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <LayoutClient 
-        geistSans={geistSans.variable} 
-        geistMono={geistMono.variable}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ScrollProvider>          
+          <Navigation/>
+          </ScrollProvider>
+  
+            
         {children}
-      </LayoutClient>
+        <Footer/>
+       
+      </body>
     </html>
   );
 }
