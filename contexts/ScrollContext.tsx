@@ -5,9 +5,7 @@ import React, { createContext, useContext, useRef, RefObject } from 'react';
 interface ScrollRefs {
   contact: RefObject<HTMLDivElement>;
   feature: RefObject<HTMLDivElement>;
-  // Add scroll functions
-  scrollToContact: () => void;
-  scrollToFeature: () => void;
+  // Add more refs as needed
 }
 
 // Define the type for our context
@@ -19,29 +17,9 @@ interface ScrollProviderProps {
 }
 
 export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
-  const contact = useRef<HTMLDivElement>(null);
-  const feature = useRef<HTMLDivElement>(null);
-
-  // Define scroll functions
-  const scrollToContact = () => {
-    contact.current?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
-  const scrollToFeature = () => {
-    feature.current?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
   const refs: ScrollRefs = {
-    contact,
-    feature,
-    scrollToContact,
-    scrollToFeature
+    contact: useRef<HTMLDivElement>(null),
+    feature: useRef<HTMLDivElement>(null),
   };
 
   return (
