@@ -6,6 +6,7 @@ import { ChevronDown, Menu, X, MoveRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 import Image from 'next/image'
+import { useScroll } from '@/contexts/ScrollContext'
 
 interface SubItem {
   name: string
@@ -328,6 +329,8 @@ const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { scrollToContact } = useScroll()
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -514,8 +517,8 @@ const Navigation: React.FC = () => {
             <Button variant="ghost" className="text-foreground hover:text-primary">
               Log In
             </Button>
-            <Button variant="default">
-              Contact Us
+            <Button variant="default" onClick={scrollToContact}>
+               Contact Us
             </Button>
            
           </div>
