@@ -543,9 +543,11 @@ const Navigation: React.FC = () => {
             ))}
           </div>
           <div className="hidden md:flex items-center space-x-4">
+          <Link href="https://attendance-tracking.vercel.app/Home" passHref>
             <Button variant="ghost" className="text-foreground hover:text-primary">
               Log In
             </Button>
+            </Link>
             <Button variant="default" onClick={handleContactClick}>
              Contact Us
             </Button>
