@@ -129,7 +129,7 @@ const NavItem: React.FC<NavItemProps> = ({
             className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-2xl"
           >
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div className="relative bg-background px-8 py-8">
+              <div className="relative bg-background px-12 py-12">
                 <div className="grid grid-cols-2 gap-x-8">
                   {dropdown.map((category, index) => (
                     <div key={category.category || index} className="space-y-4">
@@ -176,7 +176,7 @@ const NavItem: React.FC<NavItemProps> = ({
             className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-md"
           >
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div className={`relative bg-background px-5 py-6 sm:gap-8 sm:p-8 ${hasFeatureCard || hasTwoColumns ? 'grid grid-cols-2 gap-x-12 gap-y-6' : ''}`}>
+              <div className={`relative bg-background px-5 py-6 sm:gap-8 sm:p-8 ${hasFeatureCard || hasTwoColumns ? 'grid grid-cols-2 gap-4' : ''}`}>
                 <div className={hasTwoColumns ? 'col-span-2 grid grid-cols-2 gap-x-8 gap-y-4' : ''}>
                   {dropdown.map((category, index) => (
                     <div key={category.category || index} className="mb-4 last:mb-0">
