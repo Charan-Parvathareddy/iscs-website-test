@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
+import { Card, CardContent, CardDescription,  CardHeader, CardTitle } from "@/components/ui/card";
 
 export function AllIndustries() {
   const industries = [
