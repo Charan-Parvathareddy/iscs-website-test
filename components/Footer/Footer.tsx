@@ -28,7 +28,7 @@ export function Footer  ()  {
             <p className="font-bold">Services</p>
             <li>
               <Link
-                href="docs/templates/startup-saas"
+                href="/Services#ai-ml-solutions"
                 className="opacity-75 hover:opacity-100"
               >
                 AI / ML Solutions
@@ -36,7 +36,7 @@ export function Footer  ()  {
             </li>
             <li>
               <Link
-                href="docs/components"
+                href="/Services#salesforce-solutions"
                 className="opacity-75 hover:opacity-100"
               >
                 Salesforce Solutions
@@ -44,14 +44,15 @@ export function Footer  ()  {
             </li>
             <li>
               <Link
-                href="docs/layouts"
+                href="/Services#tibco-services"
                 className="opacity-75 hover:opacity-100"
               >
                 TIBCO Solutions
               </Link>
             </li>
             <li>
-              <Link href="docs/learn" className="opacity-75 hover:opacity-100">
+              <Link href="/Services#oracle-solutions"
+               className="opacity-75 hover:opacity-100">
                 Oracle Solutions
               </Link>
             </li>
@@ -62,7 +63,7 @@ export function Footer  ()  {
             <p className="font-bold">Products</p>
             <li>
               <Link
-                href="docs/examples"
+                href="/Products#g-nayana"
                 className="opacity-75 hover:opacity-100"
               >
                 G-Nayana
@@ -70,7 +71,7 @@ export function Footer  ()  {
             </li>
             <li>
               <Link
-                href="docs/changelog"
+                href="/Products#mi-ware"
                 className="opacity-75 hover:opacity-100"
               >
                 Mi-Ware
@@ -78,7 +79,7 @@ export function Footer  ()  {
             </li>
             <li>
               <Link
-                href="docs/roadmap"
+                href="/Products#i-hrms"
                 className="opacity-75 hover:opacity-100"
               >
                 i-HRMS
@@ -86,7 +87,7 @@ export function Footer  ()  {
             </li>
             <li>
               <Link
-                href="docs/support"
+                href="/Products#ogcom-elp"
                 className="opacity-75 hover:opacity-100"
               >
                 E-Learning Platform
