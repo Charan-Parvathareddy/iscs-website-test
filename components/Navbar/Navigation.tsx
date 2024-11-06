@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X, MoveRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useRouter, usePathname } from 'next/navigation'
 
 import Image from 'next/image'
 
@@ -329,14 +330,34 @@ const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
  
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+  const handleContactClick = () => {
+    // If we're already on the home page
+    if (pathname === '/') {
+      const contactSection = document.getElementById('contact')
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // If we're on a different page, navigate to home with hash
+      router.push('/#contact')
     }
-  };
+  }
 
+  // Add an effect to handle the hash when landing on the home page
+  useEffect(() => {
+    if (pathname === '/' && window.location.hash === '#contact') {
+      // Small delay to ensure the section is rendered
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact')
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
+  }, [pathname])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -523,8 +544,8 @@ const Navigation: React.FC = () => {
             <Button variant="ghost" className="text-foreground hover:text-primary">
               Log In
             </Button>
-            <Button variant="default" onClick={scrollToContact}>
-              Contact Us
+            <Button variant="default" onClick={handleContactClick}>
+             Contact Us
             </Button>
            
           </div>
