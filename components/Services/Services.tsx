@@ -33,13 +33,13 @@ export function Services() {
       title: "Oracle PeopleSoft",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/Oracle/peoplesoft.jpeg",
-      slug: "oracle-peoplesoft"
+      slug: "oracle-solutions"
     },
     {
       title: "Cloud Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/cloud-services.jpg",
-      slug: "cloud-services"
+      slug: "oracle-solutions"
     },
     {
       title: "Professional Staffing Services",
@@ -82,7 +82,7 @@ export function Services() {
             </CardContent>
             <CardFooter>
               <Link
-                href={`/services#${service.slug}`}
+                href={`/Services#${service.slug}`}
                 className="text-sm text-blue-600 hover:underline"
               >
                 Know more →
