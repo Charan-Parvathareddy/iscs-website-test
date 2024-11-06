@@ -225,7 +225,9 @@ const NavItem: React.FC<NavItemProps> = ({
                     />
                     <h3 className="text-lg font-semibold mb-2">Featured Product</h3>
                     <p className="text-sm text-gray-600">Hybrid AI Approach: CNNs + Vision Transformers!</p>
+                    <Link href="https://ai-ra.vercel.app/" passHref>
                     <Button variant="default" className="mt-4 w-full">Learn More</Button>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -445,7 +447,7 @@ const Navigation: React.FC = () => {
           category: "Diabetic Retinopathy Detection G-Nayana ",
           items: [
             { name: "Our Solution", description: "Early detection ", icon: "/assets/G-Nayana/solution.png", href: "https://ai-ra.vercel.app/" },
-            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-Nayana/ai.png", href: "/Products" },
+            { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-Nayana/ai.png", href: "/Products#g-nayana" },
           ],
         },
         
@@ -453,21 +455,21 @@ const Navigation: React.FC = () => {
           {
           category: "Integrated HRMS",
           items: [
-            { name: "i-HRMS", description: "Fast, scalable, and reliable", icon: "/assets/i-HRMS/i-HRMS.png", href: "/Products" },
+            { name: "i-HRMS", description: "Fast, scalable, and reliable", icon: "/assets/i-HRMS/i-HRMS.png", href: "/Products#i-hrms" },
          ],
         },
 
         {
           category: "E-Learning Platform",
           items: [
-            { name: "Empowering Learning", description: "Interactive  online education.", icon: "/assets/E-Learning/E-Learning.png", href: "/Products" },
+            { name: "Empowering Learning", description: "Interactive  online education.", icon: "/assets/E-Learning/E-Learning.png", href: "/Products#ogcom-elp" },
           ],
         },
         {
           category: "Mi-Ware ",
           items: [
-            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products" },
-            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products" },
+            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products#mi-ware" },
+            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products#mi-ware" },
           ],
         },
        

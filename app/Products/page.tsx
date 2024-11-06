@@ -50,22 +50,22 @@ const BannerData4 = {
 
 export default function Home() {
   return (
-    <>  <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+    <>  <div id="g-nayana" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
       <Banner {...BannerData} />
       </div>
-      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="mi-ware" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
       <Banner {...BannerData2} reverse={true} />
       </div>
-      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="i-hrms" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
       <Banner {...BannerData3} />
 </div>
-<div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+<div id="ogcom-elp" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
       <Banner {...BannerData4} reverse={true} />
