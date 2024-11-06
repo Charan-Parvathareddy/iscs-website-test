@@ -129,7 +129,7 @@ const NavItem: React.FC<NavItemProps> = ({
             className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-2xl"
           >
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div className="relative bg-background px-12 py-12">
+              <div className="relative bg-background px-5 py-6">
                 <div className="grid grid-cols-2 gap-x-8">
                   {dropdown.map((category, index) => (
                     <div key={category.category || index} className="space-y-4">
@@ -501,7 +501,22 @@ const Navigation: React.FC = () => {
       ],
       hasTwoColumns: true
     },
-    
+    {
+      name: "Resources",
+      href: "/Resources",
+      description: "Valuable insights and tools to help you succeed.",
+      isResourceItem: true,
+      dropdown: [
+        {
+          items: [
+            { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
+            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
+            { name: "Insights", icon: "/assets/placeholder.svg", href: "/Resources/blog" },
+            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
+          ],
+        }
+      ]
+    },
   ]
 
   return (
