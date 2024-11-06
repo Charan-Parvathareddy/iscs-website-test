@@ -18,7 +18,7 @@ interface BannerProps {
   reverse?: boolean;
 }
 
-const Banner: React.FC<BannerProps> = ({ image, title, subtitle, link, tag, reverse }) => {
+const Banner: React.FC<BannerProps> = ({ image, title, subtitle,  tag, reverse }) => {
   // Convert subtitle to array if it's a single string
   const paragraphs = Array.isArray(subtitle) ? subtitle : [subtitle];
 
