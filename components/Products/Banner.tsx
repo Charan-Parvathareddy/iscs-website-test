@@ -13,7 +13,7 @@ interface BannerProps {
   image: StaticImageData;
   title: string;
   subtitle: string | string[];  // Accept either a single string or array of strings
-  link?: string;
+  // link?: string;
   tag: string;
   reverse?: boolean;
 }
