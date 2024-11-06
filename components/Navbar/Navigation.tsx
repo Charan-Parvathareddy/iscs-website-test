@@ -527,7 +527,9 @@ const Navigation: React.FC = () => {
             ))}
           </div>
           <div className="hidden md:flex items-center space-x-4">
-           
+            <Button variant="ghost" className="text-foreground hover:text-primary">
+              Log In
+            </Button>
             <Button variant="default" onClick={handleContactClick}>
              Contact Us
             </Button>
