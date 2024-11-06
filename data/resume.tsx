@@ -58,7 +58,7 @@ export const DATA = {
         
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "https://pub-ccb175376fc94e64b1b2376fadf6c341.r2.dev/analytics-dashboard.mp4",
     },
     {
       title: "E-Learning Platform",
