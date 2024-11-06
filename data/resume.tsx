@@ -27,7 +27,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "@/public/assets/G-Nayana/diabetic-retinopathy.jpg",
+      image: "/assets/G-Nayana/diabetic-retinopathy.jpg",
       video: "",
     },
     {
