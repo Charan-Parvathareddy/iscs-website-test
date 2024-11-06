@@ -81,14 +81,7 @@ export function AllIndustries() {
               />
               <CardDescription>{industry.description}</CardDescription>
             </CardContent>
-            <CardFooter>
-              <Link
-                href="/Industries"
-                className="text-sm text-blue-600 hover:underline"
-              >
-                Know More →
-              </Link>
-            </CardFooter>
+           
           </Card>
         ))}
       </div>
