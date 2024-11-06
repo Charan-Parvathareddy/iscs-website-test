@@ -406,9 +406,9 @@ const Navigation: React.FC = () => {
         {
           category: "Oracle Solutions",
           items: [
-            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services" },
-            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services" },
-           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services" },
+            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services#oracle-solutions" },
+            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services#oracle-solutions" },
+           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services#oracle-solutions" },
        
           ],
         },
@@ -420,13 +420,13 @@ const Navigation: React.FC = () => {
               name: "IT Consulting Services", 
               description: "Expert IT consulting and staffing solutions", 
               icon: "/assets/staffing/it-consulting.png", 
-              href: "/Services" 
+              href: "/Services#professional-staffing" 
             },
             { 
               name: "Talent Assessment Management", 
               description: "Comprehensive talent assessment and management services", 
               icon: "/assets/staffing/talent-assessment.png", 
-              href: "/Services" 
+              href: "/Services#professional-staffing" 
             }
           ]
         },
@@ -444,7 +444,7 @@ const Navigation: React.FC = () => {
         {
           category: "Diabetic Retinopathy Detection G-Nayana ",
           items: [
-            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-Nayana/solution.png", href: "/Products" },
+            { name: "Our Solution", description: "Early detection ", icon: "/assets/G-Nayana/solution.png", href: "https://ai-ra.vercel.app/" },
             { name: "Leveraging AI", description: "AI-powered solution", icon: "/assets/G-Nayana/ai.png", href: "/Products" },
           ],
         },
