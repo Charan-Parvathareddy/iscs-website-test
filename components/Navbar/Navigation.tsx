@@ -375,7 +375,6 @@ const Navigation: React.FC = () => {
 
   const navItems: NavItemProps[] = [
     
-    { name: "About Us", href: "/About" },
     
     {
       name: "Services",
@@ -502,22 +501,7 @@ const Navigation: React.FC = () => {
       ],
       hasTwoColumns: true
     },
-    {
-      name: "Resources",
-      href: "/Resources",
-      description: "Valuable insights and tools to help you succeed.",
-      isResourceItem: true,
-      dropdown: [
-        {
-          items: [
-            { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
-            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
-            { name: "Insights", icon: "/assets/placeholder.svg", href: "/Resources/blog" },
-            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
-          ],
-        }
-      ]
-    },
+    
   ]
 
   return (
@@ -543,9 +527,7 @@ const Navigation: React.FC = () => {
             ))}
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Log In
-            </Button>
+           
             <Button variant="default" onClick={handleContactClick}>
              Contact Us
             </Button>
