@@ -382,23 +382,23 @@ const Navigation: React.FC = () => {
         {
           category: "AI/ML Solutions",
           items: [
-            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services" },
-            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services" },
+            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services#ai-ml-solutions" },
+            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services#ai-ml-solutions" },
           ],
         },
         {
           category: "Salesforce Solutions",
           items: [
-            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services" },
-            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services" }
+            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services#salesforce-solutions" },
+            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services#salesforce-solutions" }
             ],
         },
         {
           category: "TIBCO Services",
           items: [
-            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/Services" },
-            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/Services" },
-            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/Services" },
+            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/Services#tibco-services" },
+            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/Services#tibco-services" },
+            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/Services#tibco-services" },
           
           ],
         },
