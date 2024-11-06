@@ -7,6 +7,7 @@ import Img5 from "@/public/assets/staffing/it-consulting.png";
 import Banner from "@/components/Products/Banner";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import React, { useEffect } from 'react';
 
 
 const BannerData = {
@@ -73,33 +74,54 @@ const BannerData5 = {
 
 
 export default function Home() {
-  return (
-    <>  <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/background-1.png')"
-    }}>
-      <Banner {...BannerData} />
-      </div>
-      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/background-1.png')"
-    }}>
-      <Banner {...BannerData2} reverse={true} />
-      </div>
-      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/background-1.png')"
-    }}>
-      <Banner {...BannerData3} />
-</div>
-<div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/background-1.png')"
-    }}>
-      <Banner {...BannerData4} reverse={true} />
-      </div>
-      <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('/background-1.png')"
-    }}>
-      <Banner {...BannerData5} />
-</div>
 
+  useEffect(() => {
+    // Handle scroll to section on page load
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          // Add a slight delay to ensure smooth scrolling after page load
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    }
+  }, []);
+
+  return (
+    <>
+      <div id="tibco-services" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/background-1.png')"
+      }}>
+        <Banner {...BannerData} />
+      </div>
+
+      <div id="ai-ml-solutions" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/background-1.png')"
+      }}>
+        <Banner {...BannerData2} reverse={true} />
+      </div>
+
+      <div id="salesforce-solutions" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/background-1.png')"
+      }}>
+        <Banner {...BannerData3} />
+      </div>
+
+      <div id="oracle-solutions" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/background-1.png')"
+      }}>
+        <Banner {...BannerData4} reverse={true} />
+      </div>
+
+      <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/background-1.png')"
+      }}>
+        <Banner {...BannerData5} />
+      </div>
     </>
   );
 }

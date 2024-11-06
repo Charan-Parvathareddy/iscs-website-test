@@ -8,40 +8,44 @@ export function Services() {
     {
       title: "AI/ML Solutions",
       description: "Transform your business with our tailored AI and machine learning solutions that enhance insights, automate processes, and drive innovation.",
-      image: "/assets/ai/ai.png"
+      image: "/assets/ai/ai.png",
+      slug: "ai-ml-solutions"
     },
     {
       title: "Salesforce Solutions",
       description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
-      image: "/assets/salesforce/salesforce-logo.png"
+      image: "/assets/salesforce/salesforce-logo.png",
+      slug: "salesforce-solutions"
     },
     {
       title: "TIBCO Services",
       description: "Leverage our TIBCO services to enhance data integration, analytics, and application connectivity. We offer tailored solutions to streamline your processes.",
-      image: "/assets/tibco/tibco-logo.webp"
+      image: "/assets/tibco/tibco-logo.webp",
+      slug: "tibco-services"
     },
     {
       title: "Oracle Solutions",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/oracle.jpg"
+      image: "/assets/Oracle/oracle.jpg",
+      slug: "oracle-solutions"
     },
-
     {
       title: "Oracle PeopleSoft",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/peoplesoft.jpeg"
+      image: "/assets/Oracle/peoplesoft.jpeg",
+      slug: "oracle-peoplesoft"
     },
-
     {
       title: "Cloud Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/cloud-services.jpg"
+      image: "/assets/cloud-services.jpg",
+      slug: "cloud-services"
     },
-    
     {
       title: "Professional Staffing Services",
       description: "Find the right talent for your business with our professional staffing services. We specialize in connecting you with skilled professionals across various industries.",
-      image: "/assets/staffing/professional-staffing.webp"
+      image: "/assets/staffing/professional-staffing.webp",
+      slug: "professional-staffing"
     }
   ];
 
@@ -78,7 +82,7 @@ export function Services() {
             </CardContent>
             <CardFooter>
               <Link
-                href="#"
+                href={`/services#${service.slug}`}
                 className="text-sm text-blue-600 hover:underline"
               >
                 Know more →
