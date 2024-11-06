@@ -83,10 +83,10 @@ export function AllIndustries() {
             </CardContent>
             <CardFooter>
               <Link
-                href="#"
+                href="/Industries"
                 className="text-sm text-blue-600 hover:underline"
               >
-                Try now →
+                Know More →
               </Link>
             </CardFooter>
           </Card>
