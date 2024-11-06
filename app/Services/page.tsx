@@ -1,3 +1,4 @@
+"use client";
 import Img1 from "@/public/assets/tibco/tibco.jpg";
 import Img2 from "@/public/assets/ai/ai.png";
 import Img3 from "@/public/assets/salesforce/salesforce.webp";
