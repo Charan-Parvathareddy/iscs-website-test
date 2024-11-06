@@ -5,7 +5,7 @@ export const DATA = {
   projects: [
     {
       title: "Diabetic Retinopathy Detection G-Nayana",
-      href: "https://chatcollect.com",
+      href: "https://ai-ra.vercel.app/",
       dates: "Feb 2024 - Present",
       active: true,
       description:
