@@ -4,11 +4,12 @@ import Img3 from "@/public/assets/middleware.png";
 import Img4 from "@/public/assets/ihrms.png";
 
 import Banner1 from "@/components/Products/Banner1";
+import Banner from "@/components/Products/Banner";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-const Banner1Data = {
+const BannerData = {
   image: Img1,
   tag: "G-Nayana",
   title: "AI-Driven Severity Classification for Diabetic Retinopathy",
@@ -61,7 +62,7 @@ export default function Home() {
     <>  <div id="g-nayana" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner1 {...Banner1Data} />
+      <Banner {...BannerData} />
       </div>
       <div id="mi-ware" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
