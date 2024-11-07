@@ -1,6 +1,6 @@
 "use client";
 import Img1 from "@/public/assets/tibco/pngwing.png";
-import Img2 from "@/public/assets/tibco/tibco-training-ml.png";
+import Img2 from "@/public/assets/tibco/tibco-training.png"
 import Img3 from "@/public/assets/tibco/tibco-consulting.jpg";
 
 import Banner1 from "@/components/Products/Banner1";
