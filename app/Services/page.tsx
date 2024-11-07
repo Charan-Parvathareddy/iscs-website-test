@@ -25,7 +25,7 @@ const BannerData = {
     "From retail to healthcare and manufacturing, TIBCO solutions are trusted by a diverse range of industries to streamline business operations, reduce bottlenecks, and enhance customer experiences. ISCS ensures that each implementation aligns with the client's goals, enabling them to unlock the full potential of their data and drive measurable business outcomes.",
     "At ISCS, our team of TIBCO experts partners with clients through every step of the journey—from integration design to execution—delivering scalable, future-ready solutions that position businesses for success in an increasingly data-driven world."
   ],
-  link: "/TIBCO",
+  link: "/Services/TIBCO",
 };
 
 const BannerData2 = {
@@ -37,7 +37,7 @@ const BannerData2 = {
     "With a wide range of applications—from natural language processing and computer vision to predictive maintenance and personalized recommendations—AI/ML solutions can be tailored to meet the unique needs of any business.",
     "By leveraging powerful algorithms, these solutions can process large datasets, uncover hidden patterns, and provide actionable insights in real time, helping companies stay ahead of the competition."
   ],
-  link: "/AI-ML",
+  link: "/Services/AI-ML",
 };
 
 const BannerData3 = {
@@ -49,7 +49,7 @@ const BannerData3 = {
     "With Salesforce Sales Cloud, teams can manage leads, track customer interactions, and close deals faster through robust sales automation and real-time insights. Service Cloud enables businesses to deliver exceptional customer support with intelligent case management, automated workflows, and AI-driven assistance.",
     "Marketing Cloud helps marketers create personalized campaigns, track customer journeys, and measure the effectiveness of their efforts, while Commerce Cloud powers seamless, scalable e-commerce experiences."
   ],
-  link: "/Salesforce",
+  link: "/Services/Salesforce",
 };
 
 const BannerData4 = {
@@ -61,7 +61,7 @@ const BannerData4 = {
     "For organizations looking to leverage emerging technologies, Oracle's AI, ML, and blockchain solutions enable automation, data-driven insights, and secure digital transactions.",
     "Whether it's modernizing legacy systems, migrating to the cloud, or transforming business processes, Oracle Solutions offer the flexibility, scalability, and intelligence needed to stay competitive in a rapidly changing market."
   ],
-  link: "/Oracle",
+  link: "/Services/Oracle",
 };
 
 const BannerData5 = {
@@ -73,7 +73,7 @@ const BannerData5 = {
     "From executive search to flexible workforce solutions, professional staffing services can support various staffing needs, including temporary staffing, contract-to-hire, and direct-hire placements.",
     "Whether it's scaling up for a short-term project or finding the perfect candidate for a permanent role, professional staffing services help businesses stay competitive by ensuring access to the right talent at the right time."
   ],
-  link: "/Staffing",
+  link: "/Services/Staffing",
 };
 
 // const BannerData6 = {
