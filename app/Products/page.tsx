@@ -67,7 +67,7 @@ export default function Home() {
       <div id="mi-ware" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner1 {...Banner1Data2} reverse={true} />
+      <Banner {...Banner1Data2} reverse={true} />
       </div>
       <div id="i-hrms" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
