@@ -510,6 +510,7 @@ const Navigation: React.FC = () => {
       dropdown: [
         {
           items: [
+            { name: "About Us", icon: "/assets/placeholder.svg", href: "/About" },
             // { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
             // { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
             { name: "About Us", icon: "/assets/placeholder.svg", href: "/About" },
