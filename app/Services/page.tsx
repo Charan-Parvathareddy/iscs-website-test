@@ -4,8 +4,8 @@ import Img2 from "@/public/assets/ai/ai.png";
 import Img3 from "@/public/assets/salesforce/salesforce.webp";
 import Img4 from "@/public/assets/Oracle/oracle-consulting.png";
 import Img5 from "@/public/assets/staffing/it-consulting.png";
-import Img6 from "@/public/assets/Oracle/oracle-peoplesoft.png";
-import Img7 from "@/public/assets/cloud-services.jpg";
+// import Img6 from "@/public/assets/Oracle/oracle-peoplesoft.png";
+// import Img7 from "@/public/assets/cloud-services.jpg";
 
 
 
@@ -76,33 +76,33 @@ const BannerData5 = {
   link: "#",
 };
 
-const BannerData6 = {
-  image: Img6,
-  "tag": "Oracle PeopleSoft Solutions",
-  title: "Modernizing Operations and Maximizing Efficiency with Oracle PeopleSoft Solutions",
-  subtitle: [
-    "Our PeopleSoft solutions streamline HR, finance, and supply chain operations, providing organizations with the tools to enhance productivity and data-driven decision-making. Tailored to fit your unique needs, we help improve workflows and increase data visibility.",
-    "With seamless PeopleSoft upgrades and cloud migration to Oracle Cloud, we support businesses in modernizing their infrastructure, improving system performance, scalability, and security, all while reducing costs.",
-    "Our PeopleSoft consulting offers customized support for implementations, integrations, and optimizations, maximizing the capabilities of your PeopleSoft systems to foster productivity and operational resilience."
-  ],
-  link: "#",
-};
+// const BannerData6 = {
+//   image: Img6,
+//   "tag": "Oracle PeopleSoft Solutions",
+//   title: "Modernizing Operations and Maximizing Efficiency with Oracle PeopleSoft Solutions",
+//   subtitle: [
+//     "Our PeopleSoft solutions streamline HR, finance, and supply chain operations, providing organizations with the tools to enhance productivity and data-driven decision-making. Tailored to fit your unique needs, we help improve workflows and increase data visibility.",
+//     "With seamless PeopleSoft upgrades and cloud migration to Oracle Cloud, we support businesses in modernizing their infrastructure, improving system performance, scalability, and security, all while reducing costs.",
+//     "Our PeopleSoft consulting offers customized support for implementations, integrations, and optimizations, maximizing the capabilities of your PeopleSoft systems to foster productivity and operational resilience."
+//   ],
+//   link: "#",
+// };
 
-const BannerData7 = {
-  image: Img7,
-  tag: "Cloud Services",
-  title: "Transforming Your Business with Scalable, Secure Cloud Solutions",
-    subtitle: [
-      "Our cloud services provide secure, scalable solutions to streamline operations and drive growth. We offer tailored public, private, and hybrid cloud options that align with your business needs, enhancing flexibility and collaboration.",
-      "Cloud migration is made easy with our expert team guiding each step, ensuring a smooth, efficient transition that maximizes benefits like performance and security. We support you throughout, from data migration to application adaptation.",
-      "With cloud security as a top priority, we protect your data through advanced protocols, including encryption and continuous monitoring, to ensure safety and resilience in the cloud.",
-      "Our cloud consulting offers customized strategies to fully leverage cloud potential, from performance optimization to cost control, delivering solutions designed for flexibility and growth.",
-      "Cloud optimization services enhance efficiency and reduce costs. We analyze your environment, streamlining resources and implementing automation tools for optimal performance and savings."
-    ],
-    link: "#"
+// const BannerData7 = {
+//   image: Img7,
+//   tag: "Cloud Services",
+//   title: "Transforming Your Business with Scalable, Secure Cloud Solutions",
+//     subtitle: [
+//       "Our cloud services provide secure, scalable solutions to streamline operations and drive growth. We offer tailored public, private, and hybrid cloud options that align with your business needs, enhancing flexibility and collaboration.",
+//       "Cloud migration is made easy with our expert team guiding each step, ensuring a smooth, efficient transition that maximizes benefits like performance and security. We support you throughout, from data migration to application adaptation.",
+//       "With cloud security as a top priority, we protect your data through advanced protocols, including encryption and continuous monitoring, to ensure safety and resilience in the cloud.",
+//       "Our cloud consulting offers customized strategies to fully leverage cloud potential, from performance optimization to cost control, delivering solutions designed for flexibility and growth.",
+//       "Cloud optimization services enhance efficiency and reduce costs. We analyze your environment, streamlining resources and implementing automation tools for optimal performance and savings."
+//     ],
+//     link: "#"
   
   
-};
+// };
 
 
 export default function Home() {
@@ -149,7 +149,7 @@ export default function Home() {
         <Banner {...BannerData4} reverse={true} />
       </div>
 
-      <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      {/* <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner {...BannerData6} />
@@ -159,7 +159,7 @@ export default function Home() {
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner {...BannerData7} reverse={true} />
-      </div>
+      </div> */}
 
       <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
