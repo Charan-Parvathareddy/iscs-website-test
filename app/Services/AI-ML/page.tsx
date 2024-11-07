@@ -1,6 +1,5 @@
 "use client";
 import Img1 from "@/public/assets/tibco/tibco.jpg";
-import Img2 from "@/public/assets/ai/ai.png";
 
 import Banner1 from "@/components/Products/Banner1";
 import "slick-carousel/slick/slick.css";
@@ -22,7 +21,7 @@ const Banner1Data = {
 };
 
 const Banner1Data2 = {
-  image: Img2,
+  image: Img1,
   tag: "Machine Learning Models",
   title: "Build and Deploy ML Models",
   subtitle: [
