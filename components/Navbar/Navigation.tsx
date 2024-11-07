@@ -422,13 +422,13 @@ const Navigation: React.FC = () => {
               name: "IT Consulting Services", 
               description: "Expert IT consulting and staffing solutions", 
               icon: "/assets/staffing/it-consulting.png", 
-              href: "/Staffing#consulting-services" 
+              href: "/Services/Staffing#consulting-services" 
             },
             { 
               name: "Talent Assessment Management", 
               description: "Comprehensive talent assessment and management services", 
               icon: "/assets/staffing/talent-assessment.png", 
-              href: "/Staffing#talent-assessment" 
+              href: "/Services/Staffing#talent-assessment" 
             }
           ]
         },
