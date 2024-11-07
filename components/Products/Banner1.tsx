@@ -32,13 +32,13 @@ const Banner1: React.FC<Banner1Props> = ({ image, title, subtitle , tag, reverse
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-                className="relative w-[400px] h-[400px]"
+                className="relative w-full h-auto"
               >
                 <Image
                   src={image}
                   alt="Banner1"
-                  fill
-                  className="object-cover rounded-lg shadow-lg"
+                  layout="responsive"
+                  className="rounded-lg shadow-lg"
                 />
               </motion.div>
             </div>

@@ -391,8 +391,8 @@ const Navigation: React.FC = () => {
         {
           category: "Salesforce Solutions",
           items: [
-            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services#salesforce-solutions" },
-            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services#salesforce-solutions" }
+            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services/Salesforce#salesforce-crm" },
+            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services/Salesforce#salesforce-servicecloud" }
             ],
         },
         {
