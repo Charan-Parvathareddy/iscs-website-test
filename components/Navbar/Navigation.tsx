@@ -398,9 +398,9 @@ const Navigation: React.FC = () => {
         {
           category: "TIBCO Services",
           items: [
-            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/Services#tibco-services" },
-            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/Services#tibco-services" },
-            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/Services#tibco-services" },
+            { name: "Integration Strategy", description: "Expert integration planning", icon: "/assets/tibco/tibco-integration.png", href: "/Services/TIBCO#tibco-integration" },
+            { name: "Training & Development", description: "Empower your team", icon: "/assets/tibco/tibco-consulting.png", href: "/Services/TIBCO#tibco-training" },
+            { name: "TIBCO Consulting", description: "Expert TIBCO consulting", icon: "/assets/tibco/tibco-support.png", href: "/Services/TIBCO#tibco-consulting" },
           
           ],
         },

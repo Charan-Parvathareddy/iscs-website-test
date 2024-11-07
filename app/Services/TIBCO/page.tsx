@@ -68,19 +68,19 @@ export default function Home() {
 
   return (
     <>
-      <div id="ai-strategy" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="tibco-integration" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...Banner1Data} />
       </div>
 
-      <div id="ml-models" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="tibco-training" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...Banner1Data2} reverse={true} />
       </div>
 
-      <div id="ml-models" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="tibco-consulting" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...Banner1Data3}  />
