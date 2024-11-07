@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       <div id="ml-models" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "url('/background-2.png')"
+        backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...Banner1Data2} reverse={true} />
       </div>
