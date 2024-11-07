@@ -3,13 +3,13 @@ import Img1 from "@/public/assets/Oracle/oracle-ebs.png";
 import Img2 from "@/public/assets/Oracle/oracle.png"
 import Img3 from "@/public/assets/Oracle/oracle-consulting.png";
 
-import Banner1 from "@/components/Products/Banner1";
+import Banner2 from "@/components/Products/Banner2";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect } from 'react';
 
 
-const Banner1Data = {
+const Banner2Data = {
   image: Img1,
   tag: "E-Business Suite",
   title: "Comprehensive Solutions with Oracle E-Business Suite",
@@ -21,7 +21,7 @@ const Banner1Data = {
   link: "#",
 };
 
-const Banner1Data2 = {
+const Banner2Data2 = {
   image: Img2,
   tag: "Business Analytics",
   title: "Insightful Business Analytics with Oracle",
@@ -33,7 +33,7 @@ const Banner1Data2 = {
   link: "#",
 };
 
-const Banner1Data3 = {
+const Banner2Data3 = {
   image: Img3,
   tag: " Oracle IT Consulting",
   title: "Expert Oracle IT Consulting Services for Digital Transformation",
@@ -71,19 +71,19 @@ export default function Home() {
       <div id="oracle-e-business" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <Banner1 {...Banner1Data} />
+        <Banner2 {...Banner2Data} />
       </div>
 
       <div id="oracle-business-analytics" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <Banner1 {...Banner1Data2} reverse={true} />
+        <Banner2 {...Banner2Data2} reverse={true} />
       </div>
 
       <div id="oracle-it-consulting" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <Banner1 {...Banner1Data3}  />
+        <Banner2 {...Banner2Data3}  />
       </div>
       
     </>
