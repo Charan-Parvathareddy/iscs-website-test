@@ -77,9 +77,11 @@ const NavItem: React.FC<NavItemProps> = ({
                           {description}
                         </p>
                       </div>
+                      <Link href="https://iscs-website-test.vercel.app/#contact" passHref>
                       <Button size="sm" className="mt-10">
                         Book a call today
                       </Button>
+                      </Link>
                     </div>
                     <div className="flex flex-col text-sm h-full justify-end">
                       {dropdown[0].items.map((item) => (
