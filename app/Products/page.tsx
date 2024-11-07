@@ -5,6 +5,7 @@ import Img4 from "@/public/assets/ihrms.png";
 
 import Banner1 from "@/components/Products/Banner1";
 import Banner from "@/components/Products/Banner";
+import Banner3 from "@/components/Products/Banner3";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -62,7 +63,7 @@ export default function Home() {
     <>  <div id="g-nayana" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner {...BannerData} />
+      <Banner3 {...BannerData} />
       </div>
       <div id="mi-ware" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
