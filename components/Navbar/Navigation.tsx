@@ -384,8 +384,8 @@ const Navigation: React.FC = () => {
         {
           category: "AI/ML Solutions",
           items: [
-            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services#ai-ml-solutions" },
-            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services#ai-ml-solutions" },
+            { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services/AI-ML#ai-strategy" },
+            { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services/AI-ML#ml-models" },
           ],
         },
         {
