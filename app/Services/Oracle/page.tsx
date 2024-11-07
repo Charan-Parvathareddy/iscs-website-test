@@ -1,6 +1,6 @@
 "use client";
 import Img1 from "@/public/assets/Oracle/oracle-ebs.png";
-import Img2 from "@/public/assets/Oracle/oracle.png"
+import Img2 from "@/public/assets/Oracle/oracle.jpg"
 import Img3 from "@/public/assets/Oracle/oracle-consulting.png";
 
 import Banner2 from "@/components/Products/Banner2";
