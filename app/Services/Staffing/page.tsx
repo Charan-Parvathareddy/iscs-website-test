@@ -2,7 +2,7 @@
 import Img1 from "@/public/assets/staffing/it-consulting.png";
 import Img2 from "@/public/assets/staffing/talent-assessment.png";
 
-import Banner1 from "@/components/Products/Banner1";
+import Banner2 from "@/components/Products/Banner2";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect } from 'react';
@@ -67,13 +67,13 @@ export default function Home() {
       <div id="consulting-services" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <Banner1 {...Banner1Data} />
+        <Banner2 {...Banner1Data} />
       </div>
 
       <div id="talent-assessment" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
-        <Banner1 {...Banner1Data2} reverse={true} />
+        <Banner2 {...Banner1Data2} reverse={true} />
       </div>
 
       
