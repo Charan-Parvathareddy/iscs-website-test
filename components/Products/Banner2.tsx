@@ -39,7 +39,7 @@ const Banner: React.FC<BannerProps> = ({ image, title, subtitle, tag, reverse })
                   src={image}
                   alt="Banner"
                   fill
-                  className="object-cover rounded-lg shadow-lg"
+                  className="object-cover rounded-lg "
                 />
               </motion.div>
             </div>
