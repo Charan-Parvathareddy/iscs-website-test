@@ -504,16 +504,16 @@ const Navigation: React.FC = () => {
     },
     {
       name: "Resources",
-      href: "/Resources",
+      href: "/",
       description: "Valuable insights and tools to help you succeed.",
       isResourceItem: true,
       dropdown: [
         {
           items: [
-            { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
-            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
+            // { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
+            // { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
             { name: "About Us", icon: "/assets/placeholder.svg", href: "/About" },
-            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
+            // { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
           ],
         }
       ]
