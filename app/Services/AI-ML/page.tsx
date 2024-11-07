@@ -1,5 +1,6 @@
 "use client";
-import Img1 from "@/public/assets/tibco/tibco.jpg";
+import Img1 from "@/public/assets/ai/ai-strategy-ml.jpg";
+import Img2 from "@/public/assets/ai/ml-models-ml.png";
 
 import Banner1 from "@/components/Products/Banner1";
 import "slick-carousel/slick/slick.css";
@@ -21,7 +22,7 @@ const Banner1Data = {
 };
 
 const Banner1Data2 = {
-  image: Img1,
+  image: Img2,
   tag: "Machine Learning Models",
   title: "Build and Deploy ML Models",
   subtitle: [
@@ -64,7 +65,7 @@ export default function Home() {
       </div>
 
       <div id="ml-models" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "url('/background-1.png')"
+        backgroundImage: "url('/background-2.png')"
       }}>
         <Banner1 {...Banner1Data2} reverse={true} />
       </div>
