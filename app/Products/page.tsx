@@ -3,12 +3,12 @@ import Img2 from "@/public/assets/elearning.png";
 import Img3 from "@/public/assets/middleware.png";
 import Img4 from "@/public/assets/ihrms.png";
 
-import Banner from "@/components/Products/Banner";
+import Banner1 from "@/components/Products/Banner1";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-const BannerData = {
+const Banner1Data = {
   image: Img1,
   tag: "G-Nayana",
   title: "AI-Driven Severity Classification for Diabetic Retinopathy",
@@ -24,7 +24,7 @@ const BannerData = {
   link: "https://ai-ra.vercel.app/",
 };
 
-const BannerData2 = {
+const Banner1Data2 = {
   image: Img3,
   tag: "Mi-Ware",
   title: "Cost-Effective Middleware Integration Solution for Enterprises",
@@ -40,7 +40,7 @@ const BannerData2 = {
   link: "https://ai-ra.vercel.app/",
 };
 
-const BannerData3 = {
+const Banner1Data3 = {
   image: Img4,
   tag: " i-HRMS",
   title: "i-HRMS: Automated Human Resource Management Solution ",
@@ -48,7 +48,7 @@ const BannerData3 = {
   link: "#",
 };
 
-const BannerData4 = {
+const Banner1Data4 = {
   image: Img2,
   tag: "OGcom-eLP",
   title: "An  Interactive E-Learning Platform ",
@@ -61,22 +61,22 @@ export default function Home() {
     <>  <div id="g-nayana" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner {...BannerData} />
+      <Banner1 {...Banner1Data} />
       </div>
       <div id="mi-ware" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner {...BannerData2} reverse={true} />
+      <Banner1 {...Banner1Data2} reverse={true} />
       </div>
       <div id="i-hrms" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner {...BannerData3} />
+      <Banner1 {...Banner1Data3} />
 </div>
 <div id="ogcom-elp" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <Banner {...BannerData4} reverse={true} />
+      <Banner1 {...Banner1Data4} reverse={true} />
       </div>
     </>
   );
