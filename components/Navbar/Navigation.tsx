@@ -408,9 +408,9 @@ const Navigation: React.FC = () => {
         {
           category: "Oracle Solutions",
           items: [
-            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services#oracle-solutions" },
-            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services#oracle-solutions" },
-           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services#oracle-solutions" },
+            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services/Oracle#oracle-e-business" },
+            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services/Oracle#oracle-business-analytics" },
+           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services/Oracle#oracle-it-consulting" },
        
           ],
         },
