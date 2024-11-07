@@ -4,7 +4,7 @@ import Img3 from "@/public/assets/middleware.png";
 import Img4 from "@/public/assets/ihrms.png";
 
 import Banner1 from "@/components/Products/Banner1";
-import Banner from "@/components/Products/Banner";
+// import Banner from "@/components/Products/Banner";
 import Banner3 from "@/components/Products/Banner3";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
