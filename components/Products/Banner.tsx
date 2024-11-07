@@ -7,18 +7,18 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Button } from "@/components/ui/button";
+ import { Button } from "@/components/ui/button";
 
 interface BannerProps {
   image: StaticImageData;
   title: string;
   subtitle: string | string[];  // Accept either a single string or array of strings
-  // link?: string;
+  link?: string;
   tag: string;
   reverse?: boolean;
 }
 
-const Banner: React.FC<BannerProps> = ({ image, title, subtitle,  tag, reverse }) => {
+const Banner: React.FC<BannerProps> = ({ image, title, subtitle, link , tag, reverse }) => {
   // Convert subtitle to array if it's a single string
   const paragraphs = Array.isArray(subtitle) ? subtitle : [subtitle];
 
@@ -84,9 +84,9 @@ const Banner: React.FC<BannerProps> = ({ image, title, subtitle,  tag, reverse }
                 whileInView="visible"
                 className="pt-4"
               >
-                {/* <Button className="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors">
+                <Button className="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors">
                   {link ? <a href={link}>Know More</a> : "Get Started"}
-                </Button> */}
+                </Button> 
               </motion.div>
             </div>
           </div>
