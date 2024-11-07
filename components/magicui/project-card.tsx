@@ -38,9 +38,16 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const isDiabeticRetinopathy = title === "Diabetic Retinopathy Detection G-Nayana";
+
   return (
     <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
-      <Link href={href || "#"} className={cn("block", className)}>
+      <Link
+        href={isDiabeticRetinopathy ? (href || "#") : "#"}
+        className={cn("block", className, {
+          "pointer-events-none": !isDiabeticRetinopathy,
+        })}
+      >
         {video && (
           <video
             src={video}
@@ -57,7 +64,7 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-32 w-full object-cover object-top"
+            className="h-32 w-full object-cover object-top pointer-events-none"
           />
         )}
       </Link>
@@ -85,8 +92,15 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="flex flex-wrap gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge className="flex items-center gap-1 px-1.5 py-0.5 text-[10px]">
+              <Link
+                href={isDiabeticRetinopathy ? link?.href : "#"}
+                key={idx}
+                target="_blank"
+                className={cn("flex items-center gap-1 px-1.5 py-0.5 text-[10px]", {
+                  "opacity-50 pointer-events-none": !isDiabeticRetinopathy,
+                })}
+              >
+                <Badge className="flex items-center gap-1">
                   {link.icon}
                   {link.type}
                 </Badge>
