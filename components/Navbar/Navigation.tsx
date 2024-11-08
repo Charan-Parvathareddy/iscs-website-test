@@ -470,8 +470,8 @@ const Navigation: React.FC = () => {
         {
           category: "Mi-Ware ",
           items: [
-            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products#mi-ware" },
-            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products#mi-ware" },
+            { name: "Our Solution", description: "Streamlining data flow", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products/#mi-ware" },
+            { name: "Low-Cost", description: "Efficient Integration Solutions", icon: "/assets/Mi-Ware/Mi-Ware.png", href: "/Products/Mi-ware#mi-ware" },
           ],
         },
        
