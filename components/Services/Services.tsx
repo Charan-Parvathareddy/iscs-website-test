@@ -33,13 +33,13 @@ export function Services() {
       title: "Oracle PeopleSoft",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/Oracle/peoplesoft.jpeg",
-      slug: "oracle-solutions"
+      slug: "oracle-peoplesoft"
     },
     {
       title: "Cloud Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/cloud-services.jpg",
-      slug: "oracle-solutions"
+      slug: "cloud-services"
     },
     {
       title: "Professional Staffing Services",

@@ -7,8 +7,6 @@ import Img5 from "@/public/assets/staffing/it-consulting.png";
 import Img6 from "@/public/assets/Oracle/peoplesoft.jpeg";
 import Img7 from "@/public/assets/cloud-services.jpg";
 
-
-
 import Banner1 from "@/components/Products/Banner1";
 import Banner from "@/components/Products/Banner";
 import Banner3 from "@/components/Products/Banner3";
@@ -151,13 +149,13 @@ export default function Home() {
         <Banner3 {...BannerData4} reverse={true} />
       </div>
 
-      <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="oracle-peoplesoft" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...BannerData6} />
       </div>
 
-      <div id="professional-staffing" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="cloud-services" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...BannerData7} reverse={true} />
