@@ -1,6 +1,6 @@
 "use client";
-import Img1 from "@/public/assets/ai/ai-strategy-ml.jpg";
-import Img2 from "@/public/assets/ai/mlmodels-ml.png";
+import Img1 from "@/public/assets/Mi-Ware/middle-ware-solution.png";
+import Img2 from "@/public/assets/Mi-Ware/middle-ware-1.jpg";
 
 import Banner1 from "@/components/Products/Banner1";
 import "slick-carousel/slick/slick.css";
