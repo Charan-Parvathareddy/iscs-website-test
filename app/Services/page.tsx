@@ -4,7 +4,7 @@ import Img2 from "@/public/assets/ai/ai.png";
 import Img3 from "@/public/assets/salesforce/salesforce.webp";
 import Img4 from "@/public/assets/Oracle/oracle-consulting.png";
 import Img5 from "@/public/assets/staffing/it-consulting.png";
-import Img6 from "@/public/assets/Oracle/oracle-peoplesoft.png";
+import Img6 from "@/public/assets/Oracle/peoplesoft.png";
 import Img7 from "@/public/assets/cloud-services.jpg";
 
 
