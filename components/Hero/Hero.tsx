@@ -75,7 +75,8 @@ const Hero = () => {
                 Your Trusted Global IT Partner
               </span>
             </Badge>
-            <span className="text-sm text-gray-600">
+            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text hover:text-white">
+               
               Experienced | Enriched | Envisioned
             </span>
 
