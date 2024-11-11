@@ -62,10 +62,12 @@ export function Footer() {
         {/* USA Section */}
         <div className="footer-section">
         <p className="font-bold">Global Office  </p>
-        <br/>
+        
           <p className="font-bold">USA</p>
+        
           <address>
-            2055 Limestone Road STE 200-C,
+            2055 Limestone Road
+            <br/> STE 200-C,
             <br/> Wilmington, Delaware, 19702
             <br />Phone: +1-302-725-4554
             <br />
@@ -76,10 +78,11 @@ export function Footer() {
         {/* Australia Section */}
         <div className="footer-section">
         <p className="font-bold">Global Office </p>
-        <br/>
+        
           <p className="font-bold">Australia</p>
           <address>
-            10 Keilor Road, Essendon North,
+            10 Keilor Road,
+            <br/> Essendon North,
             <br/> Victoria 3041, Australia.
             <br />Phone: +61 302-503-5426
             <br />

@@ -1,74 +1,61 @@
 "use client";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import { reviews } from '@/data/reviewsData';
+import Quote from '../assets/blockquote.svg';
 
-import { useEffect, useState } from "react";
-import {
-  Carousel,
-  CarouselApi,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import { User } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+interface Review {
+  id: number;
+  image: string;
+  text: string;
+  name: string;
+}
 
-export const Testimonials = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setTimeout(() => {
-      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-        setCurrent(0);
-        api.scrollTo(0);
-      } else {
-        api.scrollNext();
-        setCurrent(current + 1);
-      }
-    }, 4000);
-  }, [api, current]);
-
+const Testimonials: React.FC = () => {
   return (
-    <div className="w-full py-20 lg:py-40">
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-10">
-          <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
-            Trusted by thousands of businesses worldwide
-          </h2>
-          <Carousel setApi={setApi} className="w-full">
-            <CarouselContent>
-              {Array.from({ length: 15 }).map((_, index) => (
-                <CarouselItem className="lg:basis-1/2" key={index}>
-                  <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-video flex justify-between flex-col">
-                    <User className="w-8 h-8 stroke-1" />
-                    <div className="flex flex-col gap-4">
-                      <div className="flex flex-col">
-                        <h3 className="text-xl tracking-tight">
-                          Best decision
-                        </h3>
-                        <p className="text-muted-foreground max-w-xs text-base">
-                          Our goal was to streamline SMB trade, making it easier
-                          and faster than ever and we did it together.
-                        </p>
-                      </div>
-                      <p className="flex flex-row gap-2 text-sm items-center">
-                        <span className="text-muted-foreground">By</span>{" "}
-                        <Avatar className="h-6 w-6">
-                          <AvatarImage src="https://github.com/shadcn.png" />
-                          <AvatarFallback>CN</AvatarFallback>
-                        </Avatar>
-                        <span>John Johnsen</span>
-                      </p>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-        </div>
+    <section className="testimonial-container">
+      <div className="title">
+        <h2>Testimonial</h2>
+        <p>What members are saying.</p>
       </div>
-    </div>
+
+      <div className="slider-container">
+        <blockquote>
+          <img className="top-quote quote" src={Quote} alt="quote" />
+          <img className="bottom-quote quote" src={Quote} alt="quote" />
+        </blockquote>
+
+        <Splide
+          options={{
+            perPage: 1,
+            autoplay: true,
+            speed: 1000,
+            rewind: true,
+            rewindByDrag: true,
+          }}
+        >
+          {reviews.map((review: Review) => (
+            <SplideSlide key={review.id}>
+              <img className="review-img" src={review.image} alt="" />
+              <div className="content">
+                <p className="text">{review.text}</p>
+                <div className="info">
+                  <div className="rating">
+                    <span className="star">&#9733;</span>
+                    <span className="star">&#9733;</span>
+                    <span className="star">&#9733;</span>
+                    <span className="star">&#9733;</span>
+                    <span className="star">&#9734;</span>
+                  </div>
+                  <p className="user">{review.name}</p>
+                </div>
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
+      </div>
+    </section>
   );
 };
+
+export default Testimonials;
