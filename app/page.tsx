@@ -9,6 +9,8 @@ import Projects from "@/components/Projects/Projects";
 import { Industries } from "@/components/Services/Industries";
 import { Services } from "@/components/Services/Services";
 import { ScrollProvider } from '@/contexts/ScrollContext';
+import { Testimonials } from '@/components/Testimonials/Testimonials';
+
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       <HorizontalScroller2/>
       <Projects/>
       <Industries/>
+      <Testimonials/>
       <Contact/>
     </ScrollProvider>
   );
