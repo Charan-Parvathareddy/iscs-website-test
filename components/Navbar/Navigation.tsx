@@ -384,14 +384,14 @@ const Navigation: React.FC = () => {
       href: "/Services",
       dropdown: [
         {
-          category: "AI/ML Solutions",
+          category: "AI/ML Services",
           items: [
             { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services/AI-ML#ai-strategy" },
             { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services/AI-ML#ml-models" },
           ],
         },
         {
-          category: "Salesforce Solutions",
+          category: "Salesforce Services",
           items: [
             { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services/Salesforce#salesforce-crm" },
             { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services/Salesforce#salesforce-servicecloud" }
@@ -408,7 +408,7 @@ const Navigation: React.FC = () => {
         },
        
         {
-          category: "Oracle Solutions",
+          category: "Oracle Services",
           items: [
             { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services/Oracle#oracle-e-business" },
             { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services/Oracle#oracle-business-analytics" },
@@ -422,7 +422,7 @@ const Navigation: React.FC = () => {
           items: [
             { 
               name: "IT Consulting Services", 
-              description: "Expert IT consulting and staffing solutions", 
+              description: "Expert IT consulting and staffing Services", 
               icon: "/assets/staffing/it-consulting.png", 
               href: "/Services/Staffing#consulting-services" 
             },

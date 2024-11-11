@@ -26,23 +26,28 @@ export  function Footer() {
             <li>
               <br/>
               <Link href="/Services#ai-ml-solutions" className="opacity-75 hover:opacity-100">
-                AI / ML Solutions
+                AI / ML Services
               </Link>
             </li>
             <li>
               <Link href="/Services#salesforce-solutions" className="opacity-75 hover:opacity-100">
-                Salesforce Solutions
+                Salesforce Services
               </Link>
             </li>
             <li>
               <Link href="/Services#tibco-services" className="opacity-75 hover:opacity-100">
-                TIBCO Solutions
+                TIBCO Services
               </Link>
             </li>
             <li>
               <Link href="/Services#oracle-solutions" className="opacity-75 hover:opacity-100">
-                Oracle Solutions
+                Oracle Services
               </Link>
+
+              <Link href="/Services#oracle-peoplesoft" className="opacity-75 hover:opacity-100">
+                Peoplesoft Services
+              </Link>
+
             </li>
           </ul>
         </div>
