@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export default function Footer() {
+export  function Footer() {
   return (
     <footer
       className="flex flex-wrap items-center w-full p-6 footer gap-7 grow justify-between"
