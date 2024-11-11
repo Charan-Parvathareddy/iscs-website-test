@@ -66,11 +66,11 @@ export function Services() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
         {services.map((service, index) => (
-          <Card key={index} className="w-full">
+          <Card key={index} className="w-full flex flex-col">
             <CardHeader>
               <CardTitle>{service.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <Image
                 src={service.image}
                 alt={service.title}
@@ -78,9 +78,9 @@ export function Services() {
                 height={200}
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
-              <CardDescription>{service.description}</CardDescription>
+              <CardDescription className="hidden lg:block">{service.description}</CardDescription>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="mt-auto">
               <Link
                 href={`/Services#${service.slug}`}
                 className="text-sm text-blue-600 hover:underline"

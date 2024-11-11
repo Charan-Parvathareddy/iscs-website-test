@@ -27,6 +27,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        lightblue: '#0066CC', 
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         navy: {

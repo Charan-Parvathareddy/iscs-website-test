@@ -58,7 +58,7 @@ export function Industries() {
             <CardHeader>
               <CardTitle>{industry.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <Image
                 src={industry.image}
                 alt={industry.title}
@@ -66,9 +66,9 @@ export function Industries() {
                 height={200}
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
-              <CardDescription>{industry.description}</CardDescription>
+              <CardDescription className="hidden lg:block">{industry.description}</CardDescription>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="mt-auto">
               <Link
                 href="/Industries"
                 className="text-sm text-blue-600 hover:underline"
