@@ -32,7 +32,7 @@ export function Services() {
     {
       title: "PeopleSoft Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/peoplesoft.jpeg",
+      image: "/assets/Oracle/download.png",
       slug: "oracle-peoplesoft"
     },
     {

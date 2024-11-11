@@ -8,7 +8,7 @@ const CLIENT_LOGOS = [
   { src: '/assets/Client_Logos/DELAPLEX.jpg', alt: 'DELAPLEX' },
   { src: '/assets/Client_Logos/GSLAB.jpg', alt: 'GSLAB' },
   { src: '/assets/Client_Logos/HCL.jpg', alt: 'HCL' },
-  { src: '/assets/Client_Logos/KOFAX.png', alt: 'KOFAX' },
+  { src: '/assets/Client_Logos/kofax.svg', alt: 'KOFAX' },
   { src: '/assets/Client_Logos/MAGNIT.jpg', alt: 'MAGNIT' },
   { src: '/assets/Client_Logos/Oracle.jpg', alt: 'Oracle' },
   { src: '/assets/Client_Logos/PROWESS.png', alt: 'PROWESS' },
@@ -16,6 +16,7 @@ const CLIENT_LOGOS = [
   { src: '/assets/Client_Logos/TEKLINK.jpg', alt: 'TEKLINK' },
   { src: '/assets/Client_Logos/UST.jpg', alt: 'UST' },
   { src: '/assets/Client_Logos/ERPA.png', alt: 'ERPA' },
+  { src: '/assets/Client_Logos/dgliger.png', alt: 'DGLIGER' },
   
 ];
 
