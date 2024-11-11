@@ -31,13 +31,6 @@ interface NavItemProps {
   isResourceItem?: boolean
 }
 
-const colors = {
-  primary: '#0066CC',    // Blue
-  secondary: '#FF3366',  // Red
-  accent: '#FFB800',     // Yellow
-  green: '#009944',      // Green from ISCS logo
-  text: '#333333'
-}
 
 
 const NavItem: React.FC<NavItemProps> = ({ 
@@ -559,12 +552,7 @@ const Navigation: React.FC = () => {
               Log In
             </Button>
             </Link>
-            <Button variant="default" size="lg" 
-                className="gap-2" 
-                style={{
-                  backgroundColor: colors.primary,
-                  color: 'white'
-                }} onClick={handleContactClick}>
+            <Button variant="default" onClick={handleContactClick}>
              Contact Us
             </Button>
            
