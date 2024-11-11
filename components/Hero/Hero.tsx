@@ -3,7 +3,7 @@
 import React from 'react';
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import Autoplay from "embla-carousel-autoplay";
