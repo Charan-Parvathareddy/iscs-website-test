@@ -1,44 +1,52 @@
-// components/Hero/Hero.tsx
-'use client'
+'use client';
 
-import React from 'react'
-import { MoveRight, PhoneCall } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import Image from "next/image"
-import { WobbleCard } from "@/components/ui/wobble-card"
-import Autoplay from "embla-carousel-autoplay"
-import { useScroll } from '@/contexts/ScrollContext'
+import React from 'react';
+import { MoveRight, PhoneCall} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import { WobbleCard } from "@/components/ui/wobble-card";
+import Autoplay from "embla-carousel-autoplay";
+import { useScroll } from '@/contexts/ScrollContext';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
 const cardContent = [
   {
-    title: "Innovative Enterprise Solutions",
-    description: "Delivering cutting-edge IT solutions that transform businesses and drive growth in digital era.",
-    image: "/assets/ISCS/Innovation.jpg"
+    title: "Next-Generation Enterprise Solutions",
+    description: "Harness the power of AI/ML, Cloud Computing, and Enterprise Integration to transform your business operations. Our certified experts deliver scalable, secure, and innovative solutions.",
+    image: "/assets/ISCS/Innovation.jpg",
   },
   {
-    title: "Global Resource Consulting",
-    description: "Expert talent acquisition and management services to help your business thrive in a competitive landscape.",
-    image: "/assets/ISCS/Strategic.jpg"
+    title: "AI-Powered Industry Solutions",
+    description: "Purpose-built products designed for specific industry challenges, combining cutting-edge technology with domain expertise in Healthcare, HR, and Learning Management.",
+    image: "/assets/ISCS/Strategic.jpg",
   },
   {
-    title: "Industry-Specific IT Products",
-    description: "Tailored technology solutions designed to meet the unique challenges of various industry sectors.",
-    image: "/hero.webp"
-  }
-]
+    title: "Strategic Technology Consulting",
+    description: "Transform your business vision into reality with our comprehensive consulting services, backed by global expertise and local insights across continents.",
+    image: "/hero.webp",
+  },
+];
+
+
+const colors = {
+  primary: '#0066CC',    // Blue
+  secondary: '#FF3366',  // Red
+  accent: '#FFB800',     // Yellow
+  green: '#009944',      // Green from ISCS logo
+  text: '#333333'
+}
 
 const Hero = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
   const refs = useScroll();
 
   const scrollToContact = () => {
@@ -53,31 +61,40 @@ const Hero = () => {
     <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
+      {/* Responsive Certification Banner */}
+      
+
       <div className="container mx-auto px-4 py-12 lg:py-24">
-        <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
-          <div className="flex gap-8 flex-col items-center lg:items-start">
-            <div>
-              <Badge variant="outline">
-                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
-                  ISCS Technologies
-                </span>
-              </Badge>
-            </div>
-            <div className="flex gap-8 flex-col">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl max-w-lg tracking-tighter text-center lg:text-left font-regular">
-                Innovative&nbsp;Strategic<br />
-                Consulting&nbsp;Services
-              </h1>
-              <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-center lg:text-left">
-                ISCS Technologies offers IT Enterprise Business Solutions, 
-                Various Industry Specific IT Products and Resource Consulting Services Globally.
-              </p>
-            </div>
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
+          <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left">
+            <Badge
+              variant="outline"
+              className="border-[#0066CC] text-[#0066CC] hover:bg-[#0066CC] hover:text-white transition-colors px-4 py-1"
+            >
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text hover:text-white">
+                Your Trusted Global IT Partner
+              </span>
+            </Badge>
+            <span className="text-sm text-gray-600">
+              Experienced | Enriched | Envisioned
+            </span>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold">
+              Innovative Strategic Consulting Services
+            </h1>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+        ISCS Technologies stands at the forefront of digital transformation, delivering end-to-end IT solutions that empower businesses to thrive in a competitive landscape. Our tailored, industry-specific products leverage the latest in AI, cloud computing, and data analytics, ensuring clients not only keep pace with technological advancements but lead their industries. With a strong presence across continents, our team of seasoned consultants brings deep domain expertise and strategic insights to help organizations seamlessly bridge the gap between innovative technology and tangible business success. From enterprise integration to customized digital solutions, we are committed to driving growth, efficiency, and resilience for our clients worldwide.
+      </p>
+
+
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button 
                 size="lg" 
                 className="gap-2" 
-                variant="outline"
+                style={{
+                  backgroundColor: colors.primary,
+                  color: 'white'
+                }}
                 onClick={scrollToContact}
               >
                 Contact Us <PhoneCall className="w-4 h-4" />
@@ -85,13 +102,18 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="gap-2"
+                style={{
+                  backgroundColor: colors.secondary,
+                  color: 'white'
+                }}
                 onClick={scrollToFeature}
               >
                 Know More <MoveRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
-          <div className="hidden md:block w-full max-w-xl mx-auto relative">
+
+          <div className="hidden lg:block w-full max-w-xl mx-auto relative">
             <Carousel
               plugins={[plugin.current]}
               className="w-full"
@@ -101,39 +123,37 @@ const Hero = () => {
               <CarouselContent>
                 {cardContent.map((card, index) => (
                   <CarouselItem key={index}>
-                    <WobbleCard containerClassName="bg-green-1200 min-h-[500px] lg:min-h-[300px] overflow-hidden">
-                      <div className="max-w-xs relative z-10">
-                        <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-black">
+                    <WobbleCard containerClassName="bg-green-1200  overflow-hidden">
+                      <div className="px-6 py-4">
+                        <h2 className="text-2xl font-semibold text-black mb-3">
                           {card.title}
                         </h2>
-                        <p className="mt-4 text-left text-base/6 text-grey-200">
+                        <p className="text-sm text-gray-600">
                           {card.description}
                         </p>
                       </div>
-                      <div className="absolute -right-[20%] lg:-right-[30%] -bottom-10 w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
-                        <div className="relative w-full h-full">
-                          <Image
-                            src={card.image}
-                            fill
-                            alt={`${card.title} illustration`}
-                            className="grayscale filter object-contain"
-                          />
-                        </div>
+                      <div className="relative w-full h-48">
+                        <Image
+                          src={card.image}
+                          alt={`${card.title} illustration`}
+                          fill
+                          className="object-cover grayscale filter"
+                        />
                       </div>
                     </WobbleCard>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <div className="absolute -bottom-12 w-full flex justify-center gap-2">
-                <CarouselPrevious className="relative translate-y-0 left-0" />
-                <CarouselNext className="relative translate-y-0 right-0" />
+              <div className="absolute bottom-[-30px] w-full flex justify-center gap-2">
+                <CarouselPrevious className="relative left-0" />
+                <CarouselNext className="relative right-0" />
               </div>
             </Carousel>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;

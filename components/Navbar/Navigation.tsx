@@ -384,7 +384,7 @@ const Navigation: React.FC = () => {
       href: "/Services",
       dropdown: [
         {
-          category: "AI/ML Services",
+          category: "AI/ML | Data Engg & Science",
           items: [
             { name: "AI Strategy", description: "Develop AI-driven solutions", icon: "/assets/ai/ai-strategy.png", href: "/Services/AI-ML#ai-strategy" },
             { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services/AI-ML#ml-models" },

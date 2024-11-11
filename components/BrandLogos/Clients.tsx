@@ -14,7 +14,9 @@ const CLIENT_LOGOS = [
   { src: '/assets/Client_Logos/PROWESS.png', alt: 'PROWESS' },
   { src: '/assets/Client_Logos/RAMSSOLGROUP.png', alt: 'RAMSSOLGROUP' },
   { src: '/assets/Client_Logos/TEKLINK.jpg', alt: 'TEKLINK' },
-  { src: '/assets/Client_Logos/UST.jpg', alt: 'UST' }
+  { src: '/assets/Client_Logos/UST.jpg', alt: 'UST' },
+  { src: '/assets/Client_Logos/ERPA.png', alt: 'ERPA' },
+  
 ];
 
 const HorizontalScroller2 = () => {
