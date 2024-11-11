@@ -6,13 +6,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export function Services() {
   const services = [
     {
-      title: "AI/ML Solutions",
+      title: "AI/ML | Data Engg & Science",
       description: "Transform your business with our tailored AI and machine learning solutions that enhance insights, automate processes, and drive innovation.",
       image: "/assets/ai/ai.png",
       slug: "ai-ml-solutions"
     },
     {
-      title: "Salesforce Solutions",
+      title: "Salesforce Services",
       description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
       image: "/assets/salesforce/salesforce-logo.png",
       slug: "salesforce-solutions"
@@ -24,13 +24,13 @@ export function Services() {
       slug: "tibco-services"
     },
     {
-      title: "Oracle Solutions",
+      title: "Oracle Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/Oracle/oracle.jpg",
       slug: "oracle-solutions"
     },
     {
-      title: "Oracle PeopleSoft",
+      title: "PeopleSoft Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
       image: "/assets/Oracle/peoplesoft.jpeg",
       slug: "oracle-peoplesoft"
@@ -42,7 +42,7 @@ export function Services() {
       slug: "cloud-services"
     },
     {
-      title: "Professional Staffing Services",
+      title: "Strategic IT Consulting Services",
       description: "Find the right talent for your business with our professional staffing services. We specialize in connecting you with skilled professionals across various industries.",
       image: "/assets/staffing/professional-staffing.webp",
       slug: "professional-staffing"

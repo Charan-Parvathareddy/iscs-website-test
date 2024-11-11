@@ -75,19 +75,20 @@ const Hero = () => {
                 Your Trusted Global IT Partner
               </span>
             </Badge>
-            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text hover:text-white">
+            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text hover:text-black">
                
               Experienced | Enriched | Envisioned
             </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold">
               Innovative Strategic Consulting Services
             </h1>
             <p className="text-sm text-muted-foreground leading-relaxed">
-        ISCS Technologies stands at the forefront of digital transformation, delivering end-to-end IT solutions that empower businesses to thrive in a competitive landscape. Our tailored, industry-specific products leverage the latest in AI, cloud computing, and data analytics, ensuring clients not only keep pace with technological advancements but lead their industries. With a strong presence across continents, our team of seasoned consultants brings deep domain expertise and strategic insights to help organizations seamlessly bridge the gap between innovative technology and tangible business success. From enterprise integration to customized digital solutions, we are committed to driving growth, efficiency, and resilience for our clients worldwide.
-      </p>
-
-
+        ISCS Technologies stands at the forefront of digital transformation, delivering end-to-end IT solutions that empower businesses to thrive in a competitive landscape. Our tailored, industry-specific products leverage the latest in AI , cloud computing and data analytics, ensuring clients not only keep pace with technological advancements but lead their industries.
+</p>
+<p className="text-sm text-muted-foreground leading-relaxed">
+With a strong presence across continents, our team of seasoned consultants brings deep domain expertise and strategic insights to help organizations seamlessly bridge the gap between innovative technology and tangible business success. From enterprise integration to customized digital solutions, we are committed to driving growth, efficiency, and resilience for our clients worldwide.
+</p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button 
                 size="lg" 
