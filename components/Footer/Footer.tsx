@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export  function Footer() {
+export default function Footer() {
   return (
     <footer
       className="flex flex-wrap items-center w-full p-6 footer gap-7 grow justify-between"
@@ -26,28 +26,33 @@ export  function Footer() {
             <li>
               <br/>
               <Link href="/Services#ai-ml-solutions" className="opacity-75 hover:opacity-100">
-                AI / ML Services
+                AI/ML | Data Engg & Science
               </Link>
             </li>
             <li>
-              <Link href="/Services#salesforce-solutions" className="opacity-75 hover:opacity-100">
-                Salesforce Services
+              <Link href="/Services#cloud-services" className="opacity-75 hover:opacity-100">
+                Cloud Services
               </Link>
             </li>
             <li>
               <Link href="/Services#tibco-services" className="opacity-75 hover:opacity-100">
-                TIBCO Services
+                TIBCO | API Integrations
               </Link>
             </li>
             <li>
-              <Link href="/Services#oracle-solutions" className="opacity-75 hover:opacity-100">
-                Oracle Services
+              <Link href="/Services#peoplesoft" className="opacity-75 hover:opacity-100">
+                Peoplesoft
               </Link>
-
-              <Link href="/Services#oracle-peoplesoft" className="opacity-75 hover:opacity-100">
-                Peoplesoft Services
+            </li>
+            <li>
+              <Link href="/Services#salesforce" className="opacity-75 hover:opacity-100">
+                Salesforce
               </Link>
-
+            </li>
+            <li>
+              <Link href="/Services#oracle" className="opacity-75 hover:opacity-100">
+                Oracle
+              </Link>
             </li>
           </ul>
         </div>
@@ -56,35 +61,36 @@ export  function Footer() {
             <p className="font-bold">Products</p>
             <li>
               <br/>
-              <Link href="/Products#g-nayana" className="opacity-75 hover:opacity-100">
-                G-Nayana
+              <Link href="/Products#healthcare-ai" className="opacity-75 hover:opacity-100">
+                Healthcare.AI
               </Link>
             </li>
             <li>
-              <Link href="/Products#mi-ware" className="opacity-75 hover:opacity-100">
-                Mi-Ware
+              <Link href="/Products#middleware" className="opacity-75 hover:opacity-100">
+                Middleware Integrations
               </Link>
             </li>
             <li>
-              <Link href="/Products#i-hrms" className="opacity-75 hover:opacity-100">
-                i-HRMS
+              <Link href="/Products#hrms-ai" className="opacity-75 hover:opacity-100">
+                HRMS.AI
               </Link>
             </li>
             <li>
-              <Link href="/Products#ogcom-elp" className="opacity-75 hover:opacity-100">
-                E-Learning Platform
+              <Link href="/Products#lms-ai" className="opacity-75 hover:opacity-100">
+                LMS.AI
               </Link>
             </li>
           </ul>
         </div>
+        {/* Rest of the footer sections remain unchanged */}
         <div className="footer-section4">
           <ul className="flex flex-col gap-2 text-sm list-none">
-          <p className="font-bold">Corporate Office & Delivery Center</p>
+            <p className="font-bold">Corporate Office & Delivery Center</p>
             <p className="font-bold">India</p>
             <li className="opacity-75">
               Level 4, Gumidelli Towers, Old Airport Rd,
               <br/>
-               Begumpet, Hyderabad, TS- 500016, India.
+              Begumpet, Hyderabad, TS- 500016, India.
             </li>
             <li className="opacity-75">Phone: +91 75695 38823</li>
             <li>
@@ -94,39 +100,38 @@ export  function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer-section5"> 
-  <ul className="flex flex-col gap-2 text-sm list-none">
-  <p className="font-bold">Global Offices</p>
-    <p className="font-bold">USA</p>
-    <li className="opacity-75">
-      2055 Limestone Road STE 200-C, 
-      <br/>Wilmington, Delaware, 19702
-    </li>
-    <li className="opacity-75">Phone: +1-302-725-4554</li>
-    <li>
-      <a href="mailto:info@iscstech.com" className="opacity-75 hover:opacity-100">
-        Email: info@iscstech.com
-      </a>
-    </li>
-  </ul>
-</div>
-<div className="footer-section6"> 
-  <ul className="flex flex-col gap-2 text-sm list-none">
-  <p className="font-bold">Global Offices</p>
-    <p className="font-bold">Australia</p>
-    <li className="opacity-75">
-      10 Keilor Road, Essendon North,
-      <br/> Victoria 3041, Australia.
-    </li>
-    <li className="opacity-75">Phone: +61 302-503-5426</li>
-    <li>
-      <a href="mailto:info@iscstech.com" className="opacity-75 hover:opacity-100">
-        Email: info@iscstech.com
-      </a>
-    </li>
-  </ul>
-</div>
-
+        <div className="footer-section5">
+          <ul className="flex flex-col gap-2 text-sm list-none">
+            <p className="font-bold">Global Offices</p>
+            <p className="font-bold">USA</p>
+            <li className="opacity-75">
+              2055 Limestone Road STE 200-C,
+              <br/>Wilmington, Delaware, 19702
+            </li>
+            <li className="opacity-75">Phone: +1-302-725-4554</li>
+            <li>
+              <a href="mailto:info@iscstech.com" className="opacity-75 hover:opacity-100">
+                Email: info@iscstech.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section6">
+          <ul className="flex flex-col gap-2 text-sm list-none">
+            <p className="font-bold">Global Offices</p>
+            <p className="font-bold">Australia</p>
+            <li className="opacity-75">
+              10 Keilor Road, Essendon North,
+              <br/> Victoria 3041, Australia.
+            </li>
+            <li className="opacity-75">Phone: +61 302-503-5426</li>
+            <li>
+              <a href="mailto:info@iscstech.com" className="opacity-75 hover:opacity-100">
+                Email: info@iscstech.com
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   )
