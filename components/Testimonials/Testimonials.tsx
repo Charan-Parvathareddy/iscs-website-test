@@ -1,7 +1,8 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
 
 interface Testimonial {
   id: number
@@ -51,12 +52,20 @@ const testimonials: Testimonial[] = [
     role: "Client Engagement Manager",
     company: "Prowess",
     companyLogo: "/assets/Client_Logos/PROWESS.png",
-    quote: "ISCS has always been a go to partner to leverage niche skills and their aggressive approach sets them apart. It&apos;s being precise and strategic in providing with capabilities to fit our client needs."
+    quote: "ISCS has always been a go to partner to leverage niche skills and their aggressive approach sets them apart. It's being precise and strategic in providing with capabilities to fit our client needs."
   }
 ]
 
-export function Testimonials() {
+export  function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
+    }, 3000)
+
+    return () => clearInterval(timer)
+  }, [])
 
   const nextTestimonial = () => {
     setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
@@ -77,34 +86,43 @@ export function Testimonials() {
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
-              <div className="p-6 md:p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <Image
-                    src={testimonials[activeTestimonial].companyLogo}
-                    alt={testimonials[activeTestimonial].company}
-                    width={120}
-                    height={60}
-                    className="object-contain"
-                  />
-                </div>
-                
-                <blockquote className="text-lg text-gray-700 mb-6 italic">
-                  {testimonials[activeTestimonial].quote}
-                </blockquote>
-                
-                <div className="flex items-center">
-                  <div>
-                    <p className="font-semibold text-blue-900">
-                      {testimonials[activeTestimonial].name}
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
-                    </p>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeTestimonial}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.5 }}
+                className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200"
+              >
+                <div className="p-6 md:p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <Image
+                      src={testimonials[activeTestimonial].companyLogo}
+                      alt={testimonials[activeTestimonial].company}
+                      width={120}
+                      height={60}
+                      className="object-contain"
+                    />
+                  </div>
+                  
+                  <blockquote className="text-lg text-gray-700 mb-6 italic">
+                    {testimonials[activeTestimonial].quote}
+                  </blockquote>
+                  
+                  <div className="flex items-center">
+                    <div>
+                      <p className="font-semibold text-blue-900">
+                        {testimonials[activeTestimonial].name}
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </AnimatePresence>
             
             <div className="mt-8 flex justify-center items-center gap-4">
               <button
@@ -116,13 +134,15 @@ export function Testimonials() {
               </button>
               
               {testimonials.map((testimonial, index) => (
-                <button
+                <motion.button
                   key={testimonial.id}
                   onClick={() => setActiveTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
                     index === activeTestimonial ? 'bg-blue-500' : 'bg-gray-300'
                   }`}
                   aria-label={`View testimonial from ${testimonial.name}`}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               ))}
               
@@ -140,5 +160,3 @@ export function Testimonials() {
     </div>
   )
 }
-
-export default Testimonials;
