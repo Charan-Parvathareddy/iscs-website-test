@@ -12,17 +12,24 @@ export function Services() {
       slug: "ai-ml-solutions"
     },
     {
-      title: "Salesforce Services",
-      description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
-      image: "/assets/salesforce/salesforce-logo.png",
-      slug: "salesforce-solutions"
-    },
-    {
       title: "TIBCO Services",
       description: "Leverage our TIBCO services to enhance data integration, analytics, and application connectivity. We offer tailored solutions to streamline your processes.",
       image: "/assets/tibco/tibco-logo.webp",
       slug: "tibco-services"
     },
+    {
+      title: "Cloud Services",
+      description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
+      image: "/assets/cloud-services.jpg",
+      slug: "cloud-services"
+    },
+    {
+      title: "Salesforce Services",
+      description: "Optimize your business operations with our comprehensive Salesforce solutions. We provide expert implementation, customization, and support.",
+      image: "/assets/salesforce/salesforce-logo.png",
+      slug: "salesforce-solutions"
+    },
+    
     {
       title: "Oracle Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
@@ -35,14 +42,9 @@ export function Services() {
       image: "/assets/Oracle/download.png",
       slug: "oracle-peoplesoft"
     },
+   
     {
-      title: "Cloud Services",
-      description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/cloud-services.jpg",
-      slug: "cloud-services"
-    },
-    {
-      title: "Strategic IT Consulting Services",
+      title: "Strategic IT Resource Consulting ",
       description: "Find the right talent for your business with our professional staffing services. We specialize in connecting you with skilled professionals across various industries.",
       image: "/assets/staffing/professional-staffing.webp",
       slug: "professional-staffing"
