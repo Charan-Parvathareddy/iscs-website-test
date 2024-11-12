@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     category: "Software Integration",
     client: "ERP Analysts (INDIA) Pvt. Ltd.",
     date: "2023-12-04",
-    imageUrl: "/bullhorn.png",
+    imageUrl: "/bullhorn.jpg",
     pdfUrl: "/assets/bullhorn.pdf",
     results: ["Professional excellence and cooperative attitude demonstrated", "Appreciated for timely and satisfactory completion", "Positive feedback from ERP Analysts for future collaboration"]
   },
