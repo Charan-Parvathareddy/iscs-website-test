@@ -1,6 +1,6 @@
 "use client";
 import Img1 from "@/public/assets/Oracle/oracle-ebs.png";
-import Img2 from "@/public/assets/Oracle/oracle-business-intelligence.png"
+import Img2 from "@/public/assets/Oracle/oracle.webp"
 import Img3 from "@/public/assets/Oracle/oracle-consulting.png";
 
 import Banner2 from "@/components/Products/Banner2";
@@ -23,12 +23,12 @@ const Banner2Data = {
 
 const Banner2Data2 = {
   image: Img2,
-  tag: "Business Analytics",
-  title: "Insightful Business Analytics with Oracle",
+  tag: "Oracle Fusion Cloud",
+  title: "Intelligent Business Insights with Oracle",
   subtitle: [
-    "Oracle’s Business Analytics suite provides organizations with advanced tools to transform data into actionable insights, enabling proactive, data-driven decisions. At ISCS, we implement Oracle Analytics Cloud (OAC) and Oracle Autonomous Data Warehouse to help businesses uncover trends and forecast opportunities.",
-    "Through Oracle Analytics Cloud, we offer a comprehensive platform that integrates with existing systems, allowing data access and analysis across all departments to improve insights, operations, and customer experiences.",
-    "Our team customizes Oracle’s analytics solutions to meet specific industry needs, empowering organizations to drive data-driven growth, optimize processes, and gain a competitive edge."
+    "Oracle Fusion Cloud delivers a unified suite of cloud applications that enables organizations to streamline operations, enhance productivity, and drive strategic growth. At ISCS, we implement Oracle Fusion Cloud solutions to empower businesses with the flexibility and innovation they need to stay ahead.",
+    "With Oracle Fusion Cloud, we offer a comprehensive, integrated platform that spans ERP, HCM, SCM, and more, allowing seamless connectivity across all departments. This centralized approach optimizes workflows, enhances collaboration, and provides actionable insights for smarter decision-making.",
+    "Our team customizes Oracle Fusion Cloud applications to meet specific industry needs, providing businesses with the tools to modernize processes, boost operational efficiency, and gain a competitive advantage in an ever-evolving market."
   ],
   link: "#",
 };
@@ -74,7 +74,7 @@ export default function Home() {
         <Banner2 {...Banner2Data} />
       </div>
 
-      <div id="oracle-business-analytics" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="oracle-fusion-cloud" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner2 {...Banner2Data2} reverse={true} />

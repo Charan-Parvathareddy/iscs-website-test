@@ -413,9 +413,8 @@ const Navigation: React.FC = () => {
           category: "Oracle Services",
           items: [
             { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services/Oracle#oracle-e-business" },
-            { name: "Business Analytics", description: "Insightful business analytics", icon: "/assets/Oracle/oracle.png", href: "/Services/Oracle#oracle-business-analytics" },
-           { name: "IT Consulting", description: "Expert IT consulting services", icon: "/assets/Oracle/oracle-consulting.png", href: "/Services/Oracle#oracle-it-consulting" },
-       
+            { name: "Oracle Fusion Cloud", description: "Intelligent Business Insights", icon: "/assets/Oracle/oracle-fusion-cloud.jfif", href: "/Services/Oracle#oracle-fusion-cloud" },
+           
           ],
         },
        
