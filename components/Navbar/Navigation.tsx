@@ -521,8 +521,8 @@ const Navigation: React.FC = () => {
           items: [
             { name: "About Us", icon: "/assets/placeholder.svg", href: "/About" },
             { name: "Case Studies", icon: "/assets/placeholder.svg", href: "/Resources/case-studies" },
-            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/whitepapers" },
-            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/docs" },
+            { name: "Blog", icon: "/assets/placeholder.svg", href: "/Resources/blog" },
+            { name: "Careers", icon: "/assets/placeholder.svg", href: "/Resources/careers" },
           ],
         }
       ]
