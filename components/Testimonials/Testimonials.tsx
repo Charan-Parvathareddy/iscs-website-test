@@ -1,8 +1,11 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
 interface Testimonial {
   id: number
@@ -56,13 +59,13 @@ const testimonials: Testimonial[] = [
   }
 ]
 
-export  function Testimonials() {
+export function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
+    }, 15000)
 
     return () => clearInterval(timer)
   }, [])
@@ -76,87 +79,95 @@ export  function Testimonials() {
   }
 
   return (
-    <div className="relative w-full bg-cover bg-center bg-no-repeat" style={{
+    <section className="relative w-full bg-cover bg-center bg-no-repeat py-24 md:py-32" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
-      <section className="py-16 bg-white/90">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">
-            What Our CLIENTS Say About Us?
-          </h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTestimonial}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5 }}
-                className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200"
-              >
-                <div className="p-6 md:p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <Image
+      <div className="absolute inset-0 " />
+      <div className="container relative mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-16 text-blue-700">
+          What Our Clients Say About Us
+        </h2>
+        
+        <div className="max-w-5xl mx-auto">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTestimonial}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="overflow-hidden shadow-lg border-blue-200">
+                <CardContent className="p-8 md:p-12">
+                  <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 rounded-full  flex items-center justify-center">
+                      <Image
                       src={testimonials[activeTestimonial].companyLogo}
                       alt={testimonials[activeTestimonial].company}
                       width={120}
                       height={60}
                       className="object-contain"
                     />
-                  </div>
-                  
-                  <blockquote className="text-lg text-gray-700 mb-6 italic">
-                    {testimonials[activeTestimonial].quote}
-                  </blockquote>
-                  
-                  <div className="flex items-center">
-                    <div>
-                      <p className="font-semibold text-blue-900">
-                        {testimonials[activeTestimonial].name}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
-                      </p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-xl ">
+                          {testimonials[activeTestimonial].name}
+                        </p>
+                        <p className="text-sm ">
+                          {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
+                        </p>
+                      </div>
                     </div>
+                  
                   </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
+                  
+                  <blockquote className="text-lg md:text-xl text-blue-800 mb-6 italic leading-relaxed">
+                    "{testimonials[activeTestimonial].quote}"
+                  </blockquote>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </AnimatePresence>
+          
+          <div className="mt-12 flex justify-center items-center gap-6">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={prevTestimonial}
+              aria-label="Previous testimonial"
+              className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </Button>
             
-            <div className="mt-8 flex justify-center items-center gap-4">
-              <button
-                onClick={prevTestimonial}
-                className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-                aria-label="Previous testimonial"
-              >
-                ←
-              </button>
-              
+            <div className="flex gap-3">
               {testimonials.map((testimonial, index) => (
-                <motion.button
+                <Button
                   key={testimonial.id}
+                  variant="ghost"
+                  size="icon"
                   onClick={() => setActiveTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
-                    index === activeTestimonial ? 'bg-blue-500' : 'bg-gray-300'
-                  }`}
                   aria-label={`View testimonial from ${testimonial.name}`}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
+                  className={`w-3 h-3 p-0 rounded-full transition-all duration-300 ${
+                    index === activeTestimonial ? 'bg-blue-600 scale-125' : 'bg-blue-200'
+                  }`}
                 />
               ))}
-              
-              <button
-                onClick={nextTestimonial}
-                className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-                aria-label="Next testimonial"
-              >
-                →
-              </button>
             </div>
+            
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={nextTestimonial}
+              aria-label="Next testimonial"
+              className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </Button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }

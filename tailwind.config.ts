@@ -85,7 +85,7 @@ const config: Config = {
         shine: 'shine var(--duration) infinite linear',
         'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
         animatedBeam: 'animatedBeam 7s linear infinite',
-        marquee: "marquee 30s linear infinite",
+        marquee: "marquee 80s linear infinite",
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
       },

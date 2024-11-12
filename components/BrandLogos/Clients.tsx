@@ -1,25 +1,23 @@
 import Image from 'next/image';
 
 const CLIENT_LOGOS = [
-  { src: '/assets/Client_Logos/ANSYS.jpg', alt: 'ANSYS' },
-  { src: '/assets/Client_Logos/BCT.jpg', alt: 'BCT' },
-  { src: '/assets/Client_Logos/CriticalRiver.png', alt: 'CriticalRiver' },
-  { src: '/assets/Client_Logos/CSG.jpg', alt: 'CSG' },
-  { src: '/assets/Client_Logos/DELAPLEX.jpg', alt: 'DELAPLEX' },
-  { src: '/assets/Client_Logos/HCL.jpg', alt: 'HCL' },
-  { src: '/assets/Client_Logos/kofax.svg', alt: 'KOFAX' },
-  { src: '/assets/Client_Logos/MAGNIT.jpg', alt: 'MAGNIT' },
-  { src: '/assets/Client_Logos/Oracle.jpg', alt: 'Oracle' },
-  { src: '/assets/Client_Logos/PROWESS.png', alt: 'PROWESS' },
-  { src: '/assets/Client_Logos/RAMSSOLGROUP.png', alt: 'RAMSSOLGROUP' },
-  { src: '/assets/Client_Logos/TEKLINK.jpg', alt: 'TEKLINK' },
-  { src: '/assets/Client_Logos/UST.jpg', alt: 'UST' },
-  { src: '/assets/Client_Logos/ERPA.png', alt: 'ERPA' },
   { src: '/assets/Client_Logos/dgliger.png', alt: 'DGLIGER' },
+  { src: '/assets/Client_Logos/RAMSSOLGROUP.png', alt: 'RAMSSOLGROUP' },
+  { src: '/assets/Client_Logos/ERPA.png', alt: 'ERPA' },
+  { src: '/assets/Client_Logos/TEKLINK.jpg', alt: 'TEKLINK' },
+  { src: '/assets/Client_Logos/PROWESS.png', alt: 'PROWESS' },
   { src: '/assets/Client_Logos/Vertex-Logo.webp', alt: 'Vertex-Logo' },
-  { src: '/assets/Client_Logos/GS-Lab-GAVS-Logo.svg', alt: 'GS-Lab-GAVS-Logo' },
+  { src: '/assets/Client_Logos/DELAPLEX.jpg', alt: 'DELAPLEX' },
+  { src: '/assets/Client_Logos/BCT.jpg', alt: 'BCT' },
   { src: '/assets/Client_Logos/datavail-logo.svg', alt: 'datavail-logo' },
-  
+  { src: '/assets/Client_Logos/GS-Lab-GAVS-Logo.svg', alt: 'GS-Lab-GAVS-Logo' },
+  { src: '/assets/Client_Logos/CriticalRiver.png', alt: 'CriticalRiver' },
+  { src: '/assets/Client_Logos/MAGNIT.jpg', alt: 'MAGNIT' },
+  { src: '/assets/Client_Logos/kofax.svg', alt: 'KOFAX' },
+  { src: '/assets/Client_Logos/CSG.jpg', alt: 'CSG' },
+  { src: '/assets/Client_Logos/ANSYS.jpg', alt: 'ANSYS' },
+  { src: '/assets/Client_Logos/HCL.jpg', alt: 'HCL' },
+  { src: '/assets/Client_Logos/Oracle.jpg', alt: 'Oracle' }
 ];
 
 const HorizontalScroller2 = () => {
