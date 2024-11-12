@@ -67,7 +67,7 @@ export const JobListingPage = () => {
                 onChange={(e) => setSearchLocation(e.target.value)}
               />
             </div>
-            <Button className="w-[300px] px-3 py-1.5 text-sm">Search</Button>
+            <Button className="w-[300px] px-3 py-1.5 text-sm ">Search</Button>
 
           </div>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 text-sm text-gray-600">

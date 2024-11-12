@@ -64,9 +64,9 @@ const Hero = () => {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
   <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left">
     {/* Welcome Message */}
-    <h2 className="text-3xl font-bold text-[#333333] bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
-      ISCS Technologies
-    </h2>
+    <h2 className="text-4xl font-bold text-[#333333] bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-transparent bg-clip-text leading-tight">
+  ISCS Technologies
+</h2>
 
     <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold">
       Innovative Strategic Consulting Services

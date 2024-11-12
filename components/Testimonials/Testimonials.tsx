@@ -100,25 +100,25 @@ export function Testimonials() {
               <Card className="overflow-hidden shadow-lg border-blue-200">
                 <CardContent className="p-8 md:p-12">
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 rounded-full flex items-center justify-center">
-                        <Image
-                          src={testimonials[activeTestimonial].companyLogo}
-                          alt={testimonials[activeTestimonial].company}
-                          width={120}
-                          height={60}
-                          className="object-contain"
-                        />
-                      </div>
-                      <div>
-                        <p className="font-semibold text-xl">
-                          {testimonials[activeTestimonial].name}
-                        </p>
-                        <p className="text-sm">
-                          {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
-                        </p>
-                      </div>
-                    </div>
+                  <div className="flex items-center gap-8">
+  <div className="w-32 h-24 rounded-lg flex items-center justify-center">
+    <Image
+      src={testimonials[activeTestimonial].companyLogo}
+      alt={testimonials[activeTestimonial].company}
+      width={200}
+      height={100}
+      className="object-contain"
+    />
+  </div>
+  <div>
+    <p className="font-semibold text-l">
+      {testimonials[activeTestimonial].name}
+    </p>
+    <p className="text-sm">
+      {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
+    </p>
+  </div>
+</div>
                   </div>
                   
                   <blockquote className="text-lg md:text-xl text-blue-800 mb-6 italic leading-relaxed">
