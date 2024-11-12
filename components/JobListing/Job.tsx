@@ -5,9 +5,6 @@ import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card'
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-
-import { FaSearch, FaBuilding, FaMapMarkerAlt, FaInstagram, FaFacebook, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
 
 
 const Job = () => {
@@ -86,10 +83,8 @@ We are looking for a hands-on senior engineer with a passion for developing our 
   const handleCloseModal = () => {
     setShowModal(false);
   };
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
+  
   return (
     <div className="bg-gray-100 min-h-screen">
         
