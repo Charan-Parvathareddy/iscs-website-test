@@ -107,7 +107,7 @@ export function CaseStudiesPage() {
                   className="w-full"
                   onClick={() => setSelectedPdf(study.pdfUrl)}
                 >
-                  View Full Case Study
+                  View Certification
                 </Button>
               </CardFooter>
             </Card>
