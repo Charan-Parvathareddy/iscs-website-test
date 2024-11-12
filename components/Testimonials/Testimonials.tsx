@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
@@ -101,29 +101,28 @@ export function Testimonials() {
                 <CardContent className="p-8 md:p-12">
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
                     <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 rounded-full  flex items-center justify-center">
-                      <Image
-                      src={testimonials[activeTestimonial].companyLogo}
-                      alt={testimonials[activeTestimonial].company}
-                      width={120}
-                      height={60}
-                      className="object-contain"
-                    />
+                      <div className="w-16 h-16 rounded-full flex items-center justify-center">
+                        <Image
+                          src={testimonials[activeTestimonial].companyLogo}
+                          alt={testimonials[activeTestimonial].company}
+                          width={120}
+                          height={60}
+                          className="object-contain"
+                        />
                       </div>
                       <div>
-                        <p className="font-semibold text-xl ">
+                        <p className="font-semibold text-xl">
                           {testimonials[activeTestimonial].name}
                         </p>
-                        <p className="text-sm ">
+                        <p className="text-sm">
                           {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
                         </p>
                       </div>
                     </div>
-                  
                   </div>
                   
                   <blockquote className="text-lg md:text-xl text-blue-800 mb-6 italic leading-relaxed">
-                    "{testimonials[activeTestimonial].quote}"
+                    &ldquo;{testimonials[activeTestimonial].quote}&rdquo;
                   </blockquote>
                 </CardContent>
               </Card>
