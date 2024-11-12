@@ -392,13 +392,7 @@ const Navigation: React.FC = () => {
             { name: "Machine Learning Models", description: "Build and deploy ML models", icon: "/assets/ai/ml-models.png", href: "/Services/AI-ML#ml-models" },
           ],
         },
-        {
-          category: "Salesforce Services",
-          items: [
-            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services/Salesforce#salesforce-crm" },
-            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services/Salesforce#salesforce-servicecloud" }
-            ],
-        },
+
         {
           category: "TIBCO Services",
           items: [
@@ -408,6 +402,24 @@ const Navigation: React.FC = () => {
           
           ],
         },
+
+        {
+          category: "Cloud Services",
+          items: [
+            { name: "E-business Suite", description: "Solutions for Oracle", icon: "/assets/Oracle/oracle-ebs.png", href: "/Services/Oracle#oracle-e-business" },
+            { name: "Oracle Fusion Cloud", description: "Intelligent Business Insights", icon: "/assets/Oracle/oracle-fusion-cloud.png", href: "/Services/Oracle#oracle-fusion-cloud" },
+           
+          ],
+        },
+
+        {
+          category: "Salesforce Services",
+          items: [
+            { name: "Implementation", description: "Salesforce CRM integration", icon: "/assets/salesforce/salesforce-implementation.png", href: "/Services/Salesforce#salesforce-crm" },
+            { name: "Service Cloud", description: "Salesforce Service Cloud ", icon: "/assets/salesforce/service-cloud.png", href: "/Services/Salesforce#salesforce-servicecloud" }
+            ],
+        },
+      
        
         {
           category: "Oracle Services",
@@ -419,20 +431,15 @@ const Navigation: React.FC = () => {
         },
        
         {
-          category: "Professional Staffing Services",
+          category: "Strategic IT Resource Consulting Services",
           items: [
             { 
               name: "IT Consulting Services", 
-              description: "Expert IT consulting and staffing Services", 
+              description: "Expert IT consulting and staffing ", 
               icon: "/assets/staffing/it-consulting.png", 
-              href: "/Services/Staffing#consulting-services" 
+              href: "/Services/Staffing" 
             },
-            { 
-              name: "Talent Assessment Management", 
-              description: "Comprehensive talent assessment and management services", 
-              icon: "/assets/staffing/talent-assessment.png", 
-              href: "/Services/Staffing#talent-assessment" 
-            }
+            
           ]
         },
       

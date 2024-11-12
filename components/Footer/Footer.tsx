@@ -51,11 +51,11 @@ export function Footer() {
           </Link>{" "}
           |{" "}
           <Link href="/Services#salesforce-solutions" className="hover:text-lightblue">
-            Salesforce
+           Oracle 
           </Link>{" "}
           
           <Link href="/Services#oracle-solutions" className="hover:text-lightblue">
-            Oracle
+          Salesforce
           </Link>
         </li>
       </ul>
