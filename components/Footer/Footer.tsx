@@ -21,7 +21,7 @@ export function Footer() {
             <p className="text-xs font-light italic">Experienced | Enriched | Envisioned</p>
             <div className="flex mt-4 space-x-4">
              
-              <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
             </div>
