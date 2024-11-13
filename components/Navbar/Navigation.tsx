@@ -430,6 +430,18 @@ const Navigation: React.FC = () => {
           ],
         },
        
+        
+        {
+          category: "Peoplesoft Solutions",
+          items: [
+            { 
+              name: "Leveraging Peoplesoft Technology", 
+              description: "Done and dusted", 
+              icon: "/assets/peoplesoft/peoplesoft-icon.png", 
+              href: "/Services/Peoplesoft" 
+            },
+          ]
+        },
         {
           category: "Strategic IT Resource Consulting ",
           items: [
@@ -439,10 +451,8 @@ const Navigation: React.FC = () => {
               icon: "/assets/staffing/it-consulting.png", 
               href: "/Services/Staffing" 
             },
-            
           ]
         },
-      
        
       ],
       
