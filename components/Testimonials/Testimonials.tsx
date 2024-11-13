@@ -79,7 +79,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="relative w-full bg-cover bg-center bg-no-repeat py-24 md:py-32" style={{
+    <section className="relative w-full bg-cover bg-center bg-no-repeat py-4 md:py-8" style={{
       backgroundImage: "url('/background-1.png')"
     }}>
       <div className="absolute inset-0 " />
@@ -98,30 +98,30 @@ export function Testimonials() {
               transition={{ duration: 0.5 }}
             >
               <Card className="overflow-hidden shadow-lg border-blue-200">
-                <CardContent className="p-8 md:p-12">
+                <CardContent >
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
-                  <div className="flex items-center gap-8">
-  <div className="w-32 h-24 rounded-lg flex items-center justify-center">
-    <Image
-      src={testimonials[activeTestimonial].companyLogo}
-      alt={testimonials[activeTestimonial].company}
-      width={200}
-      height={100}
-      className="object-contain"
-    />
-  </div>
-  <div>
-    <p className="font-semibold text-l">
-      {testimonials[activeTestimonial].name}
-    </p>
-    <p className="text-sm">
-      {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
-    </p>
-  </div>
-</div>
+                    <div className="flex items-center gap-8">
+                      <div className="w-32 h-24 rounded-lg flex items-center justify-center">
+                        <Image
+                          src={testimonials[activeTestimonial].companyLogo}
+                          alt={testimonials[activeTestimonial].company}
+                          width={testimonials[activeTestimonial].company === "DGLiger Consulting" ? 100 : 200}
+                          height={testimonials[activeTestimonial].company === "DGLiger Consulting" ? 50 : 100}
+                          className="object-contain"
+                        />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-lg">
+                          {testimonials[activeTestimonial].name}
+                        </p>
+                        <p className="text-xs">
+                          {testimonials[activeTestimonial].role} @ {testimonials[activeTestimonial].company}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   
-                  <blockquote className="text-lg md:text-xl text-blue-800 mb-6 italic leading-relaxed">
+                  <blockquote className="text-xs md:text-sm text-blue-800 leading-relaxed">
                     &ldquo;{testimonials[activeTestimonial].quote}&rdquo;
                   </blockquote>
                 </CardContent>
