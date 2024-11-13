@@ -9,7 +9,7 @@ export function Footer() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <Link href="/" className="flex items-center mb-4">
+              <Link href="/" className="flex items-center mb-2">
                 <Image
                   src="/assets/logo.svg"
                   alt="Logo"
@@ -18,8 +18,8 @@ export function Footer() {
                   className="cursor-pointer"
                 />
               </Link>
-              <p className="text-sm mb-4">Your Trusted Global IT Partner</p>
-              <p className="text-xs font-light italic">Experienced | Enriched | Envisioned</p>
+              <p className="text-sm  ">Your Trusted Global IT Partner</p>
+              <p className="text-xs font-light  ">Experienced | Enriched | Envisioned</p>
               <div className="flex mt-4 space-x-4">
                 <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
                   <Linkedin size={20} />
