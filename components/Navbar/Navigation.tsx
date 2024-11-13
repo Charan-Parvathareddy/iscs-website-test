@@ -435,10 +435,10 @@ const Navigation: React.FC = () => {
           category: "Peoplesoft Solutions",
           items: [
             { 
-              name: "Leveraging Peoplesoft Technology", 
-              description: "Done and dusted", 
-              icon: "/assets/peoplesoft/peoplesoft-icon.png", 
-              href: "/Services/Peoplesoft" 
+              name: "Modernizing Operations", 
+              description: "Improving system performance", 
+              icon: "/assets/Oracle/download.png", 
+              href: "/Services#oracle-peoplesoft" 
             },
           ]
         },
