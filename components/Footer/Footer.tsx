@@ -50,10 +50,10 @@ export function Footer() {
                     PeopleSoft
                   </Link>{" "}
                   |{" "}
-                  <Link href="/Services#salesforce-solutions" className="hover:text-blue-600">
+                  <Link href="/Services#oracle-solutions" className="hover:text-blue-600">
                     Oracle
                   </Link>{" "}
-                  <Link href="/Services#oracle-solutions" className="hover:text-blue-600">
+                  <Link href="/Services#salesforce-solutions" className="hover:text-blue-600">
                     Salesforce
                   </Link>
                 </li>
@@ -100,12 +100,12 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Resources/whitepapers" className="hover:text-blue-600 transition-colors">
+                  <Link href="/Resources/blog" className="hover:text-blue-600 transition-colors">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Resources/docs" className="hover:text-blue-600 transition-colors">
+                  <Link href="/Resources/careers" className="hover:text-blue-600 transition-colors">
                     Careers
                   </Link>
                 </li>
