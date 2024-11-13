@@ -9,6 +9,11 @@ import { useScroll } from '@/contexts/ScrollContext';
 import emailjs from '@emailjs/browser';
 import { toast, Toaster } from "sonner";
 
+// Replace these with your actual IDs
+const EMAILJS_SERVICE_ID = "service_059k85f";
+const EMAILJS_TEMPLATE_ID = "template_wf9oi3u";
+const EMAILJS_PUBLIC_KEY = "t0rP_-Ea-HJvENzgw"; // Optional
+
 export function Contact() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
@@ -32,24 +37,17 @@ export function Contact() {
     setIsLoading(true);
 
     const templateParams = {
-      to_email: "isdsteam@gmail.com", // Replace with the email where you want to receive messages
       from_name: firstName,
       from_email: email,
-      message: `
-        Name: ${firstName}
-        Email: ${email}
-        
-        Message:
-        ${message}
-      `
+      message: message,
     };
 
     try {
       await emailjs.send(
-        'service_059k85f', // Replace with your EmailJS service ID
-        'contact_form',    // This is a default template name
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         templateParams,
-        't0rP_-Ea-HJvENzgw'       // Optional: Add your public key if you have one
+        EMAILJS_PUBLIC_KEY
       );
 
       toast.success("Message sent successfully!", {
