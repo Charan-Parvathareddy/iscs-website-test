@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 import { toast, Toaster } from "sonner";
 
 // Replace these with your actual IDs
-const EMAILJS_SERVICE_ID = "service_059k85f";
+const EMAILJS_SERVICE_ID = "service_s3x37qx";
 const EMAILJS_TEMPLATE_ID = "template_wf9oi3u";
 const EMAILJS_PUBLIC_KEY = "t0rP_-Ea-HJvENzgw"; // Optional
 
