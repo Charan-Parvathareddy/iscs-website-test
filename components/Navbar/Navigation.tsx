@@ -54,7 +54,7 @@ const NavItem: React.FC<NavItemProps> = ({
         <Link href={href} passHref>
           <Button
             variant="ghost"
-            className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+            className="text-foreground hover:text-primary px-3 py-1.5 rounded-md text-sm font-medium"
           >
             {name}
             {dropdown && <ChevronDown className="ml-1 h-4 w-4" aria-hidden="true" />}
@@ -67,7 +67,7 @@ const NavItem: React.FC<NavItemProps> = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="absolute left-0 z-10 mt-2 w-[450px]"
+              className="absolute left-0 z-10 mt-2 w-[405px]"
             >
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="relative bg-background p-4">
@@ -117,7 +117,7 @@ const NavItem: React.FC<NavItemProps> = ({
       <Link href={href} passHref>
         <Button
           variant="ghost"
-          className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+          className="text-foreground hover:text-primary px-3 py-1.5 rounded-md text-sm font-medium"
         >
           {name}
           {dropdown && <ChevronDown className="ml-1 h-4 w-4" aria-hidden="true" />}
@@ -223,8 +223,8 @@ const NavItem: React.FC<NavItemProps> = ({
                     <Image
                       src="/assets/gradcam.jpg"
                       alt="Product feature"
-                      width={200}
-                      height={200}
+                      width={180}
+                      height={180}
                       className="w-full h-auto mb-4"
                     />
                     <h3 className="text-lg font-semibold mb-2">Featured Product</h3>
@@ -263,7 +263,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
         <Button
           variant="ghost"
           onClick={() => toggleDropdown(name)}
-          className="w-full justify-between text-left text-foreground hover:text-primary px-3 py-2 rounded-md text-base font-medium"
+          className="w-full justify-between text-left text-foreground hover:text-primary px-3 py-1.5 rounded-md text-base font-medium"
         >
           {name}
           <ChevronDown
@@ -277,7 +277,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
         <Link href={href} passHref>
           <Button
             variant="ghost"
-            className="w-full justify-start text-left text-foreground hover:text-primary px-3 py-2 rounded-md text-base font-medium"
+            className="w-full justify-start text-left text-foreground hover:text-primary px-3 py-1.5 rounded-md text-base font-medium"
           >
             {name}
           </Button>
@@ -544,16 +544,16 @@ const Navigation: React.FC = () => {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-background"
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transform scale-90">
+        <div className="flex justify-between h-14">
           <div className="flex items-center">
             <Link href="/" passHref>
               <Image
                 src="/assets/logo.svg"
                 alt="ISCS Logo"
-                width={144}
-                height={64}
-                className="h-16 w-36"
+                width={130}
+                height={58}
+                className="h-14 w-32"
               />
             </Link>
           </div>
