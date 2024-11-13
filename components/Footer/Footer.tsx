@@ -29,7 +29,7 @@ export function Footer() {
 
             <div>
               <h3 className="text-lg font-semibold mb-4 text-gray-900">Services</h3>
-              <ul>
+              <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="/Services#ai-ml-solutions" className="hover:text-blue-600">
                     AI/ML | Data Engg & Science
