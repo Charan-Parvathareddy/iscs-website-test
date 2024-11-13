@@ -49,7 +49,7 @@ export function Contact() {
         'service_059k85f', // Replace with your EmailJS service ID
         'contact_form',    // This is a default template name
         templateParams,
-        'public_key'       // Optional: Add your public key if you have one
+        't0rP_-Ea-HJvENzgw'       // Optional: Add your public key if you have one
       );
 
       toast.success("Message sent successfully!", {
