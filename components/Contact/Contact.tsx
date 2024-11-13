@@ -1,5 +1,3 @@
-"use client";
-
 import { Check, MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -8,11 +6,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScroll } from '@/contexts/ScrollContext';
+import emailjs from '@emailjs/browser';
+import { toast, Toaster } from "sonner";
 
 export function Contact() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const refs = useScroll();
 
   useEffect(() => {
@@ -26,14 +27,52 @@ export function Contact() {
     }
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', { firstName, email, message });
-    // Here you would typically send the form data to your backend
+    setIsLoading(true);
+
+    const templateParams = {
+      to_email: "isdsteam@gmail.com", // Replace with the email where you want to receive messages
+      from_name: firstName,
+      from_email: email,
+      message: `
+        Name: ${firstName}
+        Email: ${email}
+        
+        Message:
+        ${message}
+      `
+    };
+
+    try {
+      await emailjs.send(
+        'service_059k85f', // Replace with your EmailJS service ID
+        'contact_form',    // This is a default template name
+        templateParams,
+        'public_key'       // Optional: Add your public key if you have one
+      );
+
+      toast.success("Message sent successfully!", {
+        description: "We'll get back to you soon.",
+      });
+
+      // Clear form
+      setFirstName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error("Failed to send message", {
+        description: "Please try again later.",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
     <section id="contact">
+      <Toaster position="top-right" />
       <div
         className="relative w-full bg-cover bg-center bg-no-repeat py-8 md:py-12"
         style={{
@@ -100,8 +139,14 @@ export function Contact() {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
-                    Send Message <MoveRight className="ml-2 h-4 w-4" />
+                  <Button type="submit" disabled={isLoading} className="w-full">
+                    {isLoading ? (
+                      "Sending..."
+                    ) : (
+                      <>
+                        Send Message <MoveRight className="ml-2 h-4 w-4" />
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>
@@ -112,3 +157,5 @@ export function Contact() {
     </section>
   );
 }
+
+export default Contact;
