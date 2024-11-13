@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
     role: "Techno - Functional Architect",
     company: "ERPA",
     companyLogo: "/assets/Client_Logos/ERPA.png",
-    quote: "We would like to commend and thank you for completing our project requirements of Build & Run Phase within the agreed upon scope and timelines.Your project team and personnel have exhibited professional excellence and cooperative attitude. They are worthy of our appreciation for a timely and satisfactory completion. We hope to be working with your company on future projects."
+    quote: "We would like to commend and thank you for completing our project requirements of Build & Run Phase within the agreed upon scope and timelines. Your project team and personnel have exhibited professional excellence and cooperative attitude. They are worthy of our appreciation for a timely and satisfactory completion. We hope to be working with your company on future projects."
   },
   {
     id: 2,
@@ -59,9 +59,46 @@ const testimonials: Testimonial[] = [
   },
 ]
 
-export function Testimonials() {
+const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
+  <Card className="overflow-hidden shadow-lg border-blue-200 h-full">
+    <CardContent className="p-6 flex flex-col h-full">
+      <div className="flex items-center gap-4 mb-4">
+        <div className="w-20 h-20 shrink-0">
+          <Image
+            src={testimonial.companyLogo}
+            alt={testimonial.company}
+            width={testimonial.company === 'DGLiger Consulting' ? 70 : 80}
+            height={testimonial.company === 'DGLiger Consulting' ? 35 : 40}
+            className="object-contain w-full h-full"
+          />
+        </div>
+        <div className="flex-1">
+          <p className="font-semibold text-lg">{testimonial.name}</p>
+          <p className="text-xs text-gray-600">
+            {testimonial.role} @ {testimonial.company}
+          </p>
+        </div>
+      </div>
+      <blockquote className="text-xs md:text-sm text-blue-800 leading-relaxed flex-grow">
+        &ldquo;{testimonial.quote}&rdquo;
+      </blockquote>
+    </CardContent>
+  </Card>
+)
+
+export  function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [direction, setDirection] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -73,32 +110,26 @@ export function Testimonials() {
 
   const nextTestimonial = () => {
     setDirection(1)
-    setActiveIndex((prev) => (prev + 1) % testimonials.length)
+    setActiveIndex((prev) => (prev + 2) % testimonials.length)
   }
 
   const prevTestimonial = () => {
     setDirection(-1)
-    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    setActiveIndex((prev) => (prev - 2 + testimonials.length) % testimonials.length)
   }
 
   const slideVariants = {
     enter: (direction: number) => ({
       x: direction > 0 ? '100%' : '-100%',
       opacity: 0,
-      scale: 0.8,
-      rotateY: direction > 0 ? -30 : 30
     }),
     center: {
       x: 0,
       opacity: 1,
-      scale: 1,
-      rotateY: 0
     },
     exit: (direction: number) => ({
       x: direction > 0 ? '-100%' : '100%',
       opacity: 0,
-      scale: 0.8,
-      rotateY: direction > 0 ? 30 : -30
     })
   }
 
@@ -114,23 +145,25 @@ export function Testimonials() {
     }}>
       <div className="absolute inset-0" />
       <div className="container relative mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 text-blue-700">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-16 text-blue-700">
           What Our Clients Say About Us
         </h2>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between gap-4">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={prevTestimonial}
-              aria-label="Previous testimonial"
-              className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800 shrink-0"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </Button>
+            {!isMobile && (
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={prevTestimonial}
+                aria-label="Previous testimonial"
+                className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800 shrink-0"
+              >
+                <ChevronLeft className="h-4 w-4 md:h-6 md:w-6" />
+              </Button>
+            )}
 
-            <div className="overflow-hidden">
+            <div className="overflow-hidden flex-1">
               <AnimatePresence initial={false} custom={direction} mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -140,63 +173,44 @@ export function Testimonials() {
                   animate="center"
                   exit="exit"
                   transition={transition}
-                  className="w-full"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-6"
                 >
-                  <Card className="overflow-hidden shadow-lg border-blue-200">
-                    <CardContent className="p-6 flex flex-col">
-                      <div className="flex flex-col items-start justify-between mb-4 gap-4">
-                        <div className="w-full h-24 rounded-lg flex items-center justify-center">
-                          <Image
-                            src={testimonials[activeIndex].companyLogo}
-                            alt={testimonials[activeIndex].company}
-                            width={testimonials[activeIndex].company === 'DGLiger Consulting' ? 70 : 200}
-                            height={testimonials[activeIndex].company === 'DGLiger Consulting' ? 35 : 100}
-                            className="object-contain"
-                          />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-lg">
-                            {testimonials[activeIndex].name}
-                          </p>
-                          <p className="text-xs">
-                            {testimonials[activeIndex].role} @ {testimonials[activeIndex].company}
-                          </p>
-                        </div>
-                      </div>
-                      
-                      <blockquote className="text-xs md:text-sm text-blue-800 leading-relaxed flex-grow">
-                        &ldquo;{testimonials[activeIndex].quote}&rdquo;
-                      </blockquote>
-                    </CardContent>
-                  </Card>
+                  <TestimonialCard testimonial={testimonials[activeIndex]} />
+                  {!isMobile && activeIndex + 1 < testimonials.length && (
+                    <TestimonialCard testimonial={testimonials[activeIndex + 1]} />
+                  )}
                 </motion.div>
               </AnimatePresence>
             </div>
 
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={nextTestimonial}
-              aria-label="Next testimonial"
-              className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800 shrink-0"
-            >
-              <ChevronRight className="h-6 w-6" />
-            </Button>
+            {!isMobile && (
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={nextTestimonial}
+                aria-label="Next testimonial"
+                className="border-blue-300 text-blue-700 hover:bg-blue-100 hover:text-blue-800 shrink-0"
+              >
+                <ChevronRight className="h-4 w-4 md:h-6 md:w-6" />
+              </Button>
+            )}
           </div>
 
-          <div className="mt-8 flex justify-center gap-3">
-            {testimonials.map((testimonial, index) => (
+          <div className="mt-4 md:mt-8 flex justify-center gap-2 md:gap-3">
+            {Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, index) => (
               <Button
-                key={testimonial.id}
+                key={index}
                 variant="ghost"
                 size="icon"
                 onClick={() => {
-                  setDirection(index > activeIndex ? 1 : -1)
-                  setActiveIndex(index)
+                  setDirection(index * 2 > activeIndex ? 1 : -1)
+                  setActiveIndex(index * 2)
                 }}
-                aria-label={`View testimonial from ${testimonial.name}`}
-                className={`w-3 h-3 p-0 rounded-full transition-all duration-300 ${
-                  index === activeIndex ? 'bg-blue-600 scale-125' : 'bg-blue-200'
+                aria-label={`View testimonial ${index * 2 + 1}`}
+                className={`w-2 h-2 md:w-3 md:h-3 p-0 rounded-full transition-all duration-300 ${
+                  index * 2 === activeIndex
+                    ? 'bg-blue-600 scale-125' 
+                    : 'bg-blue-200'
                 }`}
               />
             ))}

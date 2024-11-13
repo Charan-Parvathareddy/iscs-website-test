@@ -15,11 +15,11 @@ export function Industries() {
       description: "We offer solutions that enhance collaboration, streamline communication, and improve operational efficiency, ensuring your organization stays connected.",
       image: "/assets/Industries/Communication-Industry.jpg"
     },
-    {
-      title: "High-Tech & Semiconductor",
-      description: "We provide cutting-edge technology consulting, process optimization, and supply chain management services.",
-      image: "/assets/Industries/motherboard-background.jpg"
-    },
+    // {
+    //   title: "High-Tech & Semiconductor",
+    //   description: "We provide cutting-edge technology consulting, process optimization, and supply chain management services.",
+    //   image: "/assets/Industries/motherboard-background.jpg"
+    // },
     {
       title: "Information Services",
       description: "We specialize in data management, analytics, and IT consulting, delivering insights that drive informed decision-making and enhance operational efficiency for your organization.",
@@ -30,11 +30,11 @@ export function Industries() {
       description: "We focus on enhancing customer experiences, optimizing supply chains, and leveraging data analytics to drive sales and improve operational efficiency in a competitive market.",
       image: "/assets/Industries/Retail-Industry.jpg"
     },
-    {
-      title: "Trading & Distribution",
-      description: "We specialize in optimizing supply chains, enhancing inventory management, and improving logistics to ensure efficient product flow and maximize profitability in your business.",
-      image: "/assets/Industries/Distribution.jpg"
-    }
+    // {
+    //   title: "Trading & Distribution",
+    //   description: "We specialize in optimizing supply chains, enhancing inventory management, and improving logistics to ensure efficient product flow and maximize profitability in your business.",
+    //   image: "/assets/Industries/Distribution.jpg"
+    // }
   ];
 
   return (
