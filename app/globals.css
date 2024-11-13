@@ -14,9 +14,9 @@ body {
   background: var(--color-bg-primary);
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 @layer utilities {
   .text-balance {
@@ -250,15 +250,15 @@ body::-webkit-scrollbar {
     @apply bg-background text-foreground;
   }
 }
-
+/* 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
-}
+  display: none;  
+} */
 
 @media (max-width: 768px) {
 	:root {
