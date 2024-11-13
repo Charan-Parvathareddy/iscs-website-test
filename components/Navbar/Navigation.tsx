@@ -437,7 +437,7 @@ const Navigation: React.FC = () => {
             { 
               name: "Modernizing Operations", 
               description: "Improving system performance", 
-              icon: "/assets/Oracle/download.png", 
+              icon: "/assets/Oracle/oracle-peoplesoft-min.png", 
               href: "/Services#oracle-peoplesoft" 
             },
           ]
