@@ -124,7 +124,8 @@ export function Footer() {
                 <h4 className="font-semibold text-blue-400">Corporate Office - India</h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>Level 4, Gumidelli Towers, Old Airport Rd, Begumpet, Hyderabad, TS- 500016</p>
+                  <p>Level 4, Gumidelli Towers, Old Airport Rd,
+                    <br/> Begumpet, Hyderabad, TS- 500016</p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
@@ -135,7 +136,8 @@ export function Footer() {
                 <h4 className="font-semibold text-blue-400">Global Office - USA</h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>2055 Limestone Road, STE 200-C, Wilmington, Delaware, 19702</p>
+                  <p>2055 Limestone Road, STE 200-C,
+                    <br/> Wilmington, Delaware, 19702</p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
@@ -146,7 +148,8 @@ export function Footer() {
                 <h4 className="font-semibold text-blue-400">Global Office - Australia</h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>10 Keilor Road, Essendon North, Victoria 3041</p>
+                  <p>10 Keilor Road, Essendon North,
+                    <br/> Victoria 3041</p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
