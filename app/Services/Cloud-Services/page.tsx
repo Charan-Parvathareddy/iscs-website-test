@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect } from 'react';
 
 import Img1 from "@/public/assets/cloud-service-models-2.webp";
-import Img2 from "@/public/assets/cloud-service-models-2.webp";
+import Img2 from "@/public/assets/Cloud-Services/cloud-migration.jpg";
 
 
 
