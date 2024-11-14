@@ -63,17 +63,17 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <Card className="overflow-hidden shadow-lg border-blue-200 h-full">
     <CardContent className="p-6 flex flex-col h-full">
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-20 h-20 shrink-0">
+        <div className="w-28 h-28 shrink-0"> {/* Increased size */}
           <Image
             src={testimonial.companyLogo}
             alt={testimonial.company}
-            width={testimonial.company === 'DGLiger Consulting' ? 70 : 80}
-            height={testimonial.company === 'DGLiger Consulting' ? 35 : 40}
+            width={testimonial.company === 'DGLiger Consulting' ? 90 : 100} // Increased width
+            height={testimonial.company === 'DGLiger Consulting' ? 45 : 50} // Increased height
             className="object-contain w-full h-full"
           />
         </div>
         <div className="flex-1">
-          <p className="font-semibold text-xs">{testimonial.name}</p>
+          <p className="font-semibold text-sm">{testimonial.name}</p>
           <p className="text-xxs text-gray-600">
             {testimonial.role} @ {testimonial.company}
           </p>
@@ -85,6 +85,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
     </CardContent>
   </Card>
 )
+
 
 export  function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0)
