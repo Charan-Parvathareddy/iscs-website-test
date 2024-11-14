@@ -5,9 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X, MoveRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useRouter, usePathname } from 'next/navigation'
-
 import Image from 'next/image'
-
 
 interface SubItem {
   name: string
@@ -27,18 +25,18 @@ interface NavItemProps {
   dropdown?: Category[]
   hasFeatureCard?: boolean
   hasTwoColumns?: boolean
+  hasThreeColumns?: boolean
   description?: string
   isResourceItem?: boolean
 }
-
-
 
 const NavItem: React.FC<NavItemProps> = ({ 
   name, 
   href, 
   dropdown, 
   hasFeatureCard, 
-  hasTwoColumns, 
+  hasTwoColumns,
+  hasThreeColumns, 
   description,
   isResourceItem 
 }) => {
@@ -170,8 +168,58 @@ const NavItem: React.FC<NavItemProps> = ({
             </div>
           </motion.div>
         )}
-        {dropdown && isOpen && name !== "Industries" && (
-          // Original dropdown rendering for non-Industries items
+{dropdown && isOpen && name === "Services" && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-4xl"
+          >
+            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div className="relative bg-background px-5 py-6">
+                <div className="grid grid-cols-3 gap-x-8 gap-y-4">
+                  {dropdown.map((category, index) => (
+                    <div key={category.category || index} className="space-y-4">
+                      {category.category && (
+                        <h3 className="text-sm font-semibold text-foreground">
+                          {category.category}
+                        </h3>
+                      )}
+                      <ul className="space-y-4">
+                        {category.items.map((item) => (
+                          <li key={item.name}>
+                            <Link href={item.href} passHref>
+                              <Button
+                                variant="ghost"
+                                className="w-full justify-start text-sm text-muted-foreground hover:text-primary"
+                              >
+                                <Image
+                                  src={item.icon}
+                                  alt={`${item.name} icon`}
+                                  width={24}
+                                  height={24}
+                                  className="h-6 w-6 mr-3 flex-shrink-0"
+                                />
+                                <div className="flex-grow text-left">
+                                  <div className="font-medium">{item.name}</div>
+                                  {item.description && (
+                                    <p className="text-xs line-clamp-2">{item.description}</p>
+                                  )}
+                                </div>
+                              </Button>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+        {dropdown && isOpen && name !== "Industries" && name !== "Services" && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -338,32 +386,6 @@ const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
- 
-  const handleContactClick = () => {
-    // If we're already on the home page
-    if (pathname === '/') {
-      const contactSection = document.getElementById('contact')
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' })
-      }
-    } else {
-      // If we're on a different page, navigate to home with hash
-      router.push('/#contact')
-    }
-  }
-
-  // Add an effect to handle the hash when landing on the home page
-  useEffect(() => {
-    if (pathname === '/' && window.location.hash === '#contact') {
-      // Small delay to ensure the section is rendered
-      setTimeout(() => {
-        const contactSection = document.getElementById('contact')
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth' })
-        }
-      }, 100)
-    }
-  }, [pathname])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -372,6 +394,28 @@ const Navigation: React.FC = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const handleContactClick = () => {
+    if (pathname === '/') {
+      const contactSection = document.getElementById('contact')
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      router.push('/#contact')
+    }
+  }
+
+  useEffect(() => {
+    if (pathname === '/' && window.location.hash === '#contact') {
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact')
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
+  }, [pathname])
 
   const toggleDropdown = (name: string) => {
     setActiveDropdown(activeDropdown === name ? null : name)
@@ -407,7 +451,7 @@ const Navigation: React.FC = () => {
           category: "Cloud Services",
           items: [
             { name: "Scalable Cloud Solutions", description: "Intelligent Business Insights", icon: "/assets/Cloud-Services/internet-cloud-computing.png", href: "/Services/Cloud-Services#cloud-solutions" },
-            { name: "Cloud Migration Services", description: "Cloud Migration and Modernization ", icon: "/assets/Cloud-Services/cloud-migration.png", href: "/Services/Cloud-Services#cloud-migration" },
+            { name: "Cloud Migration Services", description: "Migration and Modernization ", icon: "/assets/Cloud-Services/cloud-migration.png", href: "/Services/Cloud-Services#cloud-migration" },
            
           ],
         },
@@ -544,7 +588,7 @@ const Navigation: React.FC = () => {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-background"
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transform scale-90">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transform ">
         <div className="flex justify-between h-14">
           <div className="flex items-center">
             <Link href="/" passHref>

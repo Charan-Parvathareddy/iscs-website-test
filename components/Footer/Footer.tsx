@@ -53,6 +53,7 @@ export function Footer() {
                   <Link href="/Services#oracle-solutions" className="hover:text-blue-600">
                     Oracle
                   </Link>{" "}
+                  |{" "}
                   <Link href="/Services#salesforce-solutions" className="hover:text-blue-600">
                     Salesforce
                   </Link>
