@@ -18,8 +18,8 @@ export function Footer() {
                   className="cursor-pointer"
                 />
               </Link>
-              <p className="text-sm  ">Your Trusted Global IT Partner</p>
-              <p className="text-xs font-light  ">Experienced | Enriched | Envisioned</p>
+              <p className="text-base font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
+              <p className="text-sm font-light  ">Experienced | Enriched | Envisioned</p>
               <div className="flex mt-4 space-x-4">
                 <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
                   <Linkedin size={20} />
