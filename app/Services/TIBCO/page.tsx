@@ -1,5 +1,5 @@
 "use client";
-import Img1 from "@/public/assets/tibco/pngwing.png";
+import Img1 from "@/public/assets/tibco/tibco.jpg";
 import Img2 from "@/public/assets/tibco/training-tiibco.jpg"
 import Img3 from "@/public/assets/tibco/tibco-consulting.jpg";
 

@@ -406,8 +406,8 @@ const Navigation: React.FC = () => {
         {
           category: "Cloud Services",
           items: [
-            { name: "Scalable Cloud Solutions", description: "Intelligent Business Insights", icon: "/assets/Cloud-Services/internet-cloud-computing.png", href: "/Services/Oracle#oracle-fusion-cloud" },
-            { name: "Cloud Migration Services", description: "Cloud Migration and Modernization ", icon: "/assets/Cloud-Services/cloud-migration.png", href: "/Services/Oracle#oracle-fusion-cloud" },
+            { name: "Scalable Cloud Solutions", description: "Intelligent Business Insights", icon: "/assets/Cloud-Services/internet-cloud-computing.png", href: "/Services/Cloud-Services#cloud-solutions" },
+            { name: "Cloud Migration Services", description: "Cloud Migration and Modernization ", icon: "/assets/Cloud-Services/cloud-migration.png", href: "/Services/Cloud-Services#cloud-solutions" },
            
           ],
         },
