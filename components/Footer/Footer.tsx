@@ -163,6 +163,8 @@ export function Footer() {
                 <div className="flex items-center justify-center md:justify-start">
                   <Mail size={16} className="mr-2 flex-shrink-0" />
                   <a href="mailto:info@iscstech.com" className="hover:text-blue-400 transition-colors">info@iscstech.com</a>
+                 
+                
                 </div>
               </div>
             </div>
