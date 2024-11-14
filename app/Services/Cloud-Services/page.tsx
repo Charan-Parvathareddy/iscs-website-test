@@ -27,12 +27,15 @@ const Banner1Data1 = {
 
 const Banner1Data2 = {
   image: Img2,
-  tag: "TIBCO Consulting",
-  title: "Expert TIBCO Consulting",
+  tag: "Cloud Migration and Modernization",
+  title: "Elevating IT Infrastructure with ISCS",
   subtitle: [
-    "ISCS’s TIBCO consulting services offer expert guidance at every stage of the integration journey, from strategic planning to implementation. Our TIBCO-certified consultants tailor solutions to align with each client’s unique business goals, modernizing systems, streamlining operations, and driving data-driven insights.",
-    "We conduct in-depth assessments to inform a customized integration roadmap that addresses both immediate challenges and long-term objectives. Our consultants’ expertise in API management, data integration, and predictive analytics ensures holistic solutions that enhance connectivity and operational efficiency.",
-    "ISCS’s consulting approach includes ongoing optimization and support, allowing clients to adapt to evolving demands and advancements. By partnering with ISCS, businesses unlock the full potential of their data, establishing a digital infrastructure that drives measurable outcomes and sustainable growth."
+    "At ISCS, we offer comprehensive cloud migration and modernization services designed to help businesses unlock the power of the cloud. Our approach is tailored to each client’s unique needs, guiding organizations through every stage of the migration journey, from assessment and strategy development to deployment and ongoing optimization.",
+    "By transitioning legacy systems to the cloud, ISCS enables businesses to reduce operational costs, improve system reliability, and enhance security.",
+    "We leverage cloud-native architectures and tools that maximize scalability, allowing infrastructure to grow with the business while adapting seamlessly to changing market conditions.",
+    "Our modernization efforts go beyond simple migration; we help clients transform their IT landscape with automated workflows, advanced analytics capabilities, and enhanced disaster recovery to ensure resilience and business continuity.",
+    "With ISCS’s expertise in cloud environments, including multi-cloud and hybrid solutions, organizations benefit from a flexible, future-proof infrastructure that supports continuous innovation, operational efficiency, and sustained growth.",
+    "Partner with ISCS to establish a robust digital foundation that drives long-term success in an increasingly digital world."
   ],
   link: "#",
 };
@@ -66,7 +69,7 @@ export default function Home() {
         <Banner1 {...Banner1Data1} reverse={true} />
       </div>
 
-      <div id="tibco-consulting" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
+      <div id="cloud-migration" className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "url('/background-1.png')"
       }}>
         <Banner1 {...Banner1Data2}  />
