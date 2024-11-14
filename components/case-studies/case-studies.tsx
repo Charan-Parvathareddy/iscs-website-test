@@ -64,7 +64,6 @@ const caseStudies: CaseStudy[] = [
 ]
 
 const categories = Array.from(new Set(caseStudies.map(study => study.category)))
-
 const CaseStudyModal = ({ study, isOpen, onClose }: { study: CaseStudy, isOpen: boolean, onClose: () => void }) => {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -101,7 +100,7 @@ const CaseStudyModal = ({ study, isOpen, onClose }: { study: CaseStudy, isOpen: 
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             ref={containerRef}
-            className="max-w-4xl mx-auto bg-white dark:bg-neutral-900 h-[600px] z-[60] my-10 p-4 md:p-10 rounded-3xl relative"
+            className="max-w-4xl mx-auto bg-white dark:bg-neutral-900 h-[80%] z-[60] my-10 p-4 md:p-10 rounded-3xl relative overflow-y-auto"
           >
             <button
               className="absolute top-4 right-4 h-8 w-8 bg-black dark:bg-white rounded-full flex items-center justify-center"
