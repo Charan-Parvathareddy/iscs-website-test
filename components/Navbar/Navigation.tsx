@@ -35,8 +35,7 @@ const NavItem: React.FC<NavItemProps> = ({
   href, 
   dropdown, 
   hasFeatureCard, 
-  hasTwoColumns,
-  hasThreeColumns, 
+  hasTwoColumns, 
   description,
   isResourceItem 
 }) => {
