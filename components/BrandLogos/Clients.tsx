@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 const CLIENT_LOGOS = [
   { src: '/assets/Client_Logos/Oracle.jpg', alt: 'Oracle' },
@@ -18,9 +18,7 @@ const CLIENT_LOGOS = [
   { src: '/assets/Client_Logos/ERPA.png', alt: 'ERPA' },
   { src: '/assets/Client_Logos/RAMSSOLGROUP.png', alt: 'RAMSSOLGROUP' },
   { src: '/assets/Client_Logos/dgliger.png', alt: 'DGLIGER' }
-  
-]
-
+];
 
 export default function HorizontalScroller2() {
   return (
@@ -31,12 +29,12 @@ export default function HorizontalScroller2() {
           key={i}
         >
           {CLIENT_LOGOS.map((logo, index) => (
-            <div className="w-24 h-24 flex items-center justify-center" key={index}>
+            <div className="w-32 h-32 flex items-center justify-center" key={index}>
               <Image 
                 src={logo.src} 
                 alt={logo.alt}
-                width={80}
-                height={80}
+                width={100} // Adjusted width
+                height={100} // Adjusted height
                 className="object-contain"
               />
             </div>
@@ -44,5 +42,5 @@ export default function HorizontalScroller2() {
         </div>
       ))}
     </div>
-  )
+  );
 }
