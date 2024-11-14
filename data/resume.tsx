@@ -4,7 +4,7 @@ export const DATA = {
 
   projects: [
     {
-      title: "Diabetic Retinopathy Detection G-Nayana",
+      title: "G-Nayana - Healthcare.AI",
       href: "https://ai-ra.vercel.app/",
       dates: "Feb 2024 - Present",
       active: true,
@@ -31,7 +31,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Integrated HRMS",
+      title: "i-HRMS.AI",
       href: "https://magicui.design",
       dates: "June 2023 - Present",
       active: true,
@@ -60,7 +60,7 @@ export const DATA = {
       video: "https://pub-ccb175376fc94e64b1b2376fadf6c341.r2.dev/analytics-dashboard.mp4",
     },
     {
-      title: "E-Learning Platform",
+      title: " LMS.AI",
       href: "https://llm.report",
       dates: "April 2023 - September 2023",
       active: true,
@@ -90,7 +90,7 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Mi-Ware",
+      title: "Mi-Ware - Integrations",
       href: "https://automatic.chat",
       dates: "April 2023 - Present",
       active: true,

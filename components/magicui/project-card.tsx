@@ -1,30 +1,30 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge"
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
-import Markdown from "react-markdown";
+} from "@/components/ui/card"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
+import Markdown from "react-markdown"
 
 interface Props {
-  title: string;
-  href?: string;
-  description: string;
-  dates: string;
-  tags: readonly string[];
-  image?: string;
-  video?: string;
+  title: string
+  href?: string
+  description: string
+  dates: string
+  tags: readonly string[]
+  image?: string
+  video?: string
   links?: readonly {
-    icon: React.ReactNode;
-    type: string;
-    href: string;
-  }[];
-  className?: string;
+    icon: React.ReactNode
+    type: string
+    href: string
+  }[]
+  className?: string
 }
 
 export function ProjectCard({
@@ -38,7 +38,7 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
-  const isDiabeticRetinopathy = title === "Diabetic Retinopathy Detection G-Nayana";
+  const isDiabeticRetinopathy = title === "Diabetic Retinopathy Detection G-Nayana"
 
   return (
     <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
@@ -70,7 +70,11 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2 py-3">
         <div className="space-y-1">
-          <CardTitle className="text-sm font-semibold">{title}</CardTitle>
+          <CardTitle className="text-sm font-semibold group">
+            <span className="transition-colors duration-200 ease-in-out group-hover:text-blue-500">
+              {title}
+            </span>
+          </CardTitle>
           <time className="text-xs text-muted-foreground">{dates}</time>
           <Markdown className="prose max-w-full text-xs text-muted-foreground dark:prose-invert line-clamp-2">
             {description}
@@ -110,5 +114,5 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
-  );
+  )
 }

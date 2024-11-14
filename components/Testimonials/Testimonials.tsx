@@ -73,13 +73,13 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
           />
         </div>
         <div className="flex-1">
-          <p className="font-semibold text-lg">{testimonial.name}</p>
-          <p className="text-xs text-gray-600">
+          <p className="font-semibold text-xs">{testimonial.name}</p>
+          <p className="text-xxs text-gray-600">
             {testimonial.role} @ {testimonial.company}
           </p>
         </div>
       </div>
-      <blockquote className="text-xs md:text-sm text-blue-800 leading-relaxed flex-grow">
+      <blockquote className="text-xxs md:text-xs text-blue-800 leading-relaxed flex-grow">
         &ldquo;{testimonial.quote}&rdquo;
       </blockquote>
     </CardContent>
