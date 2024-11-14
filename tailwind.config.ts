@@ -162,7 +162,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors], // Retain other plugins
+  plugins: [require("tailwindcss-animate"), addVariablesForColors,  require('@tailwindcss/typography')], // Retain other plugins
 };
 
 export default config;
