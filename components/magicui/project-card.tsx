@@ -1,30 +1,30 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
-import Link from "next/link"
-import Markdown from "react-markdown"
+} from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import Markdown from "react-markdown";
 
 interface Props {
-  title: string
-  href?: string
-  description: string
-  dates: string
-  tags: readonly string[]
-  image?: string
-  video?: string
+  title: string;
+  href?: string;
+  description: string;
+  dates: string;
+  tags: readonly string[];
+  image?: string;
+  video?: string;
   links?: readonly {
-    icon: React.ReactNode
-    type: string
-    href: string
-  }[]
-  className?: string
+    icon: React.ReactNode;
+    type: string;
+    href: string;
+  }[];
+  className?: string;
 }
 
 export function ProjectCard({
@@ -38,14 +38,14 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
-  const isDiabeticRetinopathy = title === "Diabetic Retinopathy Detection G-Nayana"
+  const isG_Nayana = title === "G-Nayana - Healthcare.AI";
 
   return (
     <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
       <Link
-        href={isDiabeticRetinopathy ? (href || "#") : "#"}
+        href={isG_Nayana ? (href || "#") : "#"}
         className={cn("block", className, {
-          "pointer-events-none": !isDiabeticRetinopathy,
+          "pointer-events-none": !isG_Nayana,
         })}
       >
         {video && (
@@ -97,11 +97,11 @@ export function ProjectCard({
           <div className="flex flex-wrap gap-1">
             {links?.map((link, idx) => (
               <Link
-                href={isDiabeticRetinopathy ? link?.href : "#"}
+                href={isG_Nayana ? link?.href : "#"}
                 key={idx}
                 target="_blank"
                 className={cn("flex items-center gap-1 px-1.5 py-0.5 text-[10px]", {
-                  "opacity-50 pointer-events-none": !isDiabeticRetinopathy,
+                  "opacity-50 pointer-events-none": !isG_Nayana,
                 })}
               >
                 <Badge className="flex items-center gap-1">
@@ -114,5 +114,5 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
-  )
+  );
 }
