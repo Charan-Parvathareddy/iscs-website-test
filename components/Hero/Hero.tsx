@@ -30,7 +30,7 @@ const cardContent = [
   {
     title: "Cost-effective Enterprise Integrations",
     description: "Seamlessly connect your business systems and processes with our affordable integration solutions, driving efficiency and innovation while reducing operational costs.",
-    image: "/assets/ISCS/integrations_11zon.jpg"
+    image: "/assets/ISCS/1726610551773.png"
   },
   {
     title: "Cloud Service Excellence",
@@ -40,7 +40,7 @@ const cardContent = [
   {
     title: "Strategic Technology Consulting",
     description: "Transform your business vision into reality with our comprehensive consulting services, backed by global expertise and local insights across continents.",
-    image: "/assets/ISCS/consulting-services-examples.jpg",
+    image: "/assets/ISCS/integrations_11zon.jpg",
   },
 
 ];
