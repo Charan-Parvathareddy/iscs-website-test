@@ -30,7 +30,7 @@ const cardContent = [
   {
     title: "Cost-effective Enterprise Integrations",
     description: "Seamlessly connect your business systems and processes with our affordable integration solutions, driving efficiency and innovation while reducing operational costs.",
-    image: "/hero.webp"
+    image: "/assets/ISCS/integrations_11zon.jpg"
   },
   {
     title: "Cloud Service Excellence",

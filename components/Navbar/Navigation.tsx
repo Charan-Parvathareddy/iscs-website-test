@@ -588,15 +588,15 @@ const Navigation: React.FC = () => {
       isScrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-background"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transform ">
-        <div className="flex justify-between h-14">
+        <div className="flex justify-between h-[70px]">
           <div className="flex items-center">
             <Link href="/" passHref>
-            <Image
+           <Image
   src="/assets/logo.svg"
   alt="ISCS Logo"
-  width={200}
-  height={84}
-  className="h-[82px] w-40"
+  width={200}  // Increased from 200
+  height={85} // Increased from 84
+  className="h-[102px] w-50" // Changed from h-[82px] w-40
 />
             </Link>
           </div>
