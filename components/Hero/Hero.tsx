@@ -20,18 +20,29 @@ const cardContent = [
   {
     title: "Next-Generation Enterprise Solutions",
     description: "Harness the power of AI/ML, Cloud Computing, and Enterprise Integration to transform your business operations. Our certified experts deliver scalable, secure, and innovative solutions.",
-    image: "/assets/ISCS/Innovation.jpg",
+    image: "/assets/ISCS/Strategic.jpg",
   },
   {
     title: "AI-Powered Industry Solutions",
     description: "Purpose-built products designed for specific industry challenges, combining cutting-edge technology with domain expertise in Healthcare, HR, and Learning Management.",
-    image: "/assets/ISCS/Strategic.jpg",
+    image: "/assets/ISCS/generative-ai-image.png",
+  },
+  {
+    title: "Cost-effective Enterprise Integrations",
+    description: "Seamlessly connect your business systems and processes with our affordable integration solutions, driving efficiency and innovation while reducing operational costs.",
+    image: "/hero.webp"
+  },
+  {
+    title: "Cloud Service Excellence",
+    description: "Elevate your IT infrastructure with scalable, secure, and reliable cloud solutions tailored to meet the unique needs of your enterprise.",
+    image: "/assets/ISCS/cloud-computing.png"
   },
   {
     title: "Strategic Technology Consulting",
     description: "Transform your business vision into reality with our comprehensive consulting services, backed by global expertise and local insights across continents.",
-    image: "/hero.webp",
+    image: "/assets/ISCS/consulting-services-examples.jpg",
   },
+
 ];
 
 const colors = {
@@ -131,7 +142,7 @@ const Hero = () => {
                   src={card.image}
                   alt={`${card.title} illustration`}
                   fill
-                  className="object-cover grayscale filter"
+                  className="object-cover "
                 />
               </div>
             </WobbleCard>
