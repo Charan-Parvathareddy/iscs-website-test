@@ -55,20 +55,20 @@ const testimonials: Testimonial[] = [
     role: "Solution Architect - Salesforce",
     company: "ANSYS",
     companyLogo: "/assets/Client_Logos/ANSYS.jpg",
-    quote: "An American multinational co. It develops and markets CAE/Multiphysics engineering simulation software related to product design, testing and operation offering its products and services to customers worldwide. ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to support the implementation of an internal CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavours."
+    quote: "ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to support the implementation of an internal CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavours."
   },
 ]
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <Card className="overflow-hidden shadow-lg border-blue-200 h-full">
-    <CardContent className="p-6 flex flex-col h-full">
+ <CardContent className="p-2 flex flex-col h-full"> {/* Reduced padding from p-6 to p-4 */}
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-28 h-28 shrink-0"> {/* Increased size */}
+        <div className="w-28 h-28 shrink-0"> {/* Reduced size from w-28 h-28 to w-24 h-24 */}
           <Image
             src={testimonial.companyLogo}
             alt={testimonial.company}
-            width={testimonial.company === 'DGLiger Consulting' ? 90 : 100} // Increased width
-            height={testimonial.company === 'DGLiger Consulting' ? 45 : 50} // Increased height
+            width={testimonial.company === 'DGLiger Consulting' ? 35 : 100} // Reduced width for DGLiger by 50%
+            height={testimonial.company === 'DGLiger Consulting' ? 17.5 : 50} // Reduced height for DGLiger by 50%
             className="object-contain w-full h-full"
           />
         </div>

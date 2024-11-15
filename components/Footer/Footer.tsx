@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -18,49 +18,82 @@ export function Footer() {
                   className="cursor-pointer"
                 />
               </Link>
-              <p className="text-base font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
+              <p className="text-base font-semibold text-blue-600">
+                Your Trusted Global IT Partner
+              </p>
               <p className="text-xxs font-semibold pl-[12px]">
-  <span style={{ color: "#009846" }}>Experienced</span> |{" "}
-  <span style={{ color: "#009846" }}>Enriched</span> |{" "}
-  <span style={{ color: "#009846" }}>Envisioned</span>
-</p>
-
+                <span style={{ color: "#009846" }}>Experienced</span> |{" "}
+                <span style={{ color: "#009846" }}>Enriched</span> |{" "}
+                <span style={{ color: "#009846" }}>Envisioned</span>
+              </p>
 
               <div className="flex mt-4 space-x-4">
-                <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
-                  <Linkedin size={20} />
+                <a
+                  href="https://www.linkedin.com/company/iscs-technologies"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Image
+                    src="/assets/linkedin.png"
+                    alt="LinkedIn"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                  />
                 </a>
               </div>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">Services</h3>
+              <h3 className="text-lg font-semibold mb-4 text-gray-900">
+                Services
+              </h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/Services#ai-ml-solutions" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#ai-ml-solutions"
+                    className="hover:text-blue-600"
+                  >
                     AI/ML | Data Engg & Science
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Services#cloud-services" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#cloud-services"
+                    className="hover:text-blue-600"
+                  >
                     Cloud Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Services#tibco-services" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#tibco-services"
+                    className="hover:text-blue-600"
+                  >
                     TIBCO | API Integrations
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Services#oracle-peoplesoft" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#oracle-peoplesoft"
+                    className="hover:text-blue-600"
+                  >
                     PeopleSoft
                   </Link>{" "}
                   |{" "}
-                  <Link href="/Services#oracle-solutions" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#oracle-solutions"
+                    className="hover:text-blue-600"
+                  >
                     Oracle
                   </Link>{" "}
                   |{" "}
-                  <Link href="/Services#salesforce-solutions" className="hover:text-blue-600">
+                  <Link
+                    href="/Services#salesforce-solutions"
+                    className="hover:text-blue-600"
+                  >
                     Salesforce
                   </Link>
                 </li>
@@ -68,25 +101,39 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">Products</h3>
+              <h3 className="text-lg font-semibold mb-4 text-gray-900">
+                Products
+              </h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="https://ai-ra.vercel.app/" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="https://ai-ra.vercel.app/"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     G-Nayana - Healthcare.AI
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Products#mi-ware" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Products#mi-ware"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     Mi-Ware - Integrations
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Products#i-hrms" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Products#i-hrms"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     i-HRMS.AI
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Products/#ogcom-elp" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Products/#ogcom-elp"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     LMS.AI
                   </Link>
                 </li>
@@ -94,25 +141,39 @@ export function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">Resources</h3>
+              <h3 className="text-lg font-semibold mb-4 text-gray-900">
+                Resources
+              </h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/About" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/About"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Resources/case-studies" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Resources/case-studies"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     Case Studies
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Resources/blog" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Resources/blog"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Resources/careers" className="hover:text-blue-600 transition-colors">
+                  <Link
+                    href="/Resources/careers"
+                    className="hover:text-blue-600 transition-colors"
+                  >
                     Careers
                   </Link>
                 </li>
@@ -125,14 +186,20 @@ export function Footer() {
       <div className="bg-gray-900 text-gray-300">
         <div className="container mx-auto px-4">
           <div className="pt-8 text-sm">
-            <h3 className="text-lg font-semibold mb-6 text-white">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-6 text-white">
+              Contact Us
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="space-y-4">
-                <h4 className="font-semibold text-blue-400">Corporate Office - India</h4>
+                <h4 className="font-semibold text-blue-400">
+                  Corporate Office - India
+                </h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>Level 4, Gumidelli Towers, Old Airport Rd,
-                    <br/> Begumpet, Hyderabad, TS- 500016</p>
+                  <p>
+                    Level 4, Gumidelli Towers, Old Airport Rd,
+                    <br /> Begumpet, Hyderabad, TS- 500016
+                  </p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
@@ -140,11 +207,15 @@ export function Footer() {
                 </div>
               </div>
               <div className="space-y-4">
-                <h4 className="font-semibold text-blue-400">Global Office - USA</h4>
+                <h4 className="font-semibold text-blue-400">
+                  Global Office - USA
+                </h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>26603 Bentgreen Chase Ct,
-                    <br/> Katy, Texas, 77494</p>
+                  <p>
+                    26603 Bentgreen Chase Ct,
+                    <br /> Katy, Texas, 77494
+                  </p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
@@ -152,11 +223,15 @@ export function Footer() {
                 </div>
               </div>
               <div className="space-y-4">
-                <h4 className="font-semibold text-blue-400">Global Office - Australia</h4>
+                <h4 className="font-semibold text-blue-400">
+                  Global Office - Australia
+                </h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>10 Keilor Road, Essendon North,
-                    <br/> Victoria 3041</p>
+                  <p>
+                    10 Keilor Road, Essendon North,
+                    <br /> Victoria 3041
+                  </p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />
@@ -168,16 +243,22 @@ export function Footer() {
               <div className="w-full md:w-auto mb-4 md:mb-0">
                 <div className="flex items-center justify-center md:justify-start">
                   <Mail size={16} className="mr-2 flex-shrink-0" />
-                  <a href="mailto:info@iscstech.com" className="hover:text-blue-400 transition-colors">info@iscstech.com</a>
-                 
-                
+                  <a
+                    href="mailto:info@iscstech.com"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    info@iscstech.com
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="text-center py-8 text-xs">
-            <p>&copy; {new Date().getFullYear()} ISCS Technologies. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} ISCS Technologies. All rights
+              reserved.
+            </p>
           </div>
         </div>
       </div>
