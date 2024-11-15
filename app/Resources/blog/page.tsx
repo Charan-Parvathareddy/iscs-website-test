@@ -8,9 +8,22 @@ import { AnimatePresence, motion } from "framer-motion";
 import { blogPosts } from '@/lib/blog-data';
 import type { BlogPost } from '@/lib/blog-data';
 
-const BlogCard = ({ post }: { post: BlogPost }) => {
+// Array of gradient backgrounds for cards
+const cardBackgrounds = [
+  'bg-gradient-to-br from-pink-400 to-purple-500',
+  'bg-gradient-to-br from-blue-400 to-cyan-500',
+  'bg-gradient-to-br from-green-400 to-emerald-500',
+  'bg-gradient-to-br from-orange-400 to-red-500',
+  'bg-gradient-to-br from-yellow-400 to-orange-500',
+  'bg-gradient-to-br from-indigo-400 to-purple-500',
+];
+
+const BlogCard = ({ post, index }: { post: BlogPost; index: number }) => {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Get background color based on index
+  const backgroundColor = cardBackgrounds[index % cardBackgrounds.length];
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -102,20 +115,29 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
         )}
       </AnimatePresence>
 
-      <Card className="flex flex-col h-full">
-        <CardHeader>
-          <CardTitle>{post.title}</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-muted-foreground">{post.excerpt}</p>
-        </CardContent>
-        <CardFooter className="flex justify-between mt-auto">
-          <span className="text-sm text-muted-foreground">{post.date}</span>
-          <Button onClick={() => setIsOpen(true)}>
-            Know More
-          </Button>
-        </CardFooter>
-      </Card>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      >
+        <Card className={`flex flex-col h-full ${backgroundColor} shadow-lg`}>
+          <CardHeader>
+            <CardTitle className="text-white">{post.title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-white/90">{post.excerpt}</p>
+          </CardContent>
+          <CardFooter className="flex justify-between mt-auto">
+            <span className="text-sm text-white/80">{post.date}</span>
+            <Button 
+              onClick={() => setIsOpen(true)}
+              className="bg-white text-black hover:bg-white/90"
+            >
+              Know More
+            </Button>
+          </CardFooter>
+        </Card>
+      </motion.div>
     </>
   );
 };
@@ -124,8 +146,8 @@ export default function BlogPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => (
-          <BlogCard key={post.id} post={post} />
+        {blogPosts.map((post, index) => (
+          <BlogCard key={post.id} post={post} index={index} />
         ))}
       </div>
     </div>

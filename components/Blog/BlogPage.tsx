@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card1";
 import { Button } from "@/components/ui/button";
 import { X } from 'lucide-react';
 import { AnimatePresence, motion } from "framer-motion";
