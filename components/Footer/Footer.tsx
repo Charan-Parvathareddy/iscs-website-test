@@ -251,7 +251,16 @@ export function Footer() {
                   </a>
                 </div>
               </div>
+              {/* New certifications section */}
+              <div className="w-full md:w-auto">
+                <div className="flex items-center justify-center md:justify-end space-x-4">
+                  <span className="text-xs font-semibold">Certifications:</span>
+                  <span className="text-xs">ISO 9001:2015</span>
+                  <span className="text-xs">ISO/IEC 27001:2022</span>
+                </div>
+              </div>
             </div>
+          
           </div>
 
           <div className="text-center py-8 text-xs">
