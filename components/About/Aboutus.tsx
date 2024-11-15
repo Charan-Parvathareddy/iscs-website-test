@@ -53,7 +53,7 @@ export default function AboutUs() {
             </CardHeader>
             <CardContent>
               <p>
-              We envision a future where organizations leverage cutting-edge technology for efficiency and excellence without complexity. Our solutions are built to scale and adapt to clients' evolving needs.
+              We envision a future where organizations leverage cutting-edge technology for efficiency and excellence without complexity. Our solutions are built to scale and adapt to clients&apos; evolving needs.
                </p>
             </CardContent>
           </Card>
