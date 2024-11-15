@@ -18,7 +18,7 @@ export function Footer() {
                   className="cursor-pointer"
                 />
               </Link>
-              <p className="text-sm font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
+              <p className="text-base font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
               <p className="text-xxs font-semibold pl-[12px]">
   <span style={{ color: "#009846" }}>Experienced</span> |{" "}
   <span style={{ color: "#009846" }}>Enriched</span> |{" "}

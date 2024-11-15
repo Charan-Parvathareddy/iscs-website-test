@@ -591,13 +591,13 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between h-14">
           <div className="flex items-center">
             <Link href="/" passHref>
-              <Image
-                src="/assets/logo.svg"
-                alt="ISCS Logo"
-                width={130}
-                height={58}
-                className="h-14 w-32"
-              />
+            <Image
+  src="/assets/logo.svg"
+  alt="ISCS Logo"
+  width={200}
+  height={84}
+  className="h-[82px] w-40"
+/>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4 flex-grow justify-center">
