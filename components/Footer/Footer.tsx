@@ -19,7 +19,12 @@ export function Footer() {
                 />
               </Link>
               <p className="text-base font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
-              <p className="text-sm font-light  ">Experienced | Enriched | Envisioned</p>
+              <p className="text-sm font-semibold">
+  <span style={{ color: "#ef8237"}}>Experienced</span> |{" "}
+  <span style={{ color: "#e0523c"  }}>Enriched</span> |{" "}
+  <span style={{ color: "#009846"}}>Envisioned</span>
+              </p>
+
               <div className="flex mt-4 space-x-4">
                 <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
                   <Linkedin size={20} />
@@ -137,8 +142,8 @@ export function Footer() {
                 <h4 className="font-semibold text-blue-400">Global Office - USA</h4>
                 <address className="not-italic flex items-start">
                   <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                  <p>2055 Limestone Road, STE 200-C,
-                    <br/> Wilmington, Delaware, 19702</p>
+                  <p>26603 Bentgreen Chase Ct,
+                    <br/> Katy, Texas, 77494</p>
                 </address>
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 flex-shrink-0" />

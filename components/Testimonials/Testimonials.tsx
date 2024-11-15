@@ -23,15 +23,15 @@ const testimonials: Testimonial[] = [
     role: "Techno - Functional Architect",
     company: "ERPA",
     companyLogo: "/assets/Client_Logos/ERPA.png",
-    quote: "We would like to commend and thank you for completing our project requirements of Build & Run Phase within the agreed upon scope and timelines. Your project team and personnel have exhibited professional excellence and cooperative attitude. They are worthy of our appreciation for a timely and satisfactory completion. We hope to be working with your company on future projects."
+    quote: "We would like to commend and thank you for completing our project “Integration of Bulhorn ATS with Salesforce”, within agreed timelines.Your project team and personnel have exhibited professional excellence and cooperative attitude. They are worthy of our appreciation for a timely and satisfactory completion. We hope to be working with your company on future projects."
   },
   {
     id: 2,
-    name: "Mr. Deepak Belade",
+    name: "Mr. Deepak Bedade",
     role: "VMG - Procurement Head",
     company: "CSG",
     companyLogo: "/assets/Client_Logos/CSG.jpg",
-    quote: "ISCS Tech from the date of inception has been the top vendor in deploying TIBCO resources across PAN India (locations) which helped TIBCO Software in addressing all external & global implementations. 35+ resources of ISCS Tech have been deployed to implement and support on foreign implementation"
+    quote: "ISCS Tech from the date of inception has been the top vendor in deploying TIBCO resources across PAN India locations which helped TIBCO Software in addressing the execution of its global assignments. 35+ resources of ISCS Tech have been deployed to implement and support modern integrations at TIBCO."
   },
   {
     id: 3,
@@ -39,15 +39,15 @@ const testimonials: Testimonial[] = [
     role: "CTO & Co-Founder",
     company: "DGLiger Consulting",
     companyLogo: "/assets/Client_Logos/dgliger.png",
-    quote: "They adapt to our needs seamlessly, maintaining regular communication. The quality of their resource is outstanding, fostering a strong and make them an invaluable asset. Fruitful partnership, Their flexibility and reliability."
+    quote: "They adapt to our needs seamlessly, maintaining regular communication. The quality of their resources is outstanding, fostering a strong and make them an invaluable asset.” fruitful partnership. Their flexibility and reliability ."
   },
   {
     id: 4,
-    name: "Mr. Shashanka Surjanarayana",
+    name: "Mr. Shashanka Suryanarayana",
     role: "Client Engagement Manager",
     company: "Prowess",
     companyLogo: "/assets/Client_Logos/PROWESS.png",
-    quote: "ISCS has always been a go to partner to leverage niche skills and their aggressive approach sets them apart. It's being precise and strategic in providing with capabilities to fit our client needs."
+    quote: "ISCS has always been a go to partner to leverage niche skills and their aggressive approach sets them apart“.  It’s being precise and strategic in providing with capabilities to fit our client needs."
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const testimonials: Testimonial[] = [
     role: "Solution Architect - Salesforce",
     company: "ANSYS",
     companyLogo: "/assets/Client_Logos/ANSYS.jpg",
-    quote: "An American multinational co. It develops and markets CAE/Multiphysics engineering simulation software used to predict how product designs will behave in real-world environments. With 40000+ customers worldwide ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to deliver the implementation of an external CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavors."
+    quote: "ANSYS, an American multinational co. It develops and markets CAE/Multiphysics engineering simulation software related to product design, testing and operation offering its products and services to customers worldwide. ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to support the implementation of an internal CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavours."
   },
 ]
 
