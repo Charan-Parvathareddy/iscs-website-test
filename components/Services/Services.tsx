@@ -67,11 +67,11 @@ export function Services() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
         {services.map((service, index) => (
           <Card key={index} className="w-full flex flex-col">
-            <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">{service.title}</CardTitle>
+            <CardHeader className="p-3 sm:p-6">
+              <CardTitle className="text-base sm:text-lg">{service.title}</CardTitle>
             </CardHeader>
             <CardContent className="flex-grow p-2 sm:p-4 flex flex-col">
-              <div className="relative flex items-center justify-center w-full h-40 mb-6">
+              <div className="relative flex items-center justify-center w-full h-28 sm:h-40 mb-3 sm:mb-6">
                 {/* Mobile view: 80% size wrapper */}
                 <div className="w-full h-full relative sm:hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -102,7 +102,7 @@ export function Services() {
               </div>
               <CardDescription className="hidden lg:block">{service.description}</CardDescription>
             </CardContent>
-            <CardFooter className="mt-auto">
+            <CardFooter className="mt-auto p-3 sm:p-6">
               <Link
                 href={`/Services#${service.slug}`}
                 className="text-sm text-blue-600 hover:underline"

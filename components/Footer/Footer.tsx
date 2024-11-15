@@ -239,7 +239,7 @@ export function Footer() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex flex-wrap justify-between items-center">
+            <div className="mt-8 flex flex-wrap justify-between items-start">
               <div className="w-full md:w-auto mb-4 md:mb-0">
                 <div className="flex items-center justify-center md:justify-start">
                   <Mail size={16} className="mr-2 flex-shrink-0" />
@@ -251,16 +251,21 @@ export function Footer() {
                   </a>
                 </div>
               </div>
-              {/* New certifications section */}
+              {/* Updated certifications section */}
               <div className="w-full md:w-auto">
-                <div className="flex items-center justify-center md:justify-end space-x-4">
-                  <span className="text-xs font-semibold">Certifications:</span>
-                  <span className="text-xs">ISO 9001:2015</span>
-                  <span className="text-xs">ISO/IEC 27001:2022</span>
+                <div className="flex flex-col items-center md:items-end">
+                  <span className="text-xs font-semibold mb-2">Certifications</span>
+                  <div className="flex flex-col items-center md:items-end space-y-1">
+                    <span className="text-xs hover:text-blue-400 transition-colors cursor-pointer">
+                      ISO 9001:2015
+                    </span>
+                    <span className="text-xs hover:text-blue-400 transition-colors cursor-pointer">
+                      ISO/IEC 27001:2022
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          
           </div>
 
           <div className="text-center py-8 text-xs">
