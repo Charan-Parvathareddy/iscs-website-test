@@ -173,7 +173,7 @@ const NavItem: React.FC<NavItemProps> = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-4xl"
+            className="absolute left-1/2 transform -translate-x-1/2 z-10 mt-2 w-screen max-w-3xl"
           >
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="relative bg-background px-5 py-6">
