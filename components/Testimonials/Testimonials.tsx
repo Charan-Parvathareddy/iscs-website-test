@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <Card className="overflow-hidden shadow-lg border-blue-200 h-full">
- <CardContent className="p-2 flex flex-col h-full"> {/* Reduced padding from p-6 to p-4 */}
+ <CardContent className="p-4 flex flex-col h-full"> {/* Reduced padding from p-6 to p-4 */}
       <div className="flex items-center gap-4 mb-4">
         <div className="w-28 h-28 shrink-0"> {/* Reduced size from w-28 h-28 to w-24 h-24 */}
           <Image
