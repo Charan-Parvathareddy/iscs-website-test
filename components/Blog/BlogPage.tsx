@@ -163,7 +163,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
 export function BlogPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
         {blogPosts.map((post) => (
           <BlogCard key={post.id} post={post} />
         ))}
