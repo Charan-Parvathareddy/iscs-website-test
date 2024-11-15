@@ -18,12 +18,13 @@ export function Footer() {
                   className="cursor-pointer"
                 />
               </Link>
-              <p className="text-base font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
-              <p className="text-sm font-semibold">
-  <span style={{ color: "#ef8237"}}>Experienced</span> |{" "}
-  <span style={{ color: "#e0523c"  }}>Enriched</span> |{" "}
-  <span style={{ color: "#009846"}}>Envisioned</span>
-              </p>
+              <p className="text-sm font-semibold text-blue-600 ">Your Trusted Global IT Partner</p>
+              <p className="text-xxs font-semibold pl-[12px]">
+  <span style={{ color: "#009846" }}>Experienced</span> |{" "}
+  <span style={{ color: "#009846" }}>Enriched</span> |{" "}
+  <span style={{ color: "#009846" }}>Envisioned</span>
+</p>
+
 
               <div className="flex mt-4 space-x-4">
                 <a href="https://www.linkedin.com/company/iscs-technologies" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn">

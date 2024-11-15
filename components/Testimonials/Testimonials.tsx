@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
     role: "CTO & Co-Founder",
     company: "DGLiger Consulting",
     companyLogo: "/assets/Client_Logos/dgliger.png",
-    quote: "They adapt to our needs seamlessly, maintaining regular communication. The quality of their resources is outstanding, fostering a strong and make them an invaluable asset.” fruitful partnership. Their flexibility and reliability ."
+    quote: "They adapt to our needs seamlessly, maintaining regular communication. The quality of their resources is outstanding, fostering a strong and fruitful partnership. Their flexibility and reliability make them an invaluable asset."
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const testimonials: Testimonial[] = [
     role: "Solution Architect - Salesforce",
     company: "ANSYS",
     companyLogo: "/assets/Client_Logos/ANSYS.jpg",
-    quote: "ANSYS, an American multinational co. It develops and markets CAE/Multiphysics engineering simulation software related to product design, testing and operation offering its products and services to customers worldwide. ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to support the implementation of an internal CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavours."
+    quote: "An American multinational co. It develops and markets CAE/Multiphysics engineering simulation software related to product design, testing and operation offering its products and services to customers worldwide. ISCS Tech has been deploying Tech Consultants from 2021 at ANSYS to support the implementation of an internal CRM project. It has been a great pleasure working with them. I wish the best to ISCS for all their future endeavours."
   },
 ]
 
