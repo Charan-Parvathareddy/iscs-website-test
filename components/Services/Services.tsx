@@ -32,7 +32,7 @@ export function Services() {
     {
       title: "Oracle Services",
       description: "Maximize your enterprise potential with our Oracle solutions. We offer tailored services in database management, cloud applications, and analytics to enhance operational efficiency.",
-      image: "/assets/Oracle/oracle.jpg",
+      image: "/assets/Oracle/Oracle_logo.svg",
       slug: "oracle-solutions"
     },
     {
